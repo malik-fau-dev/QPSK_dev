@@ -1,0 +1,70 @@
+#-----------------------------------------------------------
+# Vivado v2024.2 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Thu Sep 18 15:02:56 2025
+# Process ID         : 42232
+# Current directory  : C:/Users/sharifm/Desktop/HTG/htg_demo_setup/htg_proj_files/hdl_project/Taxi_QPSK_v3/Taxi_QPSK_v3
+# Command line       : vivado.exe C:\Users\sharifm\Desktop\HTG\htg_demo_setup\htg_proj_files\hdl_project\Taxi_QPSK_v3\Taxi_QPSK_v3\Taxi_QPSK_v3.xpr
+# Log file           : C:/Users/sharifm/Desktop/HTG/htg_demo_setup/htg_proj_files/hdl_project/Taxi_QPSK_v3/Taxi_QPSK_v3/vivado.log
+# Journal file       : C:/Users/sharifm/Desktop/HTG/htg_demo_setup/htg_proj_files/hdl_project/Taxi_QPSK_v3/Taxi_QPSK_v3\vivado.jou
+# Running On         : ENG_8JCHGB4
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26100
+# Processor Detail   : Intel(R) Core(TM) Ultra 9 275HX
+# CPU Frequency      : 3072 MHz
+# CPU Physical cores : 24
+# CPU Logical cores  : 24
+# Host memory        : 33777 MB
+# Swap memory        : 23622 MB
+# Total Virtual      : 57399 MB
+# Available Virtual  : 21925 MB
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/sharifm/Desktop/HTG/htg_demo_setup/htg_proj_files/hdl_project/Taxi_QPSK_v3/Taxi_QPSK_v3/Taxi_QPSK_v3.xpr
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'C:/Users/sharifm/Desktop/HTG/htg_demo_setup/htg_proj_files/hdl_project/Taxi_QPSK_v3/Taxi_QPSK_v3'
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld:part0:2.0 available at C:/Xilinx/Vivado/2024.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/production/2.0/board.xml as part xczu58dr-fsvg1517-2-i specified in board_part file is either invalid or not available
+INFO: [Project 1-313] Project file moved from 'C:/Taxi/temp_back_of_v3/Taxi_QPSK_v3/Taxi_QPSK_v3' since last save.
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at C:/Xilinx/Vivado/2024.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at C:/Xilinx/Vivado/2024.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670ld/1.0/board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not available
+INFO: [filemgmt 56-1] IP Repository Path: Directory not found as 'C:/Users/sharifm/Desktop/HTG/htg_demo_setup/QPSK/hdl_prj_zcu111/vivado_ip_prj/ipcore'; using path 'C:/QPSK/hdl_prj_zcu111/vivado_ip_prj/ipcore' instead.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/QPSK/hdl_prj_zcu111/vivado_ip_prj/ipcore'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2024.2/data/ip'.
+INFO: [Project 1-5579] Found utility IPs instantiated in one or more block designs which have equivalent inline hdl with improved performance and reduced diskspace. It is recommended to migrate these utility IPs to inline hdl using the command upgrade_project -migrate_to_inline_hdl. The utility IPs may be deprecated in future releases. More information on inline hdl is available in UG994.
+open_project: Time (s): cpu = 00:00:24 ; elapsed = 00:00:19 . Memory (MB): peak = 1815.449 ; gain = 610.586
+update_compile_order -fileset sources_1
+open_bd_design {C:/Users/sharifm/Desktop/HTG/htg_demo_setup/htg_proj_files/hdl_project/Taxi_QPSK_v3/Taxi_QPSK_v3/Taxi_QPSK_v3.srcs/sources_1/bd/qpsk_for_htg/qpsk_for_htg.bd}
+Reading block design file <C:/Users/sharifm/Desktop/HTG/htg_demo_setup/htg_proj_files/hdl_project/Taxi_QPSK_v3/Taxi_QPSK_v3/Taxi_QPSK_v3.srcs/sources_1/bd/qpsk_for_htg/qpsk_for_htg.bd>...
+Adding component instance block -- xilinx.com:ip:zynq_ultra_ps_e:3.5 - zynq_ultra_ps_e_0
+Adding component instance block -- xilinx.com:ip:axi_interconnect:2.1 - axi_interconnect_0
+Adding component instance block -- xilinx.com:ip:axi_dwidth_converter:2.1 - auto_us
+Adding component instance block -- xilinx.com:ip:axi_interconnect:2.1 - axi_interconnect_1
+Adding component instance block -- xilinx.com:ip:axi_dwidth_converter:2.1 - auto_us
+Adding component instance block -- xilinx.com:ip:axi_interconnect:2.1 - axi_interconnect_2
+Adding component instance block -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding component instance block -- xilinx.com:ip:axi_clock_converter:2.1 - auto_cc
+Adding component instance block -- xilinx.com:ip:axi_dwidth_converter:2.1 - auto_ds
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:axi_dwidth_converter:2.1 - auto_ds
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:axi_dwidth_converter:2.1 - auto_ds
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- analog.com:user:axi_dmac:1.0 - axi_dmac_0
+Adding component instance block -- fau.edu:ip:QPSK:1.0 - QPSK_0
+Adding component instance block -- analog.com:user:axi_dmac:1.0 - axi_dmac_1
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - proc_sys_reset_0
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - proc_sys_reset_1
+Adding component instance block -- xilinx.com:ip:clk_wiz:6.0 - clk_wiz_0
+Adding component instance block -- xilinx.com:ip:xlconcat:2.1 - xlconcat_0
+Adding component instance block -- xilinx.com:ip:xlconstant:1.1 - xlconstant_0
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - proc_sys_reset_2
+Adding component instance block -- mathworks.com:user:ADC_Demuxer:1.0 - ADC_Demuxer_0
+Adding component instance block -- mathworks.com:user:DAC_Muxer:1.0 - DAC_Muxer_0
+Adding component instance block -- xilinx.com:ip:system_ila:1.1 - system_ila_0
+Adding component instance block -- xilinx.com:ip:system_ila:1.1 - system_ila_1
+Successfully read diagram <qpsk_for_htg> from block design file <C:/Users/sharifm/Desktop/HTG/htg_demo_setup/htg_proj_files/hdl_project/Taxi_QPSK_v3/Taxi_QPSK_v3/Taxi_QPSK_v3.srcs/sources_1/bd/qpsk_for_htg/qpsk_for_htg.bd>

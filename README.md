@@ -1,6 +1,3 @@
-# QPSK_dev
-This repository has all the relevant data to do QPSK development on HTG-ZRF8 board
-
 # QPSK on HTG — Tutorial
 - linux_files directory contains the petalinux image. Copy all the files inside this directory to Boot partition of the SD card.
 - Once the linux is booted, copy the files inside the directory firmware to root partition of SD card i.e. /home/root
@@ -40,7 +37,6 @@ systemctl restart iiod 2>/dev/null || { killall iiod 2>/de  v/null; iiod -F & }
 ![Figure 5](images/image_05.png)
 - Now run the script gs_hdlcoder_QPSKTxRx_RFSoC_interface
 ![Figure 6](images/image_06.png)
-
 
 
 

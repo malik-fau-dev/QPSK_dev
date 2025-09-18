@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="taxi_eth_phy_25g_us_gty_ll_full_synth_1" LaunchPart="xczu48dr-ffvg1517-2-e" LaunchTime="1757549178">
+  <File Type="REPORTS-TCL" Name="taxi_eth_phy_25g_us_gty_ll_full_reports.tcl"/>
+  <File Type="RDS-UTIL" Name="taxi_eth_phy_25g_us_gty_ll_full_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="taxi_eth_phy_25g_us_gty_ll_full_utilization_synth.pb"/>
+  <File Type="PA-TCL" Name="taxi_eth_phy_25g_us_gty_ll_full.tcl"/>
+  <File Type="RDS-RDS" Name="taxi_eth_phy_25g_us_gty_ll_full.vds"/>
+  <File Type="RDS-DCP" Name="taxi_eth_phy_25g_us_gty_ll_full.dcp"/>
+  <FileSet Name="sources" Type="BlockSrcs" RelSrcDir="$PSRCDIR/taxi_eth_phy_25g_us_gty_ll_full" RelGenDir="$PGENDIR/taxi_eth_phy_25g_us_gty_ll_full">
+    <File Path="$PSRCDIR/sources_1/ip/taxi_eth_phy_25g_us_gty_ll_full/taxi_eth_phy_25g_us_gty_ll_full.xci">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopModule" Val="taxi_eth_phy_25g_us_gty_ll_full"/>
+      <Option Name="UseBlackboxStub" Val="1"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="BlockSrcs" RelSrcDir="$PSRCDIR/taxi_eth_phy_25g_us_gty_ll_full" RelGenDir="$PGENDIR/taxi_eth_phy_25g_us_gty_ll_full">
+    <File Path="$PSRCDIR/sources_1/ip/taxi_eth_phy_25g_us_gty_ll_full/taxi_eth_phy_25g_us_gty_ll_full.xci">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopModule" Val="taxi_eth_phy_25g_us_gty_ll_full"/>
+      <Option Name="UseBlackboxStub" Val="1"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1" RelGenDir="$PGENDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2024"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+</GenRun>

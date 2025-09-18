@@ -1,0 +1,1446 @@
+#-----------------------------------------------------------
+# Vivado v2024.2 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Thu Sep 18 13:08:53 2025
+# Process ID         : 37800
+# Current directory  : C:/Taxi/temp_back_of_v3/Taxi_QPSK_v3/Taxi_QPSK_v3/Taxi_QPSK_v3.runs/impl_1
+# Command line       : vivado.exe -log fpga.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source fpga.tcl -notrace
+# Log file           : C:/Taxi/temp_back_of_v3/Taxi_QPSK_v3/Taxi_QPSK_v3/Taxi_QPSK_v3.runs/impl_1/fpga.vdi
+# Journal file       : C:/Taxi/temp_back_of_v3/Taxi_QPSK_v3/Taxi_QPSK_v3/Taxi_QPSK_v3.runs/impl_1\vivado.jou
+# Running On         : ENG_8JCHGB4
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26100
+# Processor Detail   : Intel(R) Core(TM) Ultra 9 275HX
+# CPU Frequency      : 3072 MHz
+# CPU Physical cores : 24
+# CPU Logical cores  : 24
+# Host memory        : 33777 MB
+# Swap memory        : 23622 MB
+# Total Virtual      : 57399 MB
+# Available Virtual  : 19093 MB
+#-----------------------------------------------------------
+source fpga.tcl -notrace
+WARNING: [Common 17-1361] You have specified a new message control rule that is equivalent to an existing rule with attributes ' -id {Vivado 12-1790}  -string {{Evaluation} {features} {should} {NOT} {be} {used} {in} {production} {systems.}}  -new_severity {WARNING} '. The existing rule will be replaced.
+WARNING: [Common 17-1361] You have specified a new message control rule that is equivalent to an existing rule with attributes ' -id {BD 41-1343}  -new_severity {WARNING} '. The existing rule will be replaced.
+WARNING: [Common 17-1361] You have specified a new message control rule that is equivalent to an existing rule with attributes ' -id {BD 41-1306}  -new_severity {WARNING} '. The existing rule will be replaced.
+WARNING: [Common 17-1361] You have specified a new message control rule that is equivalent to an existing rule with attributes ' -id {BD 41-1276}  -severity {CRITICAL WARNING}  -new_severity {ERROR} '. The existing rule will be replaced.
+WARNING: [Common 17-1361] You have specified a new message control rule that is equivalent to an existing rule with attributes ' -id {IP_Flow 19-3656}  -new_severity {INFO} '. The existing rule will be replaced.
+WARNING: [Common 17-1361] You have specified a new message control rule that is equivalent to an existing rule with attributes ' -id {IP_Flow 19-4623}  -new_severity {INFO} '. The existing rule will be replaced.
+WARNING: [Common 17-1361] You have specified a new message control rule that is equivalent to an existing rule with attributes ' -id {IP_Flow 19-459}  -new_severity {INFO} '. The existing rule will be replaced.
+WARNING: [Common 17-1361] You have specified a new message control rule that is equivalent to an existing rule with attributes ' -id {Place 30-73}  -string {{axi_spi}}  -new_severity {WARNING} '. The existing rule will be replaced.
+WARNING: [Common 17-1361] You have specified a new message control rule that is equivalent to an existing rule with attributes ' -string {{PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY}}  -new_severity {WARNING} '. The existing rule will be replaced.
+WARNING: [Common 17-1361] You have specified a new message control rule that is equivalent to an existing rule with attributes ' -id {Vivado 12-1790}  -string {{Evaluation} {features} {should} {NOT} {be} {used} {in} {production} {systems.}}  -new_severity {WARNING} '. The existing rule will be replaced.
+WARNING: [Common 17-1361] You have specified a new message control rule that is equivalent to an existing rule with attributes ' -id {BD 41-1343}  -new_severity {WARNING} '. The existing rule will be replaced.
+WARNING: [Common 17-1361] You have specified a new message control rule that is equivalent to an existing rule with attributes ' -id {BD 41-1306}  -new_severity {WARNING} '. The existing rule will be replaced.
+WARNING: [Common 17-1361] You have specified a new message control rule that is equivalent to an existing rule with attributes ' -id {BD 41-1306}  -new_severity {WARNING} '. The existing rule will be replaced.
+WARNING: [Common 17-1361] You have specified a new message control rule that is equivalent to an existing rule with attributes ' -id {BD 41-1276}  -severity {CRITICAL WARNING}  -new_severity {ERROR} '. The existing rule will be replaced.
+WARNING: [Common 17-1361] You have specified a new message control rule that is equivalent to an existing rule with attributes ' -id {IP_Flow 19-3656}  -new_severity {INFO} '. The existing rule will be replaced.
+WARNING: [Common 17-1361] You have specified a new message control rule that is equivalent to an existing rule with attributes ' -id {IP_Flow 19-4623}  -new_severity {INFO} '. The existing rule will be replaced.
+WARNING: [Common 17-1361] You have specified a new message control rule that is equivalent to an existing rule with attributes ' -id {IP_Flow 19-459}  -new_severity {INFO} '. The existing rule will be replaced.
+WARNING: [Common 17-1361] You have specified a new message control rule that is equivalent to an existing rule with attributes ' -id {Place 30-73}  -string {{axi_spi}}  -new_severity {WARNING} '. The existing rule will be replaced.
+WARNING: [Common 17-1361] You have specified a new message control rule that is equivalent to an existing rule with attributes ' -string {{PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY}}  -new_severity {WARNING} '. The existing rule will be replaced.
+WARNING: [Common 17-1361] You have specified a new message control rule that is equivalent to an existing rule with attributes ' -id {BD 41-1276}  -severity {CRITICAL WARNING}  -new_severity {ERROR} '. The existing rule will be replaced.
+WARNING: [Common 17-1361] You have specified a new message control rule that is equivalent to an existing rule with attributes ' -id {IP_Flow 19-3656}  -new_severity {INFO} '. The existing rule will be replaced.
+WARNING: [Common 17-1361] You have specified a new message control rule that is equivalent to an existing rule with attributes ' -id {IP_Flow 19-4623}  -new_severity {INFO} '. The existing rule will be replaced.
+WARNING: [Common 17-1361] You have specified a new message control rule that is equivalent to an existing rule with attributes ' -id {IP_Flow 19-459}  -new_severity {INFO} '. The existing rule will be replaced.
+WARNING: [Common 17-1361] You have specified a new message control rule that is equivalent to an existing rule with attributes ' -id {Place 30-73}  -string {{axi_spi}}  -new_severity {WARNING} '. The existing rule will be replaced.
+WARNING: [Common 17-1361] You have specified a new message control rule that is equivalent to an existing rule with attributes ' -string {{PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY}}  -new_severity {WARNING} '. The existing rule will be replaced.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/QPSK/hdl_prj_zcu111/vivado_ip_prj/ipcore'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2024.2/data/ip'.
+add_files: Time (s): cpu = 00:00:04 ; elapsed = 00:00:15 . Memory (MB): peak = 765.844 ; gain = 129.945
+Command: link_design -top fpga -part xczu48dr-ffvg1517-2-e
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Device 21-403] Loading part xczu48dr-ffvg1517-2-e
+INFO: [Project 1-454] Reading design checkpoint 'c:/Taxi/temp_back_of_v3/Taxi_QPSK_v3/Taxi_QPSK_v3/Taxi_QPSK_v3.gen/sources_1/ip/usp_rfdc_0/usp_rfdc_0.dcp' for cell 'rfdc_inst'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Taxi/temp_back_of_v3/Taxi_QPSK_v3/Taxi_QPSK_v3/Taxi_QPSK_v3.gen/sources_1/ip/taxi_eth_phy_25g_us_gty_ll_full/taxi_eth_phy_25g_us_gty_ll_full.dcp' for cell 'core_inst/gty_quad[0].mac_inst/ch[0].ch_inst/gt.gt_inst/xcvr.taxi_eth_phy_25g_us_gty_ll_full_inst'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Taxi/temp_back_of_v3/Taxi_QPSK_v3/Taxi_QPSK_v3/Taxi_QPSK_v3.gen/sources_1/ip/taxi_eth_phy_25g_us_gty_ll_ch/taxi_eth_phy_25g_us_gty_ll_ch.dcp' for cell 'core_inst/gty_quad[0].mac_inst/ch[1].ch_inst/gt.gt_inst/xcvr.taxi_eth_phy_25g_us_gty_ll_ch_inst'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Taxi/temp_back_of_v3/Taxi_QPSK_v3/Taxi_QPSK_v3/Taxi_QPSK_v3.gen/sources_1/bd/qpsk_for_htg/ip/qpsk_for_htg_ADC_Demuxer_0_0/qpsk_for_htg_ADC_Demuxer_0_0.dcp' for cell 'qpsk_for_htg_i/ADC_Demuxer_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Taxi/temp_back_of_v3/Taxi_QPSK_v3/Taxi_QPSK_v3/Taxi_QPSK_v3.gen/sources_1/bd/qpsk_for_htg/ip/qpsk_for_htg_DAC_Muxer_0_0/qpsk_for_htg_DAC_Muxer_0_0.dcp' for cell 'qpsk_for_htg_i/DAC_Muxer_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Taxi/temp_back_of_v3/Taxi_QPSK_v3/Taxi_QPSK_v3/Taxi_QPSK_v3.gen/sources_1/bd/qpsk_for_htg/ip/qpsk_for_htg_QPSK_0_0/qpsk_for_htg_QPSK_0_0.dcp' for cell 'qpsk_for_htg_i/QPSK_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Taxi/temp_back_of_v3/Taxi_QPSK_v3/Taxi_QPSK_v3/Taxi_QPSK_v3.gen/sources_1/bd/qpsk_for_htg/ip/qpsk_for_htg_axi_dmac_0_0/qpsk_for_htg_axi_dmac_0_0.dcp' for cell 'qpsk_for_htg_i/axi_dmac_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Taxi/temp_back_of_v3/Taxi_QPSK_v3/Taxi_QPSK_v3/Taxi_QPSK_v3.gen/sources_1/bd/qpsk_for_htg/ip/qpsk_for_htg_axi_dmac_1_0/qpsk_for_htg_axi_dmac_1_0.dcp' for cell 'qpsk_for_htg_i/axi_dmac_1'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Taxi/temp_back_of_v3/Taxi_QPSK_v3/Taxi_QPSK_v3/Taxi_QPSK_v3.gen/sources_1/bd/qpsk_for_htg/ip/qpsk_for_htg_clk_wiz_0_0/qpsk_for_htg_clk_wiz_0_0.dcp' for cell 'qpsk_for_htg_i/clk_wiz_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Taxi/temp_back_of_v3/Taxi_QPSK_v3/Taxi_QPSK_v3/Taxi_QPSK_v3.gen/sources_1/bd/qpsk_for_htg/ip/qpsk_for_htg_proc_sys_reset_0_0/qpsk_for_htg_proc_sys_reset_0_0.dcp' for cell 'qpsk_for_htg_i/proc_sys_reset_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Taxi/temp_back_of_v3/Taxi_QPSK_v3/Taxi_QPSK_v3/Taxi_QPSK_v3.gen/sources_1/bd/qpsk_for_htg/ip/qpsk_for_htg_proc_sys_reset_1_0/qpsk_for_htg_proc_sys_reset_1_0.dcp' for cell 'qpsk_for_htg_i/proc_sys_reset_1'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Taxi/temp_back_of_v3/Taxi_QPSK_v3/Taxi_QPSK_v3/Taxi_QPSK_v3.gen/sources_1/bd/qpsk_for_htg/ip/qpsk_for_htg_proc_sys_reset_2_0/qpsk_for_htg_proc_sys_reset_2_0.dcp' for cell 'qpsk_for_htg_i/proc_sys_reset_2'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Taxi/temp_back_of_v3/Taxi_QPSK_v3/Taxi_QPSK_v3/Taxi_QPSK_v3.gen/sources_1/bd/qpsk_for_htg/ip/qpsk_for_htg_system_ila_0_0/qpsk_for_htg_system_ila_0_0.dcp' for cell 'qpsk_for_htg_i/system_ila_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Taxi/temp_back_of_v3/Taxi_QPSK_v3/Taxi_QPSK_v3/Taxi_QPSK_v3.gen/sources_1/bd/qpsk_for_htg/ip/qpsk_for_htg_system_ila_1_0/qpsk_for_htg_system_ila_1_0.dcp' for cell 'qpsk_for_htg_i/system_ila_1'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Taxi/temp_back_of_v3/Taxi_QPSK_v3/Taxi_QPSK_v3/Taxi_QPSK_v3.gen/sources_1/bd/qpsk_for_htg/ip/qpsk_for_htg_zynq_ultra_ps_e_0_0/qpsk_for_htg_zynq_ultra_ps_e_0_0.dcp' for cell 'qpsk_for_htg_i/zynq_ultra_ps_e_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Taxi/temp_back_of_v3/Taxi_QPSK_v3/Taxi_QPSK_v3/Taxi_QPSK_v3.gen/sources_1/bd/qpsk_for_htg/ip/qpsk_for_htg_axi_interconnect_0_imp_auto_us_0/qpsk_for_htg_axi_interconnect_0_imp_auto_us_0.dcp' for cell 'qpsk_for_htg_i/axi_interconnect_0/s00_couplers/auto_us'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Taxi/temp_back_of_v3/Taxi_QPSK_v3/Taxi_QPSK_v3/Taxi_QPSK_v3.gen/sources_1/bd/qpsk_for_htg/ip/qpsk_for_htg_axi_interconnect_1_imp_auto_us_0/qpsk_for_htg_axi_interconnect_1_imp_auto_us_0.dcp' for cell 'qpsk_for_htg_i/axi_interconnect_1/s00_couplers/auto_us'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Taxi/temp_back_of_v3/Taxi_QPSK_v3/Taxi_QPSK_v3/Taxi_QPSK_v3.gen/sources_1/bd/qpsk_for_htg/ip/qpsk_for_htg_axi_interconnect_2_imp_xbar_0/qpsk_for_htg_axi_interconnect_2_imp_xbar_0.dcp' for cell 'qpsk_for_htg_i/axi_interconnect_2/xbar'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Taxi/temp_back_of_v3/Taxi_QPSK_v3/Taxi_QPSK_v3/Taxi_QPSK_v3.gen/sources_1/bd/qpsk_for_htg/ip/qpsk_for_htg_axi_interconnect_2_imp_auto_cc_0/qpsk_for_htg_axi_interconnect_2_imp_auto_cc_0.dcp' for cell 'qpsk_for_htg_i/axi_interconnect_2/m00_couplers/auto_cc'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Taxi/temp_back_of_v3/Taxi_QPSK_v3/Taxi_QPSK_v3/Taxi_QPSK_v3.gen/sources_1/bd/qpsk_for_htg/ip/qpsk_for_htg_axi_interconnect_2_imp_auto_ds_0/qpsk_for_htg_axi_interconnect_2_imp_auto_ds_0.dcp' for cell 'qpsk_for_htg_i/axi_interconnect_2/m00_couplers/auto_ds'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Taxi/temp_back_of_v3/Taxi_QPSK_v3/Taxi_QPSK_v3/Taxi_QPSK_v3.gen/sources_1/bd/qpsk_for_htg/ip/qpsk_for_htg_axi_interconnect_2_imp_auto_pc_0/qpsk_for_htg_axi_interconnect_2_imp_auto_pc_0.dcp' for cell 'qpsk_for_htg_i/axi_interconnect_2/m00_couplers/auto_pc'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Taxi/temp_back_of_v3/Taxi_QPSK_v3/Taxi_QPSK_v3/Taxi_QPSK_v3.gen/sources_1/bd/qpsk_for_htg/ip/qpsk_for_htg_axi_interconnect_2_imp_auto_ds_1/qpsk_for_htg_axi_interconnect_2_imp_auto_ds_1.dcp' for cell 'qpsk_for_htg_i/axi_interconnect_2/m01_couplers/auto_ds'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Taxi/temp_back_of_v3/Taxi_QPSK_v3/Taxi_QPSK_v3/Taxi_QPSK_v3.gen/sources_1/bd/qpsk_for_htg/ip/qpsk_for_htg_axi_interconnect_2_imp_auto_pc_1/qpsk_for_htg_axi_interconnect_2_imp_auto_pc_1.dcp' for cell 'qpsk_for_htg_i/axi_interconnect_2/m01_couplers/auto_pc'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Taxi/temp_back_of_v3/Taxi_QPSK_v3/Taxi_QPSK_v3/Taxi_QPSK_v3.gen/sources_1/bd/qpsk_for_htg/ip/qpsk_for_htg_axi_interconnect_2_imp_auto_ds_2/qpsk_for_htg_axi_interconnect_2_imp_auto_ds_2.dcp' for cell 'qpsk_for_htg_i/axi_interconnect_2/m02_couplers/auto_ds'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Taxi/temp_back_of_v3/Taxi_QPSK_v3/Taxi_QPSK_v3/Taxi_QPSK_v3.gen/sources_1/bd/qpsk_for_htg/ip/qpsk_for_htg_axi_interconnect_2_imp_auto_pc_2/qpsk_for_htg_axi_interconnect_2_imp_auto_pc_2.dcp' for cell 'qpsk_for_htg_i/axi_interconnect_2/m02_couplers/auto_pc'
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.896 . Memory (MB): peak = 1998.637 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 4137 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2024.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. qpsk_for_htg_i/clk_wiz_0/inst/clkin1_ibuf 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Constraints 18-550] Could not create 'IBUF_LOW_PWR' constraint because net 'qpsk_for_htg_i/clk_wiz_0/clk_in1' is not directly connected to top level port. 'IBUF_LOW_PWR' is ignored for synthesis but preserved for implementation.
+INFO: [Chipscope 16-324] Core: qpsk_for_htg_i/system_ila_0/inst/ila_lib UUID: 1571c0e5-b069-5b90-bf53-0792d28aa99e 
+INFO: [Chipscope 16-324] Core: qpsk_for_htg_i/system_ila_1/inst/ila_lib UUID: 2cd85d5f-8adb-5cbf-a6e9-5845c24b5545 
+Parsing XDC File [c:/Taxi/temp_back_of_v3/Taxi_QPSK_v3/Taxi_QPSK_v3/Taxi_QPSK_v3.gen/sources_1/bd/qpsk_for_htg/ip/qpsk_for_htg_zynq_ultra_ps_e_0_0/qpsk_for_htg_zynq_ultra_ps_e_0_0.xdc] for cell 'qpsk_for_htg_i/zynq_ultra_ps_e_0/inst'
+Finished Parsing XDC File [c:/Taxi/temp_back_of_v3/Taxi_QPSK_v3/Taxi_QPSK_v3/Taxi_QPSK_v3.gen/sources_1/bd/qpsk_for_htg/ip/qpsk_for_htg_zynq_ultra_ps_e_0_0/qpsk_for_htg_zynq_ultra_ps_e_0_0.xdc] for cell 'qpsk_for_htg_i/zynq_ultra_ps_e_0/inst'
+Parsing XDC File [c:/Taxi/temp_back_of_v3/Taxi_QPSK_v3/Taxi_QPSK_v3/Taxi_QPSK_v3.gen/sources_1/bd/qpsk_for_htg/ip/qpsk_for_htg_proc_sys_reset_0_0/qpsk_for_htg_proc_sys_reset_0_0_board.xdc] for cell 'qpsk_for_htg_i/proc_sys_reset_0/U0'
+Finished Parsing XDC File [c:/Taxi/temp_back_of_v3/Taxi_QPSK_v3/Taxi_QPSK_v3/Taxi_QPSK_v3.gen/sources_1/bd/qpsk_for_htg/ip/qpsk_for_htg_proc_sys_reset_0_0/qpsk_for_htg_proc_sys_reset_0_0_board.xdc] for cell 'qpsk_for_htg_i/proc_sys_reset_0/U0'
+Parsing XDC File [c:/Taxi/temp_back_of_v3/Taxi_QPSK_v3/Taxi_QPSK_v3/Taxi_QPSK_v3.gen/sources_1/bd/qpsk_for_htg/ip/qpsk_for_htg_proc_sys_reset_0_0/qpsk_for_htg_proc_sys_reset_0_0.xdc] for cell 'qpsk_for_htg_i/proc_sys_reset_0/U0'
+Finished Parsing XDC File [c:/Taxi/temp_back_of_v3/Taxi_QPSK_v3/Taxi_QPSK_v3/Taxi_QPSK_v3.gen/sources_1/bd/qpsk_for_htg/ip/qpsk_for_htg_proc_sys_reset_0_0/qpsk_for_htg_proc_sys_reset_0_0.xdc] for cell 'qpsk_for_htg_i/proc_sys_reset_0/U0'
+Parsing XDC File [c:/Taxi/temp_back_of_v3/Taxi_QPSK_v3/Taxi_QPSK_v3/Taxi_QPSK_v3.gen/sources_1/bd/qpsk_for_htg/ip/qpsk_for_htg_proc_sys_reset_1_0/qpsk_for_htg_proc_sys_reset_1_0_board.xdc] for cell 'qpsk_for_htg_i/proc_sys_reset_1/U0'
+Finished Parsing XDC File [c:/Taxi/temp_back_of_v3/Taxi_QPSK_v3/Taxi_QPSK_v3/Taxi_QPSK_v3.gen/sources_1/bd/qpsk_for_htg/ip/qpsk_for_htg_proc_sys_reset_1_0/qpsk_for_htg_proc_sys_reset_1_0_board.xdc] for cell 'qpsk_for_htg_i/proc_sys_reset_1/U0'
+Parsing XDC File [c:/Taxi/temp_back_of_v3/Taxi_QPSK_v3/Taxi_QPSK_v3/Taxi_QPSK_v3.gen/sources_1/bd/qpsk_for_htg/ip/qpsk_for_htg_proc_sys_reset_1_0/qpsk_for_htg_proc_sys_reset_1_0.xdc] for cell 'qpsk_for_htg_i/proc_sys_reset_1/U0'
+Finished Parsing XDC File [c:/Taxi/temp_back_of_v3/Taxi_QPSK_v3/Taxi_QPSK_v3/Taxi_QPSK_v3.gen/sources_1/bd/qpsk_for_htg/ip/qpsk_for_htg_proc_sys_reset_1_0/qpsk_for_htg_proc_sys_reset_1_0.xdc] for cell 'qpsk_for_htg_i/proc_sys_reset_1/U0'
+Parsing XDC File [c:/Taxi/temp_back_of_v3/Taxi_QPSK_v3/Taxi_QPSK_v3/Taxi_QPSK_v3.gen/sources_1/bd/qpsk_for_htg/ip/qpsk_for_htg_clk_wiz_0_0/qpsk_for_htg_clk_wiz_0_0_board.xdc] for cell 'qpsk_for_htg_i/clk_wiz_0/inst'
+Finished Parsing XDC File [c:/Taxi/temp_back_of_v3/Taxi_QPSK_v3/Taxi_QPSK_v3/Taxi_QPSK_v3.gen/sources_1/bd/qpsk_for_htg/ip/qpsk_for_htg_clk_wiz_0_0/qpsk_for_htg_clk_wiz_0_0_board.xdc] for cell 'qpsk_for_htg_i/clk_wiz_0/inst'
+Parsing XDC File [c:/Taxi/temp_back_of_v3/Taxi_QPSK_v3/Taxi_QPSK_v3/Taxi_QPSK_v3.gen/sources_1/bd/qpsk_for_htg/ip/qpsk_for_htg_clk_wiz_0_0/qpsk_for_htg_clk_wiz_0_0.xdc] for cell 'qpsk_for_htg_i/clk_wiz_0/inst'
+INFO: [Timing 38-35] Done setting XDC timing constraints. [c:/Taxi/temp_back_of_v3/Taxi_QPSK_v3/Taxi_QPSK_v3/Taxi_QPSK_v3.gen/sources_1/bd/qpsk_for_htg/ip/qpsk_for_htg_clk_wiz_0_0/qpsk_for_htg_clk_wiz_0_0.xdc:54]
+INFO: [Timing 38-2] Deriving generated clocks [c:/Taxi/temp_back_of_v3/Taxi_QPSK_v3/Taxi_QPSK_v3/Taxi_QPSK_v3.gen/sources_1/bd/qpsk_for_htg/ip/qpsk_for_htg_clk_wiz_0_0/qpsk_for_htg_clk_wiz_0_0.xdc:54]
+get_clocks: Time (s): cpu = 00:00:17 ; elapsed = 00:00:11 . Memory (MB): peak = 3422.422 ; gain = 745.059
+Finished Parsing XDC File [c:/Taxi/temp_back_of_v3/Taxi_QPSK_v3/Taxi_QPSK_v3/Taxi_QPSK_v3.gen/sources_1/bd/qpsk_for_htg/ip/qpsk_for_htg_clk_wiz_0_0/qpsk_for_htg_clk_wiz_0_0.xdc] for cell 'qpsk_for_htg_i/clk_wiz_0/inst'
+Parsing XDC File [c:/Taxi/temp_back_of_v3/Taxi_QPSK_v3/Taxi_QPSK_v3/Taxi_QPSK_v3.gen/sources_1/bd/qpsk_for_htg/ip/qpsk_for_htg_proc_sys_reset_2_0/qpsk_for_htg_proc_sys_reset_2_0_board.xdc] for cell 'qpsk_for_htg_i/proc_sys_reset_2/U0'
+Finished Parsing XDC File [c:/Taxi/temp_back_of_v3/Taxi_QPSK_v3/Taxi_QPSK_v3/Taxi_QPSK_v3.gen/sources_1/bd/qpsk_for_htg/ip/qpsk_for_htg_proc_sys_reset_2_0/qpsk_for_htg_proc_sys_reset_2_0_board.xdc] for cell 'qpsk_for_htg_i/proc_sys_reset_2/U0'
+Parsing XDC File [c:/Taxi/temp_back_of_v3/Taxi_QPSK_v3/Taxi_QPSK_v3/Taxi_QPSK_v3.gen/sources_1/bd/qpsk_for_htg/ip/qpsk_for_htg_proc_sys_reset_2_0/qpsk_for_htg_proc_sys_reset_2_0.xdc] for cell 'qpsk_for_htg_i/proc_sys_reset_2/U0'
+Finished Parsing XDC File [c:/Taxi/temp_back_of_v3/Taxi_QPSK_v3/Taxi_QPSK_v3/Taxi_QPSK_v3.gen/sources_1/bd/qpsk_for_htg/ip/qpsk_for_htg_proc_sys_reset_2_0/qpsk_for_htg_proc_sys_reset_2_0.xdc] for cell 'qpsk_for_htg_i/proc_sys_reset_2/U0'
+Parsing XDC File [c:/Taxi/temp_back_of_v3/Taxi_QPSK_v3/Taxi_QPSK_v3/Taxi_QPSK_v3.gen/sources_1/bd/qpsk_for_htg/ip/qpsk_for_htg_system_ila_0_0/bd_0/ip/ip_0/ila_v6_2/constraints/ila_impl.xdc] for cell 'qpsk_for_htg_i/system_ila_0/inst/ila_lib/inst'
+Finished Parsing XDC File [c:/Taxi/temp_back_of_v3/Taxi_QPSK_v3/Taxi_QPSK_v3/Taxi_QPSK_v3.gen/sources_1/bd/qpsk_for_htg/ip/qpsk_for_htg_system_ila_0_0/bd_0/ip/ip_0/ila_v6_2/constraints/ila_impl.xdc] for cell 'qpsk_for_htg_i/system_ila_0/inst/ila_lib/inst'
+Parsing XDC File [c:/Taxi/temp_back_of_v3/Taxi_QPSK_v3/Taxi_QPSK_v3/Taxi_QPSK_v3.gen/sources_1/bd/qpsk_for_htg/ip/qpsk_for_htg_system_ila_0_0/bd_0/ip/ip_0/ila_v6_2/constraints/ila.xdc] for cell 'qpsk_for_htg_i/system_ila_0/inst/ila_lib/inst'
+Finished Parsing XDC File [c:/Taxi/temp_back_of_v3/Taxi_QPSK_v3/Taxi_QPSK_v3/Taxi_QPSK_v3.gen/sources_1/bd/qpsk_for_htg/ip/qpsk_for_htg_system_ila_0_0/bd_0/ip/ip_0/ila_v6_2/constraints/ila.xdc] for cell 'qpsk_for_htg_i/system_ila_0/inst/ila_lib/inst'
+Parsing XDC File [c:/Taxi/temp_back_of_v3/Taxi_QPSK_v3/Taxi_QPSK_v3/Taxi_QPSK_v3.gen/sources_1/bd/qpsk_for_htg/ip/qpsk_for_htg_system_ila_1_0/bd_0/ip/ip_0/ila_v6_2/constraints/ila_impl.xdc] for cell 'qpsk_for_htg_i/system_ila_1/inst/ila_lib/inst'
+Finished Parsing XDC File [c:/Taxi/temp_back_of_v3/Taxi_QPSK_v3/Taxi_QPSK_v3/Taxi_QPSK_v3.gen/sources_1/bd/qpsk_for_htg/ip/qpsk_for_htg_system_ila_1_0/bd_0/ip/ip_0/ila_v6_2/constraints/ila_impl.xdc] for cell 'qpsk_for_htg_i/system_ila_1/inst/ila_lib/inst'
+Parsing XDC File [c:/Taxi/temp_back_of_v3/Taxi_QPSK_v3/Taxi_QPSK_v3/Taxi_QPSK_v3.gen/sources_1/bd/qpsk_for_htg/ip/qpsk_for_htg_system_ila_1_0/bd_0/ip/ip_0/ila_v6_2/constraints/ila.xdc] for cell 'qpsk_for_htg_i/system_ila_1/inst/ila_lib/inst'
+Finished Parsing XDC File [c:/Taxi/temp_back_of_v3/Taxi_QPSK_v3/Taxi_QPSK_v3/Taxi_QPSK_v3.gen/sources_1/bd/qpsk_for_htg/ip/qpsk_for_htg_system_ila_1_0/bd_0/ip/ip_0/ila_v6_2/constraints/ila.xdc] for cell 'qpsk_for_htg_i/system_ila_1/inst/ila_lib/inst'
+CRITICAL WARNING: [Designutils 20-1280] Could not find module 'taxi_eth_phy_25g_us_gty_full'. The XDC file c:/Taxi/temp_back_of_v3/Taxi_QPSK_v3/Taxi_QPSK_v3/Taxi_QPSK_v3.gen/sources_1/ip/taxi_eth_phy_25g_us_gty_full/synth/taxi_eth_phy_25g_us_gty_full.xdc will not be read for any cell of this module.
+CRITICAL WARNING: [Designutils 20-1280] Could not find module 'taxi_eth_phy_25g_us_gty_ch'. The XDC file c:/Taxi/temp_back_of_v3/Taxi_QPSK_v3/Taxi_QPSK_v3/Taxi_QPSK_v3.gen/sources_1/ip/taxi_eth_phy_25g_us_gty_ch/synth/taxi_eth_phy_25g_us_gty_ch.xdc will not be read for any cell of this module.
+Parsing XDC File [c:/Taxi/temp_back_of_v3/Taxi_QPSK_v3/Taxi_QPSK_v3/Taxi_QPSK_v3.gen/sources_1/ip/taxi_eth_phy_25g_us_gty_ll_full/synth/taxi_eth_phy_25g_us_gty_ll_full.xdc] for cell 'core_inst/gty_quad[0].mac_inst/ch[0].ch_inst/gt.gt_inst/xcvr.taxi_eth_phy_25g_us_gty_ll_full_inst/inst'
+Finished Parsing XDC File [c:/Taxi/temp_back_of_v3/Taxi_QPSK_v3/Taxi_QPSK_v3/Taxi_QPSK_v3.gen/sources_1/ip/taxi_eth_phy_25g_us_gty_ll_full/synth/taxi_eth_phy_25g_us_gty_ll_full.xdc] for cell 'core_inst/gty_quad[0].mac_inst/ch[0].ch_inst/gt.gt_inst/xcvr.taxi_eth_phy_25g_us_gty_ll_full_inst/inst'
+Parsing XDC File [c:/Taxi/temp_back_of_v3/Taxi_QPSK_v3/Taxi_QPSK_v3/Taxi_QPSK_v3.gen/sources_1/ip/taxi_eth_phy_25g_us_gty_ll_full/synth/taxi_eth_phy_25g_us_gty_ll_full.xdc] for cell 'core_inst/gty_quad[1].mac_inst/ch[0].ch_inst/gt.gt_inst/xcvr.taxi_eth_phy_25g_us_gty_ll_full_inst/inst'
+Finished Parsing XDC File [c:/Taxi/temp_back_of_v3/Taxi_QPSK_v3/Taxi_QPSK_v3/Taxi_QPSK_v3.gen/sources_1/ip/taxi_eth_phy_25g_us_gty_ll_full/synth/taxi_eth_phy_25g_us_gty_ll_full.xdc] for cell 'core_inst/gty_quad[1].mac_inst/ch[0].ch_inst/gt.gt_inst/xcvr.taxi_eth_phy_25g_us_gty_ll_full_inst/inst'
+Parsing XDC File [c:/Taxi/temp_back_of_v3/Taxi_QPSK_v3/Taxi_QPSK_v3/Taxi_QPSK_v3.gen/sources_1/ip/taxi_eth_phy_25g_us_gty_ll_ch/synth/taxi_eth_phy_25g_us_gty_ll_ch.xdc] for cell 'core_inst/gty_quad[0].mac_inst/ch[1].ch_inst/gt.gt_inst/xcvr.taxi_eth_phy_25g_us_gty_ll_ch_inst/inst'
+Finished Parsing XDC File [c:/Taxi/temp_back_of_v3/Taxi_QPSK_v3/Taxi_QPSK_v3/Taxi_QPSK_v3.gen/sources_1/ip/taxi_eth_phy_25g_us_gty_ll_ch/synth/taxi_eth_phy_25g_us_gty_ll_ch.xdc] for cell 'core_inst/gty_quad[0].mac_inst/ch[1].ch_inst/gt.gt_inst/xcvr.taxi_eth_phy_25g_us_gty_ll_ch_inst/inst'
+Parsing XDC File [c:/Taxi/temp_back_of_v3/Taxi_QPSK_v3/Taxi_QPSK_v3/Taxi_QPSK_v3.gen/sources_1/ip/taxi_eth_phy_25g_us_gty_ll_ch/synth/taxi_eth_phy_25g_us_gty_ll_ch.xdc] for cell 'core_inst/gty_quad[0].mac_inst/ch[2].ch_inst/gt.gt_inst/xcvr.taxi_eth_phy_25g_us_gty_ll_ch_inst/inst'
+INFO: [Common 17-14] Message 'Vivado 12-180' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings. [c:/Taxi/temp_back_of_v3/Taxi_QPSK_v3/Taxi_QPSK_v3/Taxi_QPSK_v3.gen/sources_1/ip/taxi_eth_phy_25g_us_gty_ll_ch/synth/taxi_eth_phy_25g_us_gty_ll_ch.xdc:95]
+Finished Parsing XDC File [c:/Taxi/temp_back_of_v3/Taxi_QPSK_v3/Taxi_QPSK_v3/Taxi_QPSK_v3.gen/sources_1/ip/taxi_eth_phy_25g_us_gty_ll_ch/synth/taxi_eth_phy_25g_us_gty_ll_ch.xdc] for cell 'core_inst/gty_quad[0].mac_inst/ch[2].ch_inst/gt.gt_inst/xcvr.taxi_eth_phy_25g_us_gty_ll_ch_inst/inst'
+Parsing XDC File [c:/Taxi/temp_back_of_v3/Taxi_QPSK_v3/Taxi_QPSK_v3/Taxi_QPSK_v3.gen/sources_1/ip/taxi_eth_phy_25g_us_gty_ll_ch/synth/taxi_eth_phy_25g_us_gty_ll_ch.xdc] for cell 'core_inst/gty_quad[0].mac_inst/ch[3].ch_inst/gt.gt_inst/xcvr.taxi_eth_phy_25g_us_gty_ll_ch_inst/inst'
+Finished Parsing XDC File [c:/Taxi/temp_back_of_v3/Taxi_QPSK_v3/Taxi_QPSK_v3/Taxi_QPSK_v3.gen/sources_1/ip/taxi_eth_phy_25g_us_gty_ll_ch/synth/taxi_eth_phy_25g_us_gty_ll_ch.xdc] for cell 'core_inst/gty_quad[0].mac_inst/ch[3].ch_inst/gt.gt_inst/xcvr.taxi_eth_phy_25g_us_gty_ll_ch_inst/inst'
+Parsing XDC File [c:/Taxi/temp_back_of_v3/Taxi_QPSK_v3/Taxi_QPSK_v3/Taxi_QPSK_v3.gen/sources_1/ip/taxi_eth_phy_25g_us_gty_ll_ch/synth/taxi_eth_phy_25g_us_gty_ll_ch.xdc] for cell 'core_inst/gty_quad[1].mac_inst/ch[1].ch_inst/gt.gt_inst/xcvr.taxi_eth_phy_25g_us_gty_ll_ch_inst/inst'
+Finished Parsing XDC File [c:/Taxi/temp_back_of_v3/Taxi_QPSK_v3/Taxi_QPSK_v3/Taxi_QPSK_v3.gen/sources_1/ip/taxi_eth_phy_25g_us_gty_ll_ch/synth/taxi_eth_phy_25g_us_gty_ll_ch.xdc] for cell 'core_inst/gty_quad[1].mac_inst/ch[1].ch_inst/gt.gt_inst/xcvr.taxi_eth_phy_25g_us_gty_ll_ch_inst/inst'
+Parsing XDC File [c:/Taxi/temp_back_of_v3/Taxi_QPSK_v3/Taxi_QPSK_v3/Taxi_QPSK_v3.gen/sources_1/ip/taxi_eth_phy_25g_us_gty_ll_ch/synth/taxi_eth_phy_25g_us_gty_ll_ch.xdc] for cell 'core_inst/gty_quad[1].mac_inst/ch[2].ch_inst/gt.gt_inst/xcvr.taxi_eth_phy_25g_us_gty_ll_ch_inst/inst'
+Finished Parsing XDC File [c:/Taxi/temp_back_of_v3/Taxi_QPSK_v3/Taxi_QPSK_v3/Taxi_QPSK_v3.gen/sources_1/ip/taxi_eth_phy_25g_us_gty_ll_ch/synth/taxi_eth_phy_25g_us_gty_ll_ch.xdc] for cell 'core_inst/gty_quad[1].mac_inst/ch[2].ch_inst/gt.gt_inst/xcvr.taxi_eth_phy_25g_us_gty_ll_ch_inst/inst'
+Parsing XDC File [c:/Taxi/temp_back_of_v3/Taxi_QPSK_v3/Taxi_QPSK_v3/Taxi_QPSK_v3.gen/sources_1/ip/taxi_eth_phy_25g_us_gty_ll_ch/synth/taxi_eth_phy_25g_us_gty_ll_ch.xdc] for cell 'core_inst/gty_quad[1].mac_inst/ch[3].ch_inst/gt.gt_inst/xcvr.taxi_eth_phy_25g_us_gty_ll_ch_inst/inst'
+Finished Parsing XDC File [c:/Taxi/temp_back_of_v3/Taxi_QPSK_v3/Taxi_QPSK_v3/Taxi_QPSK_v3.gen/sources_1/ip/taxi_eth_phy_25g_us_gty_ll_ch/synth/taxi_eth_phy_25g_us_gty_ll_ch.xdc] for cell 'core_inst/gty_quad[1].mac_inst/ch[3].ch_inst/gt.gt_inst/xcvr.taxi_eth_phy_25g_us_gty_ll_ch_inst/inst'
+Parsing XDC File [c:/Taxi/temp_back_of_v3/Taxi_QPSK_v3/Taxi_QPSK_v3/Taxi_QPSK_v3.gen/sources_1/ip/usp_rfdc_0/synth/usp_rfdc_0_clocks.xdc] for cell 'rfdc_inst/inst'
+INFO: [Timing 38-2] Deriving generated clocks [c:/Taxi/temp_back_of_v3/Taxi_QPSK_v3/Taxi_QPSK_v3/Taxi_QPSK_v3.gen/sources_1/ip/usp_rfdc_0/synth/usp_rfdc_0_clocks.xdc:101]
+Finished Parsing XDC File [c:/Taxi/temp_back_of_v3/Taxi_QPSK_v3/Taxi_QPSK_v3/Taxi_QPSK_v3.gen/sources_1/ip/usp_rfdc_0/synth/usp_rfdc_0_clocks.xdc] for cell 'rfdc_inst/inst'
+Parsing XDC File [C:/Taxi/temp_back_of_v3/Taxi_QPSK_v3/Taxi_QPSK_v3/Taxi_QPSK_v3.srcs/constrs_1/imports/fpga/fpga_r2.xdc]
+CRITICAL WARNING: [Common 17-165] Too many positional options when parsing 'fpga_refclk_bufg_inst_n_0', please type 'get_nets -help' for usage info. [C:/Taxi/temp_back_of_v3/Taxi_QPSK_v3/Taxi_QPSK_v3/Taxi_QPSK_v3.srcs/constrs_1/imports/fpga/fpga_r2.xdc:41]
+INFO: [Constraints 18-632] set_output_delay: No clock object specified, the clocks will be automatically identified [C:/Taxi/temp_back_of_v3/Taxi_QPSK_v3/Taxi_QPSK_v3/Taxi_QPSK_v3.srcs/constrs_1/imports/fpga/fpga_r2.xdc:61]
+INFO: [Constraints 18-632] set_input_delay: No clock object specified, the clocks will be automatically identified [C:/Taxi/temp_back_of_v3/Taxi_QPSK_v3/Taxi_QPSK_v3/Taxi_QPSK_v3.srcs/constrs_1/imports/fpga/fpga_r2.xdc:63]
+INFO: [Constraints 18-632] set_output_delay: No clock object specified, the clocks will be automatically identified [C:/Taxi/temp_back_of_v3/Taxi_QPSK_v3/Taxi_QPSK_v3/Taxi_QPSK_v3.srcs/constrs_1/imports/fpga/fpga_r2.xdc:66]
+INFO: [Constraints 18-632] set_output_delay: No clock object specified, the clocks will be automatically identified [C:/Taxi/temp_back_of_v3/Taxi_QPSK_v3/Taxi_QPSK_v3/Taxi_QPSK_v3.srcs/constrs_1/imports/fpga/fpga_r2.xdc:75]
+INFO: [Constraints 18-632] set_input_delay: No clock object specified, the clocks will be automatically identified [C:/Taxi/temp_back_of_v3/Taxi_QPSK_v3/Taxi_QPSK_v3/Taxi_QPSK_v3.srcs/constrs_1/imports/fpga/fpga_r2.xdc:81]
+INFO: [Constraints 18-632] set_input_delay: No clock object specified, the clocks will be automatically identified [C:/Taxi/temp_back_of_v3/Taxi_QPSK_v3/Taxi_QPSK_v3/Taxi_QPSK_v3.srcs/constrs_1/imports/fpga/fpga_r2.xdc:90]
+INFO: [Constraints 18-632] set_output_delay: No clock object specified, the clocks will be automatically identified [C:/Taxi/temp_back_of_v3/Taxi_QPSK_v3/Taxi_QPSK_v3/Taxi_QPSK_v3.srcs/constrs_1/imports/fpga/fpga_r2.xdc:134]
+INFO: [Constraints 18-632] set_input_delay: No clock object specified, the clocks will be automatically identified [C:/Taxi/temp_back_of_v3/Taxi_QPSK_v3/Taxi_QPSK_v3/Taxi_QPSK_v3.srcs/constrs_1/imports/fpga/fpga_r2.xdc:136]
+INFO: [Constraints 18-632] set_output_delay: No clock object specified, the clocks will be automatically identified [C:/Taxi/temp_back_of_v3/Taxi_QPSK_v3/Taxi_QPSK_v3/Taxi_QPSK_v3.srcs/constrs_1/imports/fpga/fpga_r2.xdc:144]
+INFO: [Constraints 18-632] set_input_delay: No clock object specified, the clocks will be automatically identified [C:/Taxi/temp_back_of_v3/Taxi_QPSK_v3/Taxi_QPSK_v3/Taxi_QPSK_v3.srcs/constrs_1/imports/fpga/fpga_r2.xdc:146]
+Finished Parsing XDC File [C:/Taxi/temp_back_of_v3/Taxi_QPSK_v3/Taxi_QPSK_v3/Taxi_QPSK_v3.srcs/constrs_1/imports/fpga/fpga_r2.xdc]
+Parsing XDC File [C:/Taxi/temp_back_of_v3/Taxi_QPSK_v3/Taxi_QPSK_v3/Taxi_QPSK_v3.srcs/constrs_1/imports/fpga/cfgmclk.xdc]
+Finished Parsing XDC File [C:/Taxi/temp_back_of_v3/Taxi_QPSK_v3/Taxi_QPSK_v3/Taxi_QPSK_v3.srcs/constrs_1/imports/fpga/cfgmclk.xdc]
+Sourcing Tcl File [C:/Taxi/temp_back_of_v3/Taxi_QPSK_v3/Taxi_QPSK_v3/Taxi_QPSK_v3.srcs/constrs_1/imports/fpga/lib/taxi/src/eth/syn/vivado/taxi_eth_mac_fifo.tcl]
+Finished Sourcing Tcl File [C:/Taxi/temp_back_of_v3/Taxi_QPSK_v3/Taxi_QPSK_v3/Taxi_QPSK_v3.srcs/constrs_1/imports/fpga/lib/taxi/src/eth/syn/vivado/taxi_eth_mac_fifo.tcl]
+Sourcing Tcl File [C:/Taxi/temp_back_of_v3/Taxi_QPSK_v3/Taxi_QPSK_v3/Taxi_QPSK_v3.srcs/constrs_1/imports/fpga/lib/taxi/src/axis/syn/vivado/taxi_axis_async_fifo.tcl]
+Inserting timing constraints for taxi_axis_async_fifo instance core_inst/gty_ch[0].ch_fifo
+INFO: [Timing 38-2] Deriving generated clocks [C:/Taxi/temp_back_of_v3/Taxi_QPSK_v3/Taxi_QPSK_v3/Taxi_QPSK_v3.srcs/constrs_1/imports/fpga/lib/taxi/src/axis/syn/vivado/taxi_axis_async_fifo.tcl:11]
+Inserting timing constraints for taxi_axis_async_fifo instance core_inst/gty_ch[1].ch_fifo
+Inserting timing constraints for taxi_axis_async_fifo instance core_inst/gty_ch[2].ch_fifo
+Inserting timing constraints for taxi_axis_async_fifo instance core_inst/gty_ch[3].ch_fifo
+Inserting timing constraints for taxi_axis_async_fifo instance core_inst/gty_ch[4].ch_fifo
+Inserting timing constraints for taxi_axis_async_fifo instance core_inst/gty_ch[5].ch_fifo
+Inserting timing constraints for taxi_axis_async_fifo instance core_inst/gty_ch[6].ch_fifo
+Inserting timing constraints for taxi_axis_async_fifo instance core_inst/gty_ch[7].ch_fifo
+Inserting timing constraints for taxi_axis_async_fifo instance core_inst/gty_quad[0].mac_inst/ch[0].ch_inst/mac.mac_phy_inst/stats.mac_stats_inst/rx_stat_fifo
+Inserting timing constraints for taxi_axis_async_fifo instance core_inst/gty_quad[0].mac_inst/ch[0].ch_inst/mac.mac_phy_inst/stats.mac_stats_inst/tx_stat_fifo
+Inserting timing constraints for taxi_axis_async_fifo instance core_inst/gty_quad[0].mac_inst/ch[1].ch_inst/mac.mac_phy_inst/stats.mac_stats_inst/rx_stat_fifo
+Inserting timing constraints for taxi_axis_async_fifo instance core_inst/gty_quad[0].mac_inst/ch[1].ch_inst/mac.mac_phy_inst/stats.mac_stats_inst/tx_stat_fifo
+Inserting timing constraints for taxi_axis_async_fifo instance core_inst/gty_quad[0].mac_inst/ch[2].ch_inst/mac.mac_phy_inst/stats.mac_stats_inst/rx_stat_fifo
+Inserting timing constraints for taxi_axis_async_fifo instance core_inst/gty_quad[0].mac_inst/ch[2].ch_inst/mac.mac_phy_inst/stats.mac_stats_inst/tx_stat_fifo
+Inserting timing constraints for taxi_axis_async_fifo instance core_inst/gty_quad[0].mac_inst/ch[3].ch_inst/mac.mac_phy_inst/stats.mac_stats_inst/rx_stat_fifo
+Inserting timing constraints for taxi_axis_async_fifo instance core_inst/gty_quad[0].mac_inst/ch[3].ch_inst/mac.mac_phy_inst/stats.mac_stats_inst/tx_stat_fifo
+Inserting timing constraints for taxi_axis_async_fifo instance core_inst/gty_quad[1].mac_inst/ch[0].ch_inst/mac.mac_phy_inst/stats.mac_stats_inst/rx_stat_fifo
+Inserting timing constraints for taxi_axis_async_fifo instance core_inst/gty_quad[1].mac_inst/ch[0].ch_inst/mac.mac_phy_inst/stats.mac_stats_inst/tx_stat_fifo
+Inserting timing constraints for taxi_axis_async_fifo instance core_inst/gty_quad[1].mac_inst/ch[1].ch_inst/mac.mac_phy_inst/stats.mac_stats_inst/rx_stat_fifo
+Inserting timing constraints for taxi_axis_async_fifo instance core_inst/gty_quad[1].mac_inst/ch[1].ch_inst/mac.mac_phy_inst/stats.mac_stats_inst/tx_stat_fifo
+Inserting timing constraints for taxi_axis_async_fifo instance core_inst/gty_quad[1].mac_inst/ch[2].ch_inst/mac.mac_phy_inst/stats.mac_stats_inst/rx_stat_fifo
+Inserting timing constraints for taxi_axis_async_fifo instance core_inst/gty_quad[1].mac_inst/ch[2].ch_inst/mac.mac_phy_inst/stats.mac_stats_inst/tx_stat_fifo
+Inserting timing constraints for taxi_axis_async_fifo instance core_inst/gty_quad[1].mac_inst/ch[3].ch_inst/mac.mac_phy_inst/stats.mac_stats_inst/rx_stat_fifo
+Inserting timing constraints for taxi_axis_async_fifo instance core_inst/gty_quad[1].mac_inst/ch[3].ch_inst/mac.mac_phy_inst/stats.mac_stats_inst/tx_stat_fifo
+Finished Sourcing Tcl File [C:/Taxi/temp_back_of_v3/Taxi_QPSK_v3/Taxi_QPSK_v3/Taxi_QPSK_v3.srcs/constrs_1/imports/fpga/lib/taxi/src/axis/syn/vivado/taxi_axis_async_fifo.tcl]
+Sourcing Tcl File [C:/Taxi/temp_back_of_v3/Taxi_QPSK_v3/Taxi_QPSK_v3/Taxi_QPSK_v3.srcs/constrs_1/imports/fpga/lib/taxi/src/sync/syn/vivado/taxi_sync_reset.tcl]
+Inserting timing constraints for taxi_sync_reset instance axis_rfdc_sync_reset_inst
+Inserting timing constraints for taxi_sync_reset instance sync_reset_125mhz_inst
+Inserting timing constraints for taxi_sync_reset instance sync_reset_cfgmclk_inst
+Inserting timing constraints for taxi_sync_reset instance core_inst/gty_clk[0].qsfp_sync_reset_inst
+Inserting timing constraints for taxi_sync_reset instance core_inst/gty_clk[1].qsfp_sync_reset_inst
+Inserting timing constraints for taxi_sync_reset instance core_inst/gty_ch[0].ch_fifo/m_reset_sync_inst
+Inserting timing constraints for taxi_sync_reset instance core_inst/gty_ch[0].ch_fifo/s_reset_sync_inst
+Inserting timing constraints for taxi_sync_reset instance core_inst/gty_ch[1].ch_fifo/m_reset_sync_inst
+Inserting timing constraints for taxi_sync_reset instance core_inst/gty_ch[1].ch_fifo/s_reset_sync_inst
+Inserting timing constraints for taxi_sync_reset instance core_inst/gty_ch[2].ch_fifo/m_reset_sync_inst
+Inserting timing constraints for taxi_sync_reset instance core_inst/gty_ch[2].ch_fifo/s_reset_sync_inst
+Inserting timing constraints for taxi_sync_reset instance core_inst/gty_ch[3].ch_fifo/m_reset_sync_inst
+Inserting timing constraints for taxi_sync_reset instance core_inst/gty_ch[3].ch_fifo/s_reset_sync_inst
+Inserting timing constraints for taxi_sync_reset instance core_inst/gty_ch[4].ch_fifo/m_reset_sync_inst
+Inserting timing constraints for taxi_sync_reset instance core_inst/gty_ch[4].ch_fifo/s_reset_sync_inst
+Inserting timing constraints for taxi_sync_reset instance core_inst/gty_ch[5].ch_fifo/m_reset_sync_inst
+Inserting timing constraints for taxi_sync_reset instance core_inst/gty_ch[5].ch_fifo/s_reset_sync_inst
+Inserting timing constraints for taxi_sync_reset instance core_inst/gty_ch[6].ch_fifo/m_reset_sync_inst
+Inserting timing constraints for taxi_sync_reset instance core_inst/gty_ch[6].ch_fifo/s_reset_sync_inst
+Inserting timing constraints for taxi_sync_reset instance core_inst/gty_ch[7].ch_fifo/m_reset_sync_inst
+Inserting timing constraints for taxi_sync_reset instance core_inst/gty_ch[7].ch_fifo/s_reset_sync_inst
+Inserting timing constraints for taxi_sync_reset instance core_inst/gty_quad[0].mac_inst/ch[0].ch_inst/gt.gt_inst/reset_sync_inst
+Inserting timing constraints for taxi_sync_reset instance core_inst/gty_quad[0].mac_inst/ch[0].ch_inst/gt.gt_inst/rx_reset_sync_inst
+Inserting timing constraints for taxi_sync_reset instance core_inst/gty_quad[0].mac_inst/ch[0].ch_inst/gt.gt_inst/tx_reset_sync_inst
+Inserting timing constraints for taxi_sync_reset instance core_inst/gty_quad[0].mac_inst/ch[0].ch_inst/gt.gt_inst/gt_rx_reset_inst/reset_sync_inst
+Inserting timing constraints for taxi_sync_reset instance core_inst/gty_quad[0].mac_inst/ch[0].ch_inst/gt.gt_inst/gt_tx_reset_inst/reset_sync_inst
+Inserting timing constraints for taxi_sync_reset instance core_inst/gty_quad[0].mac_inst/ch[0].ch_inst/mac.mac_phy_inst/stats.mac_stats_inst/rx_stat_fifo/m_reset_sync_inst
+Inserting timing constraints for taxi_sync_reset instance core_inst/gty_quad[0].mac_inst/ch[0].ch_inst/mac.mac_phy_inst/stats.mac_stats_inst/rx_stat_fifo/s_reset_sync_inst
+Inserting timing constraints for taxi_sync_reset instance core_inst/gty_quad[0].mac_inst/ch[0].ch_inst/mac.mac_phy_inst/stats.mac_stats_inst/tx_stat_fifo/m_reset_sync_inst
+Inserting timing constraints for taxi_sync_reset instance core_inst/gty_quad[0].mac_inst/ch[0].ch_inst/mac.mac_phy_inst/stats.mac_stats_inst/tx_stat_fifo/s_reset_sync_inst
+Inserting timing constraints for taxi_sync_reset instance core_inst/gty_quad[0].mac_inst/ch[1].ch_inst/gt.gt_inst/reset_sync_inst
+Inserting timing constraints for taxi_sync_reset instance core_inst/gty_quad[0].mac_inst/ch[1].ch_inst/gt.gt_inst/rx_reset_sync_inst
+Inserting timing constraints for taxi_sync_reset instance core_inst/gty_quad[0].mac_inst/ch[1].ch_inst/gt.gt_inst/tx_reset_sync_inst
+Inserting timing constraints for taxi_sync_reset instance core_inst/gty_quad[0].mac_inst/ch[1].ch_inst/gt.gt_inst/gt_rx_reset_inst/reset_sync_inst
+Inserting timing constraints for taxi_sync_reset instance core_inst/gty_quad[0].mac_inst/ch[1].ch_inst/gt.gt_inst/gt_tx_reset_inst/reset_sync_inst
+Inserting timing constraints for taxi_sync_reset instance core_inst/gty_quad[0].mac_inst/ch[1].ch_inst/mac.mac_phy_inst/stats.mac_stats_inst/rx_stat_fifo/m_reset_sync_inst
+Inserting timing constraints for taxi_sync_reset instance core_inst/gty_quad[0].mac_inst/ch[1].ch_inst/mac.mac_phy_inst/stats.mac_stats_inst/rx_stat_fifo/s_reset_sync_inst
+Inserting timing constraints for taxi_sync_reset instance core_inst/gty_quad[0].mac_inst/ch[1].ch_inst/mac.mac_phy_inst/stats.mac_stats_inst/tx_stat_fifo/m_reset_sync_inst
+Inserting timing constraints for taxi_sync_reset instance core_inst/gty_quad[0].mac_inst/ch[1].ch_inst/mac.mac_phy_inst/stats.mac_stats_inst/tx_stat_fifo/s_reset_sync_inst
+Inserting timing constraints for taxi_sync_reset instance core_inst/gty_quad[0].mac_inst/ch[2].ch_inst/gt.gt_inst/reset_sync_inst
+Inserting timing constraints for taxi_sync_reset instance core_inst/gty_quad[0].mac_inst/ch[2].ch_inst/gt.gt_inst/rx_reset_sync_inst
+Inserting timing constraints for taxi_sync_reset instance core_inst/gty_quad[0].mac_inst/ch[2].ch_inst/gt.gt_inst/tx_reset_sync_inst
+Inserting timing constraints for taxi_sync_reset instance core_inst/gty_quad[0].mac_inst/ch[2].ch_inst/gt.gt_inst/gt_rx_reset_inst/reset_sync_inst
+Inserting timing constraints for taxi_sync_reset instance core_inst/gty_quad[0].mac_inst/ch[2].ch_inst/gt.gt_inst/gt_tx_reset_inst/reset_sync_inst
+Inserting timing constraints for taxi_sync_reset instance core_inst/gty_quad[0].mac_inst/ch[2].ch_inst/mac.mac_phy_inst/stats.mac_stats_inst/rx_stat_fifo/m_reset_sync_inst
+Inserting timing constraints for taxi_sync_reset instance core_inst/gty_quad[0].mac_inst/ch[2].ch_inst/mac.mac_phy_inst/stats.mac_stats_inst/rx_stat_fifo/s_reset_sync_inst
+Inserting timing constraints for taxi_sync_reset instance core_inst/gty_quad[0].mac_inst/ch[2].ch_inst/mac.mac_phy_inst/stats.mac_stats_inst/tx_stat_fifo/m_reset_sync_inst
+Inserting timing constraints for taxi_sync_reset instance core_inst/gty_quad[0].mac_inst/ch[2].ch_inst/mac.mac_phy_inst/stats.mac_stats_inst/tx_stat_fifo/s_reset_sync_inst
+Inserting timing constraints for taxi_sync_reset instance core_inst/gty_quad[0].mac_inst/ch[3].ch_inst/gt.gt_inst/reset_sync_inst
+Inserting timing constraints for taxi_sync_reset instance core_inst/gty_quad[0].mac_inst/ch[3].ch_inst/gt.gt_inst/rx_reset_sync_inst
+Inserting timing constraints for taxi_sync_reset instance core_inst/gty_quad[0].mac_inst/ch[3].ch_inst/gt.gt_inst/tx_reset_sync_inst
+Inserting timing constraints for taxi_sync_reset instance core_inst/gty_quad[0].mac_inst/ch[3].ch_inst/gt.gt_inst/gt_rx_reset_inst/reset_sync_inst
+Inserting timing constraints for taxi_sync_reset instance core_inst/gty_quad[0].mac_inst/ch[3].ch_inst/gt.gt_inst/gt_tx_reset_inst/reset_sync_inst
+Inserting timing constraints for taxi_sync_reset instance core_inst/gty_quad[0].mac_inst/ch[3].ch_inst/mac.mac_phy_inst/stats.mac_stats_inst/rx_stat_fifo/m_reset_sync_inst
+Inserting timing constraints for taxi_sync_reset instance core_inst/gty_quad[0].mac_inst/ch[3].ch_inst/mac.mac_phy_inst/stats.mac_stats_inst/rx_stat_fifo/s_reset_sync_inst
+Inserting timing constraints for taxi_sync_reset instance core_inst/gty_quad[0].mac_inst/ch[3].ch_inst/mac.mac_phy_inst/stats.mac_stats_inst/tx_stat_fifo/m_reset_sync_inst
+Inserting timing constraints for taxi_sync_reset instance core_inst/gty_quad[0].mac_inst/ch[3].ch_inst/mac.mac_phy_inst/stats.mac_stats_inst/tx_stat_fifo/s_reset_sync_inst
+Inserting timing constraints for taxi_sync_reset instance core_inst/gty_quad[1].mac_inst/ch[0].ch_inst/gt.gt_inst/reset_sync_inst
+Inserting timing constraints for taxi_sync_reset instance core_inst/gty_quad[1].mac_inst/ch[0].ch_inst/gt.gt_inst/rx_reset_sync_inst
+Inserting timing constraints for taxi_sync_reset instance core_inst/gty_quad[1].mac_inst/ch[0].ch_inst/gt.gt_inst/tx_reset_sync_inst
+Inserting timing constraints for taxi_sync_reset instance core_inst/gty_quad[1].mac_inst/ch[0].ch_inst/gt.gt_inst/gt_rx_reset_inst/reset_sync_inst
+Inserting timing constraints for taxi_sync_reset instance core_inst/gty_quad[1].mac_inst/ch[0].ch_inst/gt.gt_inst/gt_tx_reset_inst/reset_sync_inst
+Inserting timing constraints for taxi_sync_reset instance core_inst/gty_quad[1].mac_inst/ch[0].ch_inst/mac.mac_phy_inst/stats.mac_stats_inst/rx_stat_fifo/m_reset_sync_inst
+Inserting timing constraints for taxi_sync_reset instance core_inst/gty_quad[1].mac_inst/ch[0].ch_inst/mac.mac_phy_inst/stats.mac_stats_inst/rx_stat_fifo/s_reset_sync_inst
+Inserting timing constraints for taxi_sync_reset instance core_inst/gty_quad[1].mac_inst/ch[0].ch_inst/mac.mac_phy_inst/stats.mac_stats_inst/tx_stat_fifo/m_reset_sync_inst
+Inserting timing constraints for taxi_sync_reset instance core_inst/gty_quad[1].mac_inst/ch[0].ch_inst/mac.mac_phy_inst/stats.mac_stats_inst/tx_stat_fifo/s_reset_sync_inst
+Inserting timing constraints for taxi_sync_reset instance core_inst/gty_quad[1].mac_inst/ch[1].ch_inst/gt.gt_inst/reset_sync_inst
+Inserting timing constraints for taxi_sync_reset instance core_inst/gty_quad[1].mac_inst/ch[1].ch_inst/gt.gt_inst/rx_reset_sync_inst
+Inserting timing constraints for taxi_sync_reset instance core_inst/gty_quad[1].mac_inst/ch[1].ch_inst/gt.gt_inst/tx_reset_sync_inst
+Inserting timing constraints for taxi_sync_reset instance core_inst/gty_quad[1].mac_inst/ch[1].ch_inst/gt.gt_inst/gt_rx_reset_inst/reset_sync_inst
+Inserting timing constraints for taxi_sync_reset instance core_inst/gty_quad[1].mac_inst/ch[1].ch_inst/gt.gt_inst/gt_tx_reset_inst/reset_sync_inst
+Inserting timing constraints for taxi_sync_reset instance core_inst/gty_quad[1].mac_inst/ch[1].ch_inst/mac.mac_phy_inst/stats.mac_stats_inst/rx_stat_fifo/m_reset_sync_inst
+Inserting timing constraints for taxi_sync_reset instance core_inst/gty_quad[1].mac_inst/ch[1].ch_inst/mac.mac_phy_inst/stats.mac_stats_inst/rx_stat_fifo/s_reset_sync_inst
+Inserting timing constraints for taxi_sync_reset instance core_inst/gty_quad[1].mac_inst/ch[1].ch_inst/mac.mac_phy_inst/stats.mac_stats_inst/tx_stat_fifo/m_reset_sync_inst
+Inserting timing constraints for taxi_sync_reset instance core_inst/gty_quad[1].mac_inst/ch[1].ch_inst/mac.mac_phy_inst/stats.mac_stats_inst/tx_stat_fifo/s_reset_sync_inst
+Inserting timing constraints for taxi_sync_reset instance core_inst/gty_quad[1].mac_inst/ch[2].ch_inst/gt.gt_inst/reset_sync_inst
+Inserting timing constraints for taxi_sync_reset instance core_inst/gty_quad[1].mac_inst/ch[2].ch_inst/gt.gt_inst/rx_reset_sync_inst
+Inserting timing constraints for taxi_sync_reset instance core_inst/gty_quad[1].mac_inst/ch[2].ch_inst/gt.gt_inst/tx_reset_sync_inst
+Inserting timing constraints for taxi_sync_reset instance core_inst/gty_quad[1].mac_inst/ch[2].ch_inst/gt.gt_inst/gt_rx_reset_inst/reset_sync_inst
+Inserting timing constraints for taxi_sync_reset instance core_inst/gty_quad[1].mac_inst/ch[2].ch_inst/gt.gt_inst/gt_tx_reset_inst/reset_sync_inst
+Inserting timing constraints for taxi_sync_reset instance core_inst/gty_quad[1].mac_inst/ch[2].ch_inst/mac.mac_phy_inst/stats.mac_stats_inst/rx_stat_fifo/m_reset_sync_inst
+Inserting timing constraints for taxi_sync_reset instance core_inst/gty_quad[1].mac_inst/ch[2].ch_inst/mac.mac_phy_inst/stats.mac_stats_inst/rx_stat_fifo/s_reset_sync_inst
+Inserting timing constraints for taxi_sync_reset instance core_inst/gty_quad[1].mac_inst/ch[2].ch_inst/mac.mac_phy_inst/stats.mac_stats_inst/tx_stat_fifo/m_reset_sync_inst
+Inserting timing constraints for taxi_sync_reset instance core_inst/gty_quad[1].mac_inst/ch[2].ch_inst/mac.mac_phy_inst/stats.mac_stats_inst/tx_stat_fifo/s_reset_sync_inst
+Inserting timing constraints for taxi_sync_reset instance core_inst/gty_quad[1].mac_inst/ch[3].ch_inst/gt.gt_inst/reset_sync_inst
+Inserting timing constraints for taxi_sync_reset instance core_inst/gty_quad[1].mac_inst/ch[3].ch_inst/gt.gt_inst/rx_reset_sync_inst
+Inserting timing constraints for taxi_sync_reset instance core_inst/gty_quad[1].mac_inst/ch[3].ch_inst/gt.gt_inst/tx_reset_sync_inst
+Inserting timing constraints for taxi_sync_reset instance core_inst/gty_quad[1].mac_inst/ch[3].ch_inst/gt.gt_inst/gt_rx_reset_inst/reset_sync_inst
+Inserting timing constraints for taxi_sync_reset instance core_inst/gty_quad[1].mac_inst/ch[3].ch_inst/gt.gt_inst/gt_tx_reset_inst/reset_sync_inst
+Inserting timing constraints for taxi_sync_reset instance core_inst/gty_quad[1].mac_inst/ch[3].ch_inst/mac.mac_phy_inst/stats.mac_stats_inst/rx_stat_fifo/m_reset_sync_inst
+Inserting timing constraints for taxi_sync_reset instance core_inst/gty_quad[1].mac_inst/ch[3].ch_inst/mac.mac_phy_inst/stats.mac_stats_inst/rx_stat_fifo/s_reset_sync_inst
+Inserting timing constraints for taxi_sync_reset instance core_inst/gty_quad[1].mac_inst/ch[3].ch_inst/mac.mac_phy_inst/stats.mac_stats_inst/tx_stat_fifo/m_reset_sync_inst
+Inserting timing constraints for taxi_sync_reset instance core_inst/gty_quad[1].mac_inst/ch[3].ch_inst/mac.mac_phy_inst/stats.mac_stats_inst/tx_stat_fifo/s_reset_sync_inst
+Finished Sourcing Tcl File [C:/Taxi/temp_back_of_v3/Taxi_QPSK_v3/Taxi_QPSK_v3/Taxi_QPSK_v3.srcs/constrs_1/imports/fpga/lib/taxi/src/sync/syn/vivado/taxi_sync_reset.tcl]
+Sourcing Tcl File [C:/Taxi/temp_back_of_v3/Taxi_QPSK_v3/Taxi_QPSK_v3/Taxi_QPSK_v3.srcs/constrs_1/imports/fpga/lib/taxi/src/sync/syn/vivado/taxi_sync_signal.tcl]
+Inserting timing constraints for taxi_sync_signal instance sync_signal_inst
+Inserting timing constraints for taxi_sync_signal instance core_inst/gty_quad[0].mac_inst/ch[0].ch_inst/gt.gt_inst/common_ctrl.qpll0_reset_inst/qpll_lock_sync_inst
+Inserting timing constraints for taxi_sync_signal instance core_inst/gty_quad[0].mac_inst/ch[0].ch_inst/gt.gt_inst/common_ctrl.qpll1_reset_inst/qpll_lock_sync_inst
+Inserting timing constraints for taxi_sync_signal instance core_inst/gty_quad[0].mac_inst/ch[0].ch_inst/gt.gt_inst/gt_rx_reset_inst/gt_status_sync_inst
+Inserting timing constraints for taxi_sync_signal instance core_inst/gty_quad[0].mac_inst/ch[0].ch_inst/gt.gt_inst/gt_tx_reset_inst/gt_status_sync_inst
+Inserting timing constraints for taxi_sync_signal instance core_inst/gty_quad[0].mac_inst/ch[1].ch_inst/gt.gt_inst/common_ctrl.qpll_lock_sync_inst
+Inserting timing constraints for taxi_sync_signal instance core_inst/gty_quad[0].mac_inst/ch[1].ch_inst/gt.gt_inst/gt_rx_reset_inst/gt_status_sync_inst
+Inserting timing constraints for taxi_sync_signal instance core_inst/gty_quad[0].mac_inst/ch[1].ch_inst/gt.gt_inst/gt_tx_reset_inst/gt_status_sync_inst
+Inserting timing constraints for taxi_sync_signal instance core_inst/gty_quad[0].mac_inst/ch[2].ch_inst/gt.gt_inst/common_ctrl.qpll_lock_sync_inst
+Inserting timing constraints for taxi_sync_signal instance core_inst/gty_quad[0].mac_inst/ch[2].ch_inst/gt.gt_inst/gt_rx_reset_inst/gt_status_sync_inst
+Inserting timing constraints for taxi_sync_signal instance core_inst/gty_quad[0].mac_inst/ch[2].ch_inst/gt.gt_inst/gt_tx_reset_inst/gt_status_sync_inst
+Inserting timing constraints for taxi_sync_signal instance core_inst/gty_quad[0].mac_inst/ch[3].ch_inst/gt.gt_inst/common_ctrl.qpll_lock_sync_inst
+Inserting timing constraints for taxi_sync_signal instance core_inst/gty_quad[0].mac_inst/ch[3].ch_inst/gt.gt_inst/gt_rx_reset_inst/gt_status_sync_inst
+Inserting timing constraints for taxi_sync_signal instance core_inst/gty_quad[0].mac_inst/ch[3].ch_inst/gt.gt_inst/gt_tx_reset_inst/gt_status_sync_inst
+Inserting timing constraints for taxi_sync_signal instance core_inst/gty_quad[1].mac_inst/ch[0].ch_inst/gt.gt_inst/common_ctrl.qpll0_reset_inst/qpll_lock_sync_inst
+Inserting timing constraints for taxi_sync_signal instance core_inst/gty_quad[1].mac_inst/ch[0].ch_inst/gt.gt_inst/common_ctrl.qpll1_reset_inst/qpll_lock_sync_inst
+Inserting timing constraints for taxi_sync_signal instance core_inst/gty_quad[1].mac_inst/ch[0].ch_inst/gt.gt_inst/gt_rx_reset_inst/gt_status_sync_inst
+Inserting timing constraints for taxi_sync_signal instance core_inst/gty_quad[1].mac_inst/ch[0].ch_inst/gt.gt_inst/gt_tx_reset_inst/gt_status_sync_inst
+Inserting timing constraints for taxi_sync_signal instance core_inst/gty_quad[1].mac_inst/ch[1].ch_inst/gt.gt_inst/common_ctrl.qpll_lock_sync_inst
+Inserting timing constraints for taxi_sync_signal instance core_inst/gty_quad[1].mac_inst/ch[1].ch_inst/gt.gt_inst/gt_rx_reset_inst/gt_status_sync_inst
+Inserting timing constraints for taxi_sync_signal instance core_inst/gty_quad[1].mac_inst/ch[1].ch_inst/gt.gt_inst/gt_tx_reset_inst/gt_status_sync_inst
+Inserting timing constraints for taxi_sync_signal instance core_inst/gty_quad[1].mac_inst/ch[2].ch_inst/gt.gt_inst/common_ctrl.qpll_lock_sync_inst
+Inserting timing constraints for taxi_sync_signal instance core_inst/gty_quad[1].mac_inst/ch[2].ch_inst/gt.gt_inst/gt_rx_reset_inst/gt_status_sync_inst
+Inserting timing constraints for taxi_sync_signal instance core_inst/gty_quad[1].mac_inst/ch[2].ch_inst/gt.gt_inst/gt_tx_reset_inst/gt_status_sync_inst
+Inserting timing constraints for taxi_sync_signal instance core_inst/gty_quad[1].mac_inst/ch[3].ch_inst/gt.gt_inst/common_ctrl.qpll_lock_sync_inst
+Inserting timing constraints for taxi_sync_signal instance core_inst/gty_quad[1].mac_inst/ch[3].ch_inst/gt.gt_inst/gt_rx_reset_inst/gt_status_sync_inst
+Inserting timing constraints for taxi_sync_signal instance core_inst/gty_quad[1].mac_inst/ch[3].ch_inst/gt.gt_inst/gt_tx_reset_inst/gt_status_sync_inst
+Finished Sourcing Tcl File [C:/Taxi/temp_back_of_v3/Taxi_QPSK_v3/Taxi_QPSK_v3/Taxi_QPSK_v3.srcs/constrs_1/imports/fpga/lib/taxi/src/sync/syn/vivado/taxi_sync_signal.tcl]
+Parsing XDC File [c:/Taxi/temp_back_of_v3/Taxi_QPSK_v3/Taxi_QPSK_v3/Taxi_QPSK_v3.gen/sources_1/bd/qpsk_for_htg/ip/qpsk_for_htg_axi_interconnect_0_imp_auto_us_0/qpsk_for_htg_axi_interconnect_0_imp_auto_us_0_clocks.xdc] for cell 'qpsk_for_htg_i/axi_interconnect_0/s00_couplers/auto_us/inst'
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Taxi/temp_back_of_v3/Taxi_QPSK_v3/Taxi_QPSK_v3/Taxi_QPSK_v3.gen/sources_1/bd/qpsk_for_htg/ip/qpsk_for_htg_axi_interconnect_0_imp_auto_us_0/qpsk_for_htg_axi_interconnect_0_imp_auto_us_0_clocks.xdc:9]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Taxi/temp_back_of_v3/Taxi_QPSK_v3/Taxi_QPSK_v3/Taxi_QPSK_v3.gen/sources_1/bd/qpsk_for_htg/ip/qpsk_for_htg_axi_interconnect_0_imp_auto_us_0/qpsk_for_htg_axi_interconnect_0_imp_auto_us_0_clocks.xdc:12]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Taxi/temp_back_of_v3/Taxi_QPSK_v3/Taxi_QPSK_v3/Taxi_QPSK_v3.gen/sources_1/bd/qpsk_for_htg/ip/qpsk_for_htg_axi_interconnect_0_imp_auto_us_0/qpsk_for_htg_axi_interconnect_0_imp_auto_us_0_clocks.xdc:15]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Taxi/temp_back_of_v3/Taxi_QPSK_v3/Taxi_QPSK_v3/Taxi_QPSK_v3.gen/sources_1/bd/qpsk_for_htg/ip/qpsk_for_htg_axi_interconnect_0_imp_auto_us_0/qpsk_for_htg_axi_interconnect_0_imp_auto_us_0_clocks.xdc:18]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Taxi/temp_back_of_v3/Taxi_QPSK_v3/Taxi_QPSK_v3/Taxi_QPSK_v3.gen/sources_1/bd/qpsk_for_htg/ip/qpsk_for_htg_axi_interconnect_0_imp_auto_us_0/qpsk_for_htg_axi_interconnect_0_imp_auto_us_0_clocks.xdc:21]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Taxi/temp_back_of_v3/Taxi_QPSK_v3/Taxi_QPSK_v3/Taxi_QPSK_v3.gen/sources_1/bd/qpsk_for_htg/ip/qpsk_for_htg_axi_interconnect_0_imp_auto_us_0/qpsk_for_htg_axi_interconnect_0_imp_auto_us_0_clocks.xdc:24]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Taxi/temp_back_of_v3/Taxi_QPSK_v3/Taxi_QPSK_v3/Taxi_QPSK_v3.gen/sources_1/bd/qpsk_for_htg/ip/qpsk_for_htg_axi_interconnect_0_imp_auto_us_0/qpsk_for_htg_axi_interconnect_0_imp_auto_us_0_clocks.xdc:27]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Taxi/temp_back_of_v3/Taxi_QPSK_v3/Taxi_QPSK_v3/Taxi_QPSK_v3.gen/sources_1/bd/qpsk_for_htg/ip/qpsk_for_htg_axi_interconnect_0_imp_auto_us_0/qpsk_for_htg_axi_interconnect_0_imp_auto_us_0_clocks.xdc:33]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Taxi/temp_back_of_v3/Taxi_QPSK_v3/Taxi_QPSK_v3/Taxi_QPSK_v3.gen/sources_1/bd/qpsk_for_htg/ip/qpsk_for_htg_axi_interconnect_0_imp_auto_us_0/qpsk_for_htg_axi_interconnect_0_imp_auto_us_0_clocks.xdc:36]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-10' -to list should not be empty. [c:/Taxi/temp_back_of_v3/Taxi_QPSK_v3/Taxi_QPSK_v3/Taxi_QPSK_v3.gen/sources_1/bd/qpsk_for_htg/ip/qpsk_for_htg_axi_interconnect_0_imp_auto_us_0/qpsk_for_htg_axi_interconnect_0_imp_auto_us_0_clocks.xdc:39]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-10' -to list should not be empty. [c:/Taxi/temp_back_of_v3/Taxi_QPSK_v3/Taxi_QPSK_v3/Taxi_QPSK_v3.gen/sources_1/bd/qpsk_for_htg/ip/qpsk_for_htg_axi_interconnect_0_imp_auto_us_0/qpsk_for_htg_axi_interconnect_0_imp_auto_us_0_clocks.xdc:42]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-10' -to list should not be empty. [c:/Taxi/temp_back_of_v3/Taxi_QPSK_v3/Taxi_QPSK_v3/Taxi_QPSK_v3.gen/sources_1/bd/qpsk_for_htg/ip/qpsk_for_htg_axi_interconnect_0_imp_auto_us_0/qpsk_for_htg_axi_interconnect_0_imp_auto_us_0_clocks.xdc:45]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-2' -to list should not be empty. [c:/Taxi/temp_back_of_v3/Taxi_QPSK_v3/Taxi_QPSK_v3/Taxi_QPSK_v3.gen/sources_1/bd/qpsk_for_htg/ip/qpsk_for_htg_axi_interconnect_0_imp_auto_us_0/qpsk_for_htg_axi_interconnect_0_imp_auto_us_0_clocks.xdc:48]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-11' -to list should not be empty. [c:/Taxi/temp_back_of_v3/Taxi_QPSK_v3/Taxi_QPSK_v3/Taxi_QPSK_v3.gen/sources_1/bd/qpsk_for_htg/ip/qpsk_for_htg_axi_interconnect_0_imp_auto_us_0/qpsk_for_htg_axi_interconnect_0_imp_auto_us_0_clocks.xdc:51]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-11' -to list should not be empty. [c:/Taxi/temp_back_of_v3/Taxi_QPSK_v3/Taxi_QPSK_v3/Taxi_QPSK_v3.gen/sources_1/bd/qpsk_for_htg/ip/qpsk_for_htg_axi_interconnect_0_imp_auto_us_0/qpsk_for_htg_axi_interconnect_0_imp_auto_us_0_clocks.xdc:54]
+Finished Parsing XDC File [c:/Taxi/temp_back_of_v3/Taxi_QPSK_v3/Taxi_QPSK_v3/Taxi_QPSK_v3.gen/sources_1/bd/qpsk_for_htg/ip/qpsk_for_htg_axi_interconnect_0_imp_auto_us_0/qpsk_for_htg_axi_interconnect_0_imp_auto_us_0_clocks.xdc] for cell 'qpsk_for_htg_i/axi_interconnect_0/s00_couplers/auto_us/inst'
+Parsing XDC File [c:/Taxi/temp_back_of_v3/Taxi_QPSK_v3/Taxi_QPSK_v3/Taxi_QPSK_v3.gen/sources_1/bd/qpsk_for_htg/ip/qpsk_for_htg_axi_interconnect_1_imp_auto_us_0/qpsk_for_htg_axi_interconnect_1_imp_auto_us_0_clocks.xdc] for cell 'qpsk_for_htg_i/axi_interconnect_1/s00_couplers/auto_us/inst'
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Taxi/temp_back_of_v3/Taxi_QPSK_v3/Taxi_QPSK_v3/Taxi_QPSK_v3.gen/sources_1/bd/qpsk_for_htg/ip/qpsk_for_htg_axi_interconnect_1_imp_auto_us_0/qpsk_for_htg_axi_interconnect_1_imp_auto_us_0_clocks.xdc:9]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Taxi/temp_back_of_v3/Taxi_QPSK_v3/Taxi_QPSK_v3/Taxi_QPSK_v3.gen/sources_1/bd/qpsk_for_htg/ip/qpsk_for_htg_axi_interconnect_1_imp_auto_us_0/qpsk_for_htg_axi_interconnect_1_imp_auto_us_0_clocks.xdc:12]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Taxi/temp_back_of_v3/Taxi_QPSK_v3/Taxi_QPSK_v3/Taxi_QPSK_v3.gen/sources_1/bd/qpsk_for_htg/ip/qpsk_for_htg_axi_interconnect_1_imp_auto_us_0/qpsk_for_htg_axi_interconnect_1_imp_auto_us_0_clocks.xdc:15]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Taxi/temp_back_of_v3/Taxi_QPSK_v3/Taxi_QPSK_v3/Taxi_QPSK_v3.gen/sources_1/bd/qpsk_for_htg/ip/qpsk_for_htg_axi_interconnect_1_imp_auto_us_0/qpsk_for_htg_axi_interconnect_1_imp_auto_us_0_clocks.xdc:18]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Taxi/temp_back_of_v3/Taxi_QPSK_v3/Taxi_QPSK_v3/Taxi_QPSK_v3.gen/sources_1/bd/qpsk_for_htg/ip/qpsk_for_htg_axi_interconnect_1_imp_auto_us_0/qpsk_for_htg_axi_interconnect_1_imp_auto_us_0_clocks.xdc:21]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Taxi/temp_back_of_v3/Taxi_QPSK_v3/Taxi_QPSK_v3/Taxi_QPSK_v3.gen/sources_1/bd/qpsk_for_htg/ip/qpsk_for_htg_axi_interconnect_1_imp_auto_us_0/qpsk_for_htg_axi_interconnect_1_imp_auto_us_0_clocks.xdc:24]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Taxi/temp_back_of_v3/Taxi_QPSK_v3/Taxi_QPSK_v3/Taxi_QPSK_v3.gen/sources_1/bd/qpsk_for_htg/ip/qpsk_for_htg_axi_interconnect_1_imp_auto_us_0/qpsk_for_htg_axi_interconnect_1_imp_auto_us_0_clocks.xdc:27]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Taxi/temp_back_of_v3/Taxi_QPSK_v3/Taxi_QPSK_v3/Taxi_QPSK_v3.gen/sources_1/bd/qpsk_for_htg/ip/qpsk_for_htg_axi_interconnect_1_imp_auto_us_0/qpsk_for_htg_axi_interconnect_1_imp_auto_us_0_clocks.xdc:33]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Taxi/temp_back_of_v3/Taxi_QPSK_v3/Taxi_QPSK_v3/Taxi_QPSK_v3.gen/sources_1/bd/qpsk_for_htg/ip/qpsk_for_htg_axi_interconnect_1_imp_auto_us_0/qpsk_for_htg_axi_interconnect_1_imp_auto_us_0_clocks.xdc:36]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-10' -to list should not be empty. [c:/Taxi/temp_back_of_v3/Taxi_QPSK_v3/Taxi_QPSK_v3/Taxi_QPSK_v3.gen/sources_1/bd/qpsk_for_htg/ip/qpsk_for_htg_axi_interconnect_1_imp_auto_us_0/qpsk_for_htg_axi_interconnect_1_imp_auto_us_0_clocks.xdc:39]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-10' -to list should not be empty. [c:/Taxi/temp_back_of_v3/Taxi_QPSK_v3/Taxi_QPSK_v3/Taxi_QPSK_v3.gen/sources_1/bd/qpsk_for_htg/ip/qpsk_for_htg_axi_interconnect_1_imp_auto_us_0/qpsk_for_htg_axi_interconnect_1_imp_auto_us_0_clocks.xdc:42]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-10' -to list should not be empty. [c:/Taxi/temp_back_of_v3/Taxi_QPSK_v3/Taxi_QPSK_v3/Taxi_QPSK_v3.gen/sources_1/bd/qpsk_for_htg/ip/qpsk_for_htg_axi_interconnect_1_imp_auto_us_0/qpsk_for_htg_axi_interconnect_1_imp_auto_us_0_clocks.xdc:45]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-2' -to list should not be empty. [c:/Taxi/temp_back_of_v3/Taxi_QPSK_v3/Taxi_QPSK_v3/Taxi_QPSK_v3.gen/sources_1/bd/qpsk_for_htg/ip/qpsk_for_htg_axi_interconnect_1_imp_auto_us_0/qpsk_for_htg_axi_interconnect_1_imp_auto_us_0_clocks.xdc:48]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-11' -to list should not be empty. [c:/Taxi/temp_back_of_v3/Taxi_QPSK_v3/Taxi_QPSK_v3/Taxi_QPSK_v3.gen/sources_1/bd/qpsk_for_htg/ip/qpsk_for_htg_axi_interconnect_1_imp_auto_us_0/qpsk_for_htg_axi_interconnect_1_imp_auto_us_0_clocks.xdc:51]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-11' -to list should not be empty. [c:/Taxi/temp_back_of_v3/Taxi_QPSK_v3/Taxi_QPSK_v3/Taxi_QPSK_v3.gen/sources_1/bd/qpsk_for_htg/ip/qpsk_for_htg_axi_interconnect_1_imp_auto_us_0/qpsk_for_htg_axi_interconnect_1_imp_auto_us_0_clocks.xdc:54]
+Finished Parsing XDC File [c:/Taxi/temp_back_of_v3/Taxi_QPSK_v3/Taxi_QPSK_v3/Taxi_QPSK_v3.gen/sources_1/bd/qpsk_for_htg/ip/qpsk_for_htg_axi_interconnect_1_imp_auto_us_0/qpsk_for_htg_axi_interconnect_1_imp_auto_us_0_clocks.xdc] for cell 'qpsk_for_htg_i/axi_interconnect_1/s00_couplers/auto_us/inst'
+Parsing XDC File [c:/Taxi/temp_back_of_v3/Taxi_QPSK_v3/Taxi_QPSK_v3/Taxi_QPSK_v3.gen/sources_1/bd/qpsk_for_htg/ip/qpsk_for_htg_axi_interconnect_2_imp_auto_cc_0/qpsk_for_htg_axi_interconnect_2_imp_auto_cc_0_clocks.xdc] for cell 'qpsk_for_htg_i/axi_interconnect_2/m00_couplers/auto_cc/inst'
+WARNING: [Vivado_Tcl 4-2057] Waiver ID 'LUTAR-1' object list specifies likely unusable hierarchical instance 'qpsk_for_htg_i/axi_interconnect_2/m00_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi'. [c:/Taxi/temp_back_of_v3/Taxi_QPSK_v3/Taxi_QPSK_v3/Taxi_QPSK_v3.gen/sources_1/bd/qpsk_for_htg/ip/qpsk_for_htg_axi_interconnect_2_imp_auto_cc_0/qpsk_for_htg_axi_interconnect_2_imp_auto_cc_0_clocks.xdc:30]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Taxi/temp_back_of_v3/Taxi_QPSK_v3/Taxi_QPSK_v3/Taxi_QPSK_v3.gen/sources_1/bd/qpsk_for_htg/ip/qpsk_for_htg_axi_interconnect_2_imp_auto_cc_0/qpsk_for_htg_axi_interconnect_2_imp_auto_cc_0_clocks.xdc:35]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Taxi/temp_back_of_v3/Taxi_QPSK_v3/Taxi_QPSK_v3/Taxi_QPSK_v3.gen/sources_1/bd/qpsk_for_htg/ip/qpsk_for_htg_axi_interconnect_2_imp_auto_cc_0/qpsk_for_htg_axi_interconnect_2_imp_auto_cc_0_clocks.xdc:39]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Taxi/temp_back_of_v3/Taxi_QPSK_v3/Taxi_QPSK_v3/Taxi_QPSK_v3.gen/sources_1/bd/qpsk_for_htg/ip/qpsk_for_htg_axi_interconnect_2_imp_auto_cc_0/qpsk_for_htg_axi_interconnect_2_imp_auto_cc_0_clocks.xdc:42]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Taxi/temp_back_of_v3/Taxi_QPSK_v3/Taxi_QPSK_v3/Taxi_QPSK_v3.gen/sources_1/bd/qpsk_for_htg/ip/qpsk_for_htg_axi_interconnect_2_imp_auto_cc_0/qpsk_for_htg_axi_interconnect_2_imp_auto_cc_0_clocks.xdc:45]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-10' -to list should not be empty. [c:/Taxi/temp_back_of_v3/Taxi_QPSK_v3/Taxi_QPSK_v3/Taxi_QPSK_v3.gen/sources_1/bd/qpsk_for_htg/ip/qpsk_for_htg_axi_interconnect_2_imp_auto_cc_0/qpsk_for_htg_axi_interconnect_2_imp_auto_cc_0_clocks.xdc:49]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Taxi/temp_back_of_v3/Taxi_QPSK_v3/Taxi_QPSK_v3/Taxi_QPSK_v3.gen/sources_1/bd/qpsk_for_htg/ip/qpsk_for_htg_axi_interconnect_2_imp_auto_cc_0/qpsk_for_htg_axi_interconnect_2_imp_auto_cc_0_clocks.xdc:52]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Taxi/temp_back_of_v3/Taxi_QPSK_v3/Taxi_QPSK_v3/Taxi_QPSK_v3.gen/sources_1/bd/qpsk_for_htg/ip/qpsk_for_htg_axi_interconnect_2_imp_auto_cc_0/qpsk_for_htg_axi_interconnect_2_imp_auto_cc_0_clocks.xdc:56]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Taxi/temp_back_of_v3/Taxi_QPSK_v3/Taxi_QPSK_v3/Taxi_QPSK_v3.gen/sources_1/bd/qpsk_for_htg/ip/qpsk_for_htg_axi_interconnect_2_imp_auto_cc_0/qpsk_for_htg_axi_interconnect_2_imp_auto_cc_0_clocks.xdc:60]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Taxi/temp_back_of_v3/Taxi_QPSK_v3/Taxi_QPSK_v3/Taxi_QPSK_v3.gen/sources_1/bd/qpsk_for_htg/ip/qpsk_for_htg_axi_interconnect_2_imp_auto_cc_0/qpsk_for_htg_axi_interconnect_2_imp_auto_cc_0_clocks.xdc:63]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Taxi/temp_back_of_v3/Taxi_QPSK_v3/Taxi_QPSK_v3/Taxi_QPSK_v3.gen/sources_1/bd/qpsk_for_htg/ip/qpsk_for_htg_axi_interconnect_2_imp_auto_cc_0/qpsk_for_htg_axi_interconnect_2_imp_auto_cc_0_clocks.xdc:66]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-2' -to list should not be empty. [c:/Taxi/temp_back_of_v3/Taxi_QPSK_v3/Taxi_QPSK_v3/Taxi_QPSK_v3.gen/sources_1/bd/qpsk_for_htg/ip/qpsk_for_htg_axi_interconnect_2_imp_auto_cc_0/qpsk_for_htg_axi_interconnect_2_imp_auto_cc_0_clocks.xdc:70]
+Finished Parsing XDC File [c:/Taxi/temp_back_of_v3/Taxi_QPSK_v3/Taxi_QPSK_v3/Taxi_QPSK_v3.gen/sources_1/bd/qpsk_for_htg/ip/qpsk_for_htg_axi_interconnect_2_imp_auto_cc_0/qpsk_for_htg_axi_interconnect_2_imp_auto_cc_0_clocks.xdc] for cell 'qpsk_for_htg_i/axi_interconnect_2/m00_couplers/auto_cc/inst'
+Parsing XDC File [c:/Taxi/temp_back_of_v3/Taxi_QPSK_v3/Taxi_QPSK_v3/Taxi_QPSK_v3.gen/sources_1/bd/qpsk_for_htg/ip/qpsk_for_htg_axi_interconnect_2_imp_auto_ds_0/qpsk_for_htg_axi_interconnect_2_imp_auto_ds_0_clocks.xdc] for cell 'qpsk_for_htg_i/axi_interconnect_2/m00_couplers/auto_ds/inst'
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Taxi/temp_back_of_v3/Taxi_QPSK_v3/Taxi_QPSK_v3/Taxi_QPSK_v3.gen/sources_1/bd/qpsk_for_htg/ip/qpsk_for_htg_axi_interconnect_2_imp_auto_ds_0/qpsk_for_htg_axi_interconnect_2_imp_auto_ds_0_clocks.xdc:9]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Taxi/temp_back_of_v3/Taxi_QPSK_v3/Taxi_QPSK_v3/Taxi_QPSK_v3.gen/sources_1/bd/qpsk_for_htg/ip/qpsk_for_htg_axi_interconnect_2_imp_auto_ds_0/qpsk_for_htg_axi_interconnect_2_imp_auto_ds_0_clocks.xdc:12]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Taxi/temp_back_of_v3/Taxi_QPSK_v3/Taxi_QPSK_v3/Taxi_QPSK_v3.gen/sources_1/bd/qpsk_for_htg/ip/qpsk_for_htg_axi_interconnect_2_imp_auto_ds_0/qpsk_for_htg_axi_interconnect_2_imp_auto_ds_0_clocks.xdc:15]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Taxi/temp_back_of_v3/Taxi_QPSK_v3/Taxi_QPSK_v3/Taxi_QPSK_v3.gen/sources_1/bd/qpsk_for_htg/ip/qpsk_for_htg_axi_interconnect_2_imp_auto_ds_0/qpsk_for_htg_axi_interconnect_2_imp_auto_ds_0_clocks.xdc:18]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Taxi/temp_back_of_v3/Taxi_QPSK_v3/Taxi_QPSK_v3/Taxi_QPSK_v3.gen/sources_1/bd/qpsk_for_htg/ip/qpsk_for_htg_axi_interconnect_2_imp_auto_ds_0/qpsk_for_htg_axi_interconnect_2_imp_auto_ds_0_clocks.xdc:21]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Taxi/temp_back_of_v3/Taxi_QPSK_v3/Taxi_QPSK_v3/Taxi_QPSK_v3.gen/sources_1/bd/qpsk_for_htg/ip/qpsk_for_htg_axi_interconnect_2_imp_auto_ds_0/qpsk_for_htg_axi_interconnect_2_imp_auto_ds_0_clocks.xdc:24]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Taxi/temp_back_of_v3/Taxi_QPSK_v3/Taxi_QPSK_v3/Taxi_QPSK_v3.gen/sources_1/bd/qpsk_for_htg/ip/qpsk_for_htg_axi_interconnect_2_imp_auto_ds_0/qpsk_for_htg_axi_interconnect_2_imp_auto_ds_0_clocks.xdc:27]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Taxi/temp_back_of_v3/Taxi_QPSK_v3/Taxi_QPSK_v3/Taxi_QPSK_v3.gen/sources_1/bd/qpsk_for_htg/ip/qpsk_for_htg_axi_interconnect_2_imp_auto_ds_0/qpsk_for_htg_axi_interconnect_2_imp_auto_ds_0_clocks.xdc:30]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Taxi/temp_back_of_v3/Taxi_QPSK_v3/Taxi_QPSK_v3/Taxi_QPSK_v3.gen/sources_1/bd/qpsk_for_htg/ip/qpsk_for_htg_axi_interconnect_2_imp_auto_ds_0/qpsk_for_htg_axi_interconnect_2_imp_auto_ds_0_clocks.xdc:33]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Taxi/temp_back_of_v3/Taxi_QPSK_v3/Taxi_QPSK_v3/Taxi_QPSK_v3.gen/sources_1/bd/qpsk_for_htg/ip/qpsk_for_htg_axi_interconnect_2_imp_auto_ds_0/qpsk_for_htg_axi_interconnect_2_imp_auto_ds_0_clocks.xdc:36]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-10' -to list should not be empty. [c:/Taxi/temp_back_of_v3/Taxi_QPSK_v3/Taxi_QPSK_v3/Taxi_QPSK_v3.gen/sources_1/bd/qpsk_for_htg/ip/qpsk_for_htg_axi_interconnect_2_imp_auto_ds_0/qpsk_for_htg_axi_interconnect_2_imp_auto_ds_0_clocks.xdc:39]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-10' -to list should not be empty. [c:/Taxi/temp_back_of_v3/Taxi_QPSK_v3/Taxi_QPSK_v3/Taxi_QPSK_v3.gen/sources_1/bd/qpsk_for_htg/ip/qpsk_for_htg_axi_interconnect_2_imp_auto_ds_0/qpsk_for_htg_axi_interconnect_2_imp_auto_ds_0_clocks.xdc:42]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-10' -to list should not be empty. [c:/Taxi/temp_back_of_v3/Taxi_QPSK_v3/Taxi_QPSK_v3/Taxi_QPSK_v3.gen/sources_1/bd/qpsk_for_htg/ip/qpsk_for_htg_axi_interconnect_2_imp_auto_ds_0/qpsk_for_htg_axi_interconnect_2_imp_auto_ds_0_clocks.xdc:45]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-2' -to list should not be empty. [c:/Taxi/temp_back_of_v3/Taxi_QPSK_v3/Taxi_QPSK_v3/Taxi_QPSK_v3.gen/sources_1/bd/qpsk_for_htg/ip/qpsk_for_htg_axi_interconnect_2_imp_auto_ds_0/qpsk_for_htg_axi_interconnect_2_imp_auto_ds_0_clocks.xdc:48]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-11' -to list should not be empty. [c:/Taxi/temp_back_of_v3/Taxi_QPSK_v3/Taxi_QPSK_v3/Taxi_QPSK_v3.gen/sources_1/bd/qpsk_for_htg/ip/qpsk_for_htg_axi_interconnect_2_imp_auto_ds_0/qpsk_for_htg_axi_interconnect_2_imp_auto_ds_0_clocks.xdc:51]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-11' -to list should not be empty. [c:/Taxi/temp_back_of_v3/Taxi_QPSK_v3/Taxi_QPSK_v3/Taxi_QPSK_v3.gen/sources_1/bd/qpsk_for_htg/ip/qpsk_for_htg_axi_interconnect_2_imp_auto_ds_0/qpsk_for_htg_axi_interconnect_2_imp_auto_ds_0_clocks.xdc:54]
+Finished Parsing XDC File [c:/Taxi/temp_back_of_v3/Taxi_QPSK_v3/Taxi_QPSK_v3/Taxi_QPSK_v3.gen/sources_1/bd/qpsk_for_htg/ip/qpsk_for_htg_axi_interconnect_2_imp_auto_ds_0/qpsk_for_htg_axi_interconnect_2_imp_auto_ds_0_clocks.xdc] for cell 'qpsk_for_htg_i/axi_interconnect_2/m00_couplers/auto_ds/inst'
+Parsing XDC File [c:/Taxi/temp_back_of_v3/Taxi_QPSK_v3/Taxi_QPSK_v3/Taxi_QPSK_v3.gen/sources_1/bd/qpsk_for_htg/ip/qpsk_for_htg_axi_interconnect_2_imp_auto_ds_1/qpsk_for_htg_axi_interconnect_2_imp_auto_ds_1_clocks.xdc] for cell 'qpsk_for_htg_i/axi_interconnect_2/m01_couplers/auto_ds/inst'
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Taxi/temp_back_of_v3/Taxi_QPSK_v3/Taxi_QPSK_v3/Taxi_QPSK_v3.gen/sources_1/bd/qpsk_for_htg/ip/qpsk_for_htg_axi_interconnect_2_imp_auto_ds_1/qpsk_for_htg_axi_interconnect_2_imp_auto_ds_1_clocks.xdc:9]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Taxi/temp_back_of_v3/Taxi_QPSK_v3/Taxi_QPSK_v3/Taxi_QPSK_v3.gen/sources_1/bd/qpsk_for_htg/ip/qpsk_for_htg_axi_interconnect_2_imp_auto_ds_1/qpsk_for_htg_axi_interconnect_2_imp_auto_ds_1_clocks.xdc:12]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Taxi/temp_back_of_v3/Taxi_QPSK_v3/Taxi_QPSK_v3/Taxi_QPSK_v3.gen/sources_1/bd/qpsk_for_htg/ip/qpsk_for_htg_axi_interconnect_2_imp_auto_ds_1/qpsk_for_htg_axi_interconnect_2_imp_auto_ds_1_clocks.xdc:15]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Taxi/temp_back_of_v3/Taxi_QPSK_v3/Taxi_QPSK_v3/Taxi_QPSK_v3.gen/sources_1/bd/qpsk_for_htg/ip/qpsk_for_htg_axi_interconnect_2_imp_auto_ds_1/qpsk_for_htg_axi_interconnect_2_imp_auto_ds_1_clocks.xdc:18]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Taxi/temp_back_of_v3/Taxi_QPSK_v3/Taxi_QPSK_v3/Taxi_QPSK_v3.gen/sources_1/bd/qpsk_for_htg/ip/qpsk_for_htg_axi_interconnect_2_imp_auto_ds_1/qpsk_for_htg_axi_interconnect_2_imp_auto_ds_1_clocks.xdc:21]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Taxi/temp_back_of_v3/Taxi_QPSK_v3/Taxi_QPSK_v3/Taxi_QPSK_v3.gen/sources_1/bd/qpsk_for_htg/ip/qpsk_for_htg_axi_interconnect_2_imp_auto_ds_1/qpsk_for_htg_axi_interconnect_2_imp_auto_ds_1_clocks.xdc:24]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Taxi/temp_back_of_v3/Taxi_QPSK_v3/Taxi_QPSK_v3/Taxi_QPSK_v3.gen/sources_1/bd/qpsk_for_htg/ip/qpsk_for_htg_axi_interconnect_2_imp_auto_ds_1/qpsk_for_htg_axi_interconnect_2_imp_auto_ds_1_clocks.xdc:27]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Taxi/temp_back_of_v3/Taxi_QPSK_v3/Taxi_QPSK_v3/Taxi_QPSK_v3.gen/sources_1/bd/qpsk_for_htg/ip/qpsk_for_htg_axi_interconnect_2_imp_auto_ds_1/qpsk_for_htg_axi_interconnect_2_imp_auto_ds_1_clocks.xdc:30]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Taxi/temp_back_of_v3/Taxi_QPSK_v3/Taxi_QPSK_v3/Taxi_QPSK_v3.gen/sources_1/bd/qpsk_for_htg/ip/qpsk_for_htg_axi_interconnect_2_imp_auto_ds_1/qpsk_for_htg_axi_interconnect_2_imp_auto_ds_1_clocks.xdc:33]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Taxi/temp_back_of_v3/Taxi_QPSK_v3/Taxi_QPSK_v3/Taxi_QPSK_v3.gen/sources_1/bd/qpsk_for_htg/ip/qpsk_for_htg_axi_interconnect_2_imp_auto_ds_1/qpsk_for_htg_axi_interconnect_2_imp_auto_ds_1_clocks.xdc:36]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-10' -to list should not be empty. [c:/Taxi/temp_back_of_v3/Taxi_QPSK_v3/Taxi_QPSK_v3/Taxi_QPSK_v3.gen/sources_1/bd/qpsk_for_htg/ip/qpsk_for_htg_axi_interconnect_2_imp_auto_ds_1/qpsk_for_htg_axi_interconnect_2_imp_auto_ds_1_clocks.xdc:39]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-10' -to list should not be empty. [c:/Taxi/temp_back_of_v3/Taxi_QPSK_v3/Taxi_QPSK_v3/Taxi_QPSK_v3.gen/sources_1/bd/qpsk_for_htg/ip/qpsk_for_htg_axi_interconnect_2_imp_auto_ds_1/qpsk_for_htg_axi_interconnect_2_imp_auto_ds_1_clocks.xdc:42]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-10' -to list should not be empty. [c:/Taxi/temp_back_of_v3/Taxi_QPSK_v3/Taxi_QPSK_v3/Taxi_QPSK_v3.gen/sources_1/bd/qpsk_for_htg/ip/qpsk_for_htg_axi_interconnect_2_imp_auto_ds_1/qpsk_for_htg_axi_interconnect_2_imp_auto_ds_1_clocks.xdc:45]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-2' -to list should not be empty. [c:/Taxi/temp_back_of_v3/Taxi_QPSK_v3/Taxi_QPSK_v3/Taxi_QPSK_v3.gen/sources_1/bd/qpsk_for_htg/ip/qpsk_for_htg_axi_interconnect_2_imp_auto_ds_1/qpsk_for_htg_axi_interconnect_2_imp_auto_ds_1_clocks.xdc:48]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-11' -to list should not be empty. [c:/Taxi/temp_back_of_v3/Taxi_QPSK_v3/Taxi_QPSK_v3/Taxi_QPSK_v3.gen/sources_1/bd/qpsk_for_htg/ip/qpsk_for_htg_axi_interconnect_2_imp_auto_ds_1/qpsk_for_htg_axi_interconnect_2_imp_auto_ds_1_clocks.xdc:51]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-11' -to list should not be empty. [c:/Taxi/temp_back_of_v3/Taxi_QPSK_v3/Taxi_QPSK_v3/Taxi_QPSK_v3.gen/sources_1/bd/qpsk_for_htg/ip/qpsk_for_htg_axi_interconnect_2_imp_auto_ds_1/qpsk_for_htg_axi_interconnect_2_imp_auto_ds_1_clocks.xdc:54]
+Finished Parsing XDC File [c:/Taxi/temp_back_of_v3/Taxi_QPSK_v3/Taxi_QPSK_v3/Taxi_QPSK_v3.gen/sources_1/bd/qpsk_for_htg/ip/qpsk_for_htg_axi_interconnect_2_imp_auto_ds_1/qpsk_for_htg_axi_interconnect_2_imp_auto_ds_1_clocks.xdc] for cell 'qpsk_for_htg_i/axi_interconnect_2/m01_couplers/auto_ds/inst'
+Parsing XDC File [c:/Taxi/temp_back_of_v3/Taxi_QPSK_v3/Taxi_QPSK_v3/Taxi_QPSK_v3.gen/sources_1/bd/qpsk_for_htg/ip/qpsk_for_htg_axi_interconnect_2_imp_auto_ds_2/qpsk_for_htg_axi_interconnect_2_imp_auto_ds_2_clocks.xdc] for cell 'qpsk_for_htg_i/axi_interconnect_2/m02_couplers/auto_ds/inst'
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Taxi/temp_back_of_v3/Taxi_QPSK_v3/Taxi_QPSK_v3/Taxi_QPSK_v3.gen/sources_1/bd/qpsk_for_htg/ip/qpsk_for_htg_axi_interconnect_2_imp_auto_ds_2/qpsk_for_htg_axi_interconnect_2_imp_auto_ds_2_clocks.xdc:9]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Taxi/temp_back_of_v3/Taxi_QPSK_v3/Taxi_QPSK_v3/Taxi_QPSK_v3.gen/sources_1/bd/qpsk_for_htg/ip/qpsk_for_htg_axi_interconnect_2_imp_auto_ds_2/qpsk_for_htg_axi_interconnect_2_imp_auto_ds_2_clocks.xdc:12]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Taxi/temp_back_of_v3/Taxi_QPSK_v3/Taxi_QPSK_v3/Taxi_QPSK_v3.gen/sources_1/bd/qpsk_for_htg/ip/qpsk_for_htg_axi_interconnect_2_imp_auto_ds_2/qpsk_for_htg_axi_interconnect_2_imp_auto_ds_2_clocks.xdc:15]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Taxi/temp_back_of_v3/Taxi_QPSK_v3/Taxi_QPSK_v3/Taxi_QPSK_v3.gen/sources_1/bd/qpsk_for_htg/ip/qpsk_for_htg_axi_interconnect_2_imp_auto_ds_2/qpsk_for_htg_axi_interconnect_2_imp_auto_ds_2_clocks.xdc:18]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Taxi/temp_back_of_v3/Taxi_QPSK_v3/Taxi_QPSK_v3/Taxi_QPSK_v3.gen/sources_1/bd/qpsk_for_htg/ip/qpsk_for_htg_axi_interconnect_2_imp_auto_ds_2/qpsk_for_htg_axi_interconnect_2_imp_auto_ds_2_clocks.xdc:21]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Taxi/temp_back_of_v3/Taxi_QPSK_v3/Taxi_QPSK_v3/Taxi_QPSK_v3.gen/sources_1/bd/qpsk_for_htg/ip/qpsk_for_htg_axi_interconnect_2_imp_auto_ds_2/qpsk_for_htg_axi_interconnect_2_imp_auto_ds_2_clocks.xdc:24]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Taxi/temp_back_of_v3/Taxi_QPSK_v3/Taxi_QPSK_v3/Taxi_QPSK_v3.gen/sources_1/bd/qpsk_for_htg/ip/qpsk_for_htg_axi_interconnect_2_imp_auto_ds_2/qpsk_for_htg_axi_interconnect_2_imp_auto_ds_2_clocks.xdc:27]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Taxi/temp_back_of_v3/Taxi_QPSK_v3/Taxi_QPSK_v3/Taxi_QPSK_v3.gen/sources_1/bd/qpsk_for_htg/ip/qpsk_for_htg_axi_interconnect_2_imp_auto_ds_2/qpsk_for_htg_axi_interconnect_2_imp_auto_ds_2_clocks.xdc:30]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Taxi/temp_back_of_v3/Taxi_QPSK_v3/Taxi_QPSK_v3/Taxi_QPSK_v3.gen/sources_1/bd/qpsk_for_htg/ip/qpsk_for_htg_axi_interconnect_2_imp_auto_ds_2/qpsk_for_htg_axi_interconnect_2_imp_auto_ds_2_clocks.xdc:33]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Taxi/temp_back_of_v3/Taxi_QPSK_v3/Taxi_QPSK_v3/Taxi_QPSK_v3.gen/sources_1/bd/qpsk_for_htg/ip/qpsk_for_htg_axi_interconnect_2_imp_auto_ds_2/qpsk_for_htg_axi_interconnect_2_imp_auto_ds_2_clocks.xdc:36]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-10' -to list should not be empty. [c:/Taxi/temp_back_of_v3/Taxi_QPSK_v3/Taxi_QPSK_v3/Taxi_QPSK_v3.gen/sources_1/bd/qpsk_for_htg/ip/qpsk_for_htg_axi_interconnect_2_imp_auto_ds_2/qpsk_for_htg_axi_interconnect_2_imp_auto_ds_2_clocks.xdc:39]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-10' -to list should not be empty. [c:/Taxi/temp_back_of_v3/Taxi_QPSK_v3/Taxi_QPSK_v3/Taxi_QPSK_v3.gen/sources_1/bd/qpsk_for_htg/ip/qpsk_for_htg_axi_interconnect_2_imp_auto_ds_2/qpsk_for_htg_axi_interconnect_2_imp_auto_ds_2_clocks.xdc:42]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-10' -to list should not be empty. [c:/Taxi/temp_back_of_v3/Taxi_QPSK_v3/Taxi_QPSK_v3/Taxi_QPSK_v3.gen/sources_1/bd/qpsk_for_htg/ip/qpsk_for_htg_axi_interconnect_2_imp_auto_ds_2/qpsk_for_htg_axi_interconnect_2_imp_auto_ds_2_clocks.xdc:45]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-2' -to list should not be empty. [c:/Taxi/temp_back_of_v3/Taxi_QPSK_v3/Taxi_QPSK_v3/Taxi_QPSK_v3.gen/sources_1/bd/qpsk_for_htg/ip/qpsk_for_htg_axi_interconnect_2_imp_auto_ds_2/qpsk_for_htg_axi_interconnect_2_imp_auto_ds_2_clocks.xdc:48]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-11' -to list should not be empty. [c:/Taxi/temp_back_of_v3/Taxi_QPSK_v3/Taxi_QPSK_v3/Taxi_QPSK_v3.gen/sources_1/bd/qpsk_for_htg/ip/qpsk_for_htg_axi_interconnect_2_imp_auto_ds_2/qpsk_for_htg_axi_interconnect_2_imp_auto_ds_2_clocks.xdc:51]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-11' -to list should not be empty. [c:/Taxi/temp_back_of_v3/Taxi_QPSK_v3/Taxi_QPSK_v3/Taxi_QPSK_v3.gen/sources_1/bd/qpsk_for_htg/ip/qpsk_for_htg_axi_interconnect_2_imp_auto_ds_2/qpsk_for_htg_axi_interconnect_2_imp_auto_ds_2_clocks.xdc:54]
+Finished Parsing XDC File [c:/Taxi/temp_back_of_v3/Taxi_QPSK_v3/Taxi_QPSK_v3/Taxi_QPSK_v3.gen/sources_1/bd/qpsk_for_htg/ip/qpsk_for_htg_axi_interconnect_2_imp_auto_ds_2/qpsk_for_htg_axi_interconnect_2_imp_auto_ds_2_clocks.xdc] for cell 'qpsk_for_htg_i/axi_interconnect_2/m02_couplers/auto_ds/inst'
+Parsing XDC File [c:/Taxi/temp_back_of_v3/Taxi_QPSK_v3/Taxi_QPSK_v3/Taxi_QPSK_v3.gen/sources_1/bd/qpsk_for_htg/ip/qpsk_for_htg_axi_dmac_0_0/qpsk_for_htg_axi_dmac_0_0_constr.xdc] for cell 'qpsk_for_htg_i/axi_dmac_0/inst'
+Finished Parsing XDC File [c:/Taxi/temp_back_of_v3/Taxi_QPSK_v3/Taxi_QPSK_v3/Taxi_QPSK_v3.gen/sources_1/bd/qpsk_for_htg/ip/qpsk_for_htg_axi_dmac_0_0/qpsk_for_htg_axi_dmac_0_0_constr.xdc] for cell 'qpsk_for_htg_i/axi_dmac_0/inst'
+Parsing XDC File [c:/Taxi/temp_back_of_v3/Taxi_QPSK_v3/Taxi_QPSK_v3/Taxi_QPSK_v3.gen/sources_1/bd/qpsk_for_htg/ip/qpsk_for_htg_axi_dmac_1_0/qpsk_for_htg_axi_dmac_1_0_constr.xdc] for cell 'qpsk_for_htg_i/axi_dmac_1/inst'
+Finished Parsing XDC File [c:/Taxi/temp_back_of_v3/Taxi_QPSK_v3/Taxi_QPSK_v3/Taxi_QPSK_v3.gen/sources_1/bd/qpsk_for_htg/ip/qpsk_for_htg_axi_dmac_1_0/qpsk_for_htg_axi_dmac_1_0_constr.xdc] for cell 'qpsk_for_htg_i/axi_dmac_1/inst'
+Parsing XDC File [c:/Taxi/temp_back_of_v3/Taxi_QPSK_v3/Taxi_QPSK_v3/Taxi_QPSK_v3.gen/sources_1/ip/usp_rfdc_0/synth/usp_rfdc_0.xdc] for cell 'rfdc_inst/inst'
+Finished Parsing XDC File [c:/Taxi/temp_back_of_v3/Taxi_QPSK_v3/Taxi_QPSK_v3/Taxi_QPSK_v3.gen/sources_1/ip/usp_rfdc_0/synth/usp_rfdc_0.xdc] for cell 'rfdc_inst/inst'
+INFO: [Project 1-1714] 250 XPM XDC files have been applied to the design.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-1687] 338 scoped IP constraints or related sub-commands were skipped due to synthesis logic optimizations usually triggered by constant connectivity or unconnected output pins. To review the skipped constraints and messages, run the command 'set_param netlist.IPMsgFiltering false' before opening the design.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.030 . Memory (MB): peak = 3441.594 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 1624 instances were transformed.
+  CFGLUT5 => CFGLUT5 (SRL16E, SRLC32E): 900 instances
+  DSP48E2 => DSP48E2 (DSP_ALU, DSP_A_B_DATA, DSP_C_DATA, DSP_MULTIPLIER, DSP_M_DATA, DSP_OUTPUT, DSP_PREADD, DSP_PREADD_DATA): 307 instances
+  IBUF => IBUF (IBUFCTRL, INBUF): 4 instances
+  IBUFGDS => IBUFDS (DIFFINBUF, IBUFCTRL): 3 instances
+  IOBUF => IOBUF (IBUFCTRL, INBUF, OBUFT): 2 instances
+  RAM16X1D => RAM32X1D (RAMD32(x2)): 1 instance 
+  RAM16X1S => RAM32X1S (RAMS32): 256 instances
+  RAM256X1D => RAM256X1D (MUXF7(x4), MUXF8(x2), RAMD64E(x8)): 4 instances
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 8 instances
+  RAM32M16 => RAM32M16 (RAMD32(x14), RAMS32(x2)): 109 instances
+  RAM32X1D => RAM32X1D (RAMD32(x2)): 6 instances
+  RAM64M => RAM64M (RAMD64E(x4)): 5 instances
+  RAM64M8 => RAM64M8 (RAMD64E(x8)): 9 instances
+  RAM64X1D => RAM64X1D (RAMD64E(x2)): 10 instances
+
+54 Infos, 117 Warnings, 3 Critical Warnings and 0 Errors encountered.
+link_design completed successfully
+link_design: Time (s): cpu = 00:01:19 ; elapsed = 00:01:12 . Memory (MB): peak = 3441.594 ; gain = 2672.715
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xczu48dr'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xczu48dr'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:02 . Memory (MB): peak = 3441.594 ; gain = 0.000
+
+Starting Cache Timing Information Task
+INFO: [Constraints 18-632] set_output_delay: No clock object specified, the clocks will be automatically identified [C:/Taxi/temp_back_of_v3/Taxi_QPSK_v3/Taxi_QPSK_v3/Taxi_QPSK_v3.srcs/constrs_1/imports/fpga/fpga_r2.xdc:61]
+INFO: [Constraints 18-632] set_input_delay: No clock object specified, the clocks will be automatically identified [C:/Taxi/temp_back_of_v3/Taxi_QPSK_v3/Taxi_QPSK_v3/Taxi_QPSK_v3.srcs/constrs_1/imports/fpga/fpga_r2.xdc:63]
+INFO: [Constraints 18-632] set_output_delay: No clock object specified, the clocks will be automatically identified [C:/Taxi/temp_back_of_v3/Taxi_QPSK_v3/Taxi_QPSK_v3/Taxi_QPSK_v3.srcs/constrs_1/imports/fpga/fpga_r2.xdc:66]
+INFO: [Constraints 18-632] set_output_delay: No clock object specified, the clocks will be automatically identified [C:/Taxi/temp_back_of_v3/Taxi_QPSK_v3/Taxi_QPSK_v3/Taxi_QPSK_v3.srcs/constrs_1/imports/fpga/fpga_r2.xdc:75]
+INFO: [Constraints 18-632] set_input_delay: No clock object specified, the clocks will be automatically identified [C:/Taxi/temp_back_of_v3/Taxi_QPSK_v3/Taxi_QPSK_v3/Taxi_QPSK_v3.srcs/constrs_1/imports/fpga/fpga_r2.xdc:81]
+INFO: [Constraints 18-632] set_input_delay: No clock object specified, the clocks will be automatically identified [C:/Taxi/temp_back_of_v3/Taxi_QPSK_v3/Taxi_QPSK_v3/Taxi_QPSK_v3.srcs/constrs_1/imports/fpga/fpga_r2.xdc:90]
+INFO: [Constraints 18-632] set_output_delay: No clock object specified, the clocks will be automatically identified [C:/Taxi/temp_back_of_v3/Taxi_QPSK_v3/Taxi_QPSK_v3/Taxi_QPSK_v3.srcs/constrs_1/imports/fpga/fpga_r2.xdc:134]
+INFO: [Constraints 18-632] set_input_delay: No clock object specified, the clocks will be automatically identified [C:/Taxi/temp_back_of_v3/Taxi_QPSK_v3/Taxi_QPSK_v3/Taxi_QPSK_v3.srcs/constrs_1/imports/fpga/fpga_r2.xdc:136]
+INFO: [Constraints 18-632] set_output_delay: No clock object specified, the clocks will be automatically identified [C:/Taxi/temp_back_of_v3/Taxi_QPSK_v3/Taxi_QPSK_v3/Taxi_QPSK_v3.srcs/constrs_1/imports/fpga/fpga_r2.xdc:144]
+INFO: [Constraints 18-632] set_input_delay: No clock object specified, the clocks will be automatically identified [C:/Taxi/temp_back_of_v3/Taxi_QPSK_v3/Taxi_QPSK_v3/Taxi_QPSK_v3.srcs/constrs_1/imports/fpga/fpga_r2.xdc:146]
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Ending Cache Timing Information Task | Checksum: 1f7b31b2b
+
+Time (s): cpu = 00:00:16 ; elapsed = 00:00:09 . Memory (MB): peak = 3454.250 ; gain = 12.656
+
+Starting Logic Optimization Task
+
+Phase 1 Initialization
+
+Phase 1.1 Core Generation And Design Setup
+
+Phase 1.1.1 Generate And Synthesize Debug Cores
+INFO: [Chipscope 16-329] Generating Script for core instance : dbg_hub 
+INFO: [IP_Flow 19-3806] Processing IP xilinx.com:ip:xsdbm:3.0 for cell dbg_hub_CV.
+INFO: [Chipscope 16-469] Using cached IP synthesis design for IP xilinx.com:ip:xsdbm:3.0, cache-ID = 8785434f16e2709a.
+Done building netlist checker database: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.122 . Memory (MB): peak = 3923.523 ; gain = 0.000
+get_clocks: Time (s): cpu = 00:00:14 ; elapsed = 00:00:08 . Memory (MB): peak = 3923.523 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.062 . Memory (MB): peak = 3923.523 ; gain = 0.000
+Phase 1.1.1 Generate And Synthesize Debug Cores | Checksum: 1265fd23a
+
+Time (s): cpu = 00:00:16 ; elapsed = 00:00:23 . Memory (MB): peak = 3923.523 ; gain = 20.008
+Phase 1.1 Core Generation And Design Setup | Checksum: 1265fd23a
+
+Time (s): cpu = 00:00:16 ; elapsed = 00:00:23 . Memory (MB): peak = 3923.523 ; gain = 20.008
+
+Phase 1.2 Setup Constraints And Sort Netlist
+Phase 1.2 Setup Constraints And Sort Netlist | Checksum: 1265fd23a
+
+Time (s): cpu = 00:00:16 ; elapsed = 00:00:23 . Memory (MB): peak = 3923.523 ; gain = 20.008
+Phase 1 Initialization | Checksum: 1265fd23a
+
+Time (s): cpu = 00:00:16 ; elapsed = 00:00:23 . Memory (MB): peak = 3923.523 ; gain = 20.008
+
+Phase 2 Timer Update And Timing Data Collection
+
+Phase 2.1 Timer Update
+Phase 2.1 Timer Update | Checksum: 1265fd23a
+
+Time (s): cpu = 00:00:23 ; elapsed = 00:00:27 . Memory (MB): peak = 3923.523 ; gain = 20.008
+
+Phase 2.2 Timing Data Collection
+Phase 2.2 Timing Data Collection | Checksum: 1265fd23a
+
+Time (s): cpu = 00:00:23 ; elapsed = 00:00:28 . Memory (MB): peak = 3923.523 ; gain = 20.008
+Phase 2 Timer Update And Timing Data Collection | Checksum: 1265fd23a
+
+Time (s): cpu = 00:00:23 ; elapsed = 00:00:28 . Memory (MB): peak = 3923.523 ; gain = 20.008
+
+Phase 3 Retarget
+INFO: [Opt 31-1851] Number of loadless carry chains removed were: 0
+INFO: [Opt 31-1834] Total Chains To Be Transformed Were: 0 AND Number of Transformed insts Created are: 0
+INFO: [Opt 31-1566] Pulled 22 inverters resulting in an inversion of 171 pins
+INFO: [Opt 31-138] Pushed 103 inverter(s) to 2960 load pin(s).
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell qpsk_for_htg_i/system_ila_1/inst/ila_lib/inst/ila_core_inst/ila_trace_memory_inst/SUBCORE_RAM_BLK_MEM_1.trace_block_memory/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_8SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM18.ram has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell qpsk_for_htg_i/system_ila_1/inst/ila_lib/inst/ila_core_inst/ila_trace_memory_inst/SUBCORE_RAM_BLK_MEM_1.trace_block_memory/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[10].ram.r/prim_noinit.ram/DEVICE_8SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell qpsk_for_htg_i/system_ila_1/inst/ila_lib/inst/ila_core_inst/ila_trace_memory_inst/SUBCORE_RAM_BLK_MEM_1.trace_block_memory/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[11].ram.r/prim_noinit.ram/DEVICE_8SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell qpsk_for_htg_i/system_ila_1/inst/ila_lib/inst/ila_core_inst/ila_trace_memory_inst/SUBCORE_RAM_BLK_MEM_1.trace_block_memory/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[12].ram.r/prim_noinit.ram/DEVICE_8SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell qpsk_for_htg_i/system_ila_1/inst/ila_lib/inst/ila_core_inst/ila_trace_memory_inst/SUBCORE_RAM_BLK_MEM_1.trace_block_memory/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[13].ram.r/prim_noinit.ram/DEVICE_8SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell qpsk_for_htg_i/system_ila_1/inst/ila_lib/inst/ila_core_inst/ila_trace_memory_inst/SUBCORE_RAM_BLK_MEM_1.trace_block_memory/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[14].ram.r/prim_noinit.ram/DEVICE_8SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell qpsk_for_htg_i/system_ila_1/inst/ila_lib/inst/ila_core_inst/ila_trace_memory_inst/SUBCORE_RAM_BLK_MEM_1.trace_block_memory/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[15].ram.r/prim_noinit.ram/DEVICE_8SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell qpsk_for_htg_i/system_ila_1/inst/ila_lib/inst/ila_core_inst/ila_trace_memory_inst/SUBCORE_RAM_BLK_MEM_1.trace_block_memory/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[16].ram.r/prim_noinit.ram/DEVICE_8SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell qpsk_for_htg_i/system_ila_1/inst/ila_lib/inst/ila_core_inst/ila_trace_memory_inst/SUBCORE_RAM_BLK_MEM_1.trace_block_memory/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[17].ram.r/prim_noinit.ram/DEVICE_8SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell qpsk_for_htg_i/system_ila_1/inst/ila_lib/inst/ila_core_inst/ila_trace_memory_inst/SUBCORE_RAM_BLK_MEM_1.trace_block_memory/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[18].ram.r/prim_noinit.ram/DEVICE_8SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell qpsk_for_htg_i/system_ila_1/inst/ila_lib/inst/ila_core_inst/ila_trace_memory_inst/SUBCORE_RAM_BLK_MEM_1.trace_block_memory/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[19].ram.r/prim_noinit.ram/DEVICE_8SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell qpsk_for_htg_i/system_ila_1/inst/ila_lib/inst/ila_core_inst/ila_trace_memory_inst/SUBCORE_RAM_BLK_MEM_1.trace_block_memory/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/prim_noinit.ram/DEVICE_8SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell qpsk_for_htg_i/system_ila_1/inst/ila_lib/inst/ila_core_inst/ila_trace_memory_inst/SUBCORE_RAM_BLK_MEM_1.trace_block_memory/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[20].ram.r/prim_noinit.ram/DEVICE_8SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell qpsk_for_htg_i/system_ila_1/inst/ila_lib/inst/ila_core_inst/ila_trace_memory_inst/SUBCORE_RAM_BLK_MEM_1.trace_block_memory/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[21].ram.r/prim_noinit.ram/DEVICE_8SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell qpsk_for_htg_i/system_ila_1/inst/ila_lib/inst/ila_core_inst/ila_trace_memory_inst/SUBCORE_RAM_BLK_MEM_1.trace_block_memory/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[22].ram.r/prim_noinit.ram/DEVICE_8SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell qpsk_for_htg_i/system_ila_1/inst/ila_lib/inst/ila_core_inst/ila_trace_memory_inst/SUBCORE_RAM_BLK_MEM_1.trace_block_memory/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[23].ram.r/prim_noinit.ram/DEVICE_8SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell qpsk_for_htg_i/system_ila_1/inst/ila_lib/inst/ila_core_inst/ila_trace_memory_inst/SUBCORE_RAM_BLK_MEM_1.trace_block_memory/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[24].ram.r/prim_noinit.ram/DEVICE_8SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell qpsk_for_htg_i/system_ila_1/inst/ila_lib/inst/ila_core_inst/ila_trace_memory_inst/SUBCORE_RAM_BLK_MEM_1.trace_block_memory/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[25].ram.r/prim_noinit.ram/DEVICE_8SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell qpsk_for_htg_i/system_ila_1/inst/ila_lib/inst/ila_core_inst/ila_trace_memory_inst/SUBCORE_RAM_BLK_MEM_1.trace_block_memory/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[26].ram.r/prim_noinit.ram/DEVICE_8SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell qpsk_for_htg_i/system_ila_1/inst/ila_lib/inst/ila_core_inst/ila_trace_memory_inst/SUBCORE_RAM_BLK_MEM_1.trace_block_memory/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[27].ram.r/prim_noinit.ram/DEVICE_8SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell qpsk_for_htg_i/system_ila_1/inst/ila_lib/inst/ila_core_inst/ila_trace_memory_inst/SUBCORE_RAM_BLK_MEM_1.trace_block_memory/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[28].ram.r/prim_noinit.ram/DEVICE_8SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell qpsk_for_htg_i/system_ila_1/inst/ila_lib/inst/ila_core_inst/ila_trace_memory_inst/SUBCORE_RAM_BLK_MEM_1.trace_block_memory/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[29].ram.r/prim_noinit.ram/DEVICE_8SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell qpsk_for_htg_i/system_ila_1/inst/ila_lib/inst/ila_core_inst/ila_trace_memory_inst/SUBCORE_RAM_BLK_MEM_1.trace_block_memory/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/prim_noinit.ram/DEVICE_8SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell qpsk_for_htg_i/system_ila_1/inst/ila_lib/inst/ila_core_inst/ila_trace_memory_inst/SUBCORE_RAM_BLK_MEM_1.trace_block_memory/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[30].ram.r/prim_noinit.ram/DEVICE_8SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell qpsk_for_htg_i/system_ila_1/inst/ila_lib/inst/ila_core_inst/ila_trace_memory_inst/SUBCORE_RAM_BLK_MEM_1.trace_block_memory/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[31].ram.r/prim_noinit.ram/DEVICE_8SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell qpsk_for_htg_i/system_ila_1/inst/ila_lib/inst/ila_core_inst/ila_trace_memory_inst/SUBCORE_RAM_BLK_MEM_1.trace_block_memory/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[32].ram.r/prim_noinit.ram/DEVICE_8SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell qpsk_for_htg_i/system_ila_1/inst/ila_lib/inst/ila_core_inst/ila_trace_memory_inst/SUBCORE_RAM_BLK_MEM_1.trace_block_memory/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[33].ram.r/prim_noinit.ram/DEVICE_8SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell qpsk_for_htg_i/system_ila_1/inst/ila_lib/inst/ila_core_inst/ila_trace_memory_inst/SUBCORE_RAM_BLK_MEM_1.trace_block_memory/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[34].ram.r/prim_noinit.ram/DEVICE_8SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell qpsk_for_htg_i/system_ila_1/inst/ila_lib/inst/ila_core_inst/ila_trace_memory_inst/SUBCORE_RAM_BLK_MEM_1.trace_block_memory/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[35].ram.r/prim_noinit.ram/DEVICE_8SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell qpsk_for_htg_i/system_ila_1/inst/ila_lib/inst/ila_core_inst/ila_trace_memory_inst/SUBCORE_RAM_BLK_MEM_1.trace_block_memory/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[36].ram.r/prim_noinit.ram/DEVICE_8SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell qpsk_for_htg_i/system_ila_1/inst/ila_lib/inst/ila_core_inst/ila_trace_memory_inst/SUBCORE_RAM_BLK_MEM_1.trace_block_memory/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[37].ram.r/prim_noinit.ram/DEVICE_8SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell qpsk_for_htg_i/system_ila_1/inst/ila_lib/inst/ila_core_inst/ila_trace_memory_inst/SUBCORE_RAM_BLK_MEM_1.trace_block_memory/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[38].ram.r/prim_noinit.ram/DEVICE_8SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell qpsk_for_htg_i/system_ila_1/inst/ila_lib/inst/ila_core_inst/ila_trace_memory_inst/SUBCORE_RAM_BLK_MEM_1.trace_block_memory/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[39].ram.r/prim_noinit.ram/DEVICE_8SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell qpsk_for_htg_i/system_ila_1/inst/ila_lib/inst/ila_core_inst/ila_trace_memory_inst/SUBCORE_RAM_BLK_MEM_1.trace_block_memory/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[3].ram.r/prim_noinit.ram/DEVICE_8SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell qpsk_for_htg_i/system_ila_1/inst/ila_lib/inst/ila_core_inst/ila_trace_memory_inst/SUBCORE_RAM_BLK_MEM_1.trace_block_memory/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[40].ram.r/prim_noinit.ram/DEVICE_8SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell qpsk_for_htg_i/system_ila_1/inst/ila_lib/inst/ila_core_inst/ila_trace_memory_inst/SUBCORE_RAM_BLK_MEM_1.trace_block_memory/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[41].ram.r/prim_noinit.ram/DEVICE_8SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell qpsk_for_htg_i/system_ila_1/inst/ila_lib/inst/ila_core_inst/ila_trace_memory_inst/SUBCORE_RAM_BLK_MEM_1.trace_block_memory/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[42].ram.r/prim_noinit.ram/DEVICE_8SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell qpsk_for_htg_i/system_ila_1/inst/ila_lib/inst/ila_core_inst/ila_trace_memory_inst/SUBCORE_RAM_BLK_MEM_1.trace_block_memory/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[43].ram.r/prim_noinit.ram/DEVICE_8SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell qpsk_for_htg_i/system_ila_1/inst/ila_lib/inst/ila_core_inst/ila_trace_memory_inst/SUBCORE_RAM_BLK_MEM_1.trace_block_memory/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[44].ram.r/prim_noinit.ram/DEVICE_8SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell qpsk_for_htg_i/system_ila_1/inst/ila_lib/inst/ila_core_inst/ila_trace_memory_inst/SUBCORE_RAM_BLK_MEM_1.trace_block_memory/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[45].ram.r/prim_noinit.ram/DEVICE_8SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell qpsk_for_htg_i/system_ila_1/inst/ila_lib/inst/ila_core_inst/ila_trace_memory_inst/SUBCORE_RAM_BLK_MEM_1.trace_block_memory/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[46].ram.r/prim_noinit.ram/DEVICE_8SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell qpsk_for_htg_i/system_ila_1/inst/ila_lib/inst/ila_core_inst/ila_trace_memory_inst/SUBCORE_RAM_BLK_MEM_1.trace_block_memory/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[47].ram.r/prim_noinit.ram/DEVICE_8SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell qpsk_for_htg_i/system_ila_1/inst/ila_lib/inst/ila_core_inst/ila_trace_memory_inst/SUBCORE_RAM_BLK_MEM_1.trace_block_memory/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[48].ram.r/prim_noinit.ram/DEVICE_8SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell qpsk_for_htg_i/system_ila_1/inst/ila_lib/inst/ila_core_inst/ila_trace_memory_inst/SUBCORE_RAM_BLK_MEM_1.trace_block_memory/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[49].ram.r/prim_noinit.ram/DEVICE_8SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell qpsk_for_htg_i/system_ila_1/inst/ila_lib/inst/ila_core_inst/ila_trace_memory_inst/SUBCORE_RAM_BLK_MEM_1.trace_block_memory/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[4].ram.r/prim_noinit.ram/DEVICE_8SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell qpsk_for_htg_i/system_ila_1/inst/ila_lib/inst/ila_core_inst/ila_trace_memory_inst/SUBCORE_RAM_BLK_MEM_1.trace_block_memory/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[50].ram.r/prim_noinit.ram/DEVICE_8SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell qpsk_for_htg_i/system_ila_1/inst/ila_lib/inst/ila_core_inst/ila_trace_memory_inst/SUBCORE_RAM_BLK_MEM_1.trace_block_memory/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[5].ram.r/prim_noinit.ram/DEVICE_8SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell qpsk_for_htg_i/system_ila_1/inst/ila_lib/inst/ila_core_inst/ila_trace_memory_inst/SUBCORE_RAM_BLK_MEM_1.trace_block_memory/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[6].ram.r/prim_noinit.ram/DEVICE_8SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell qpsk_for_htg_i/system_ila_1/inst/ila_lib/inst/ila_core_inst/ila_trace_memory_inst/SUBCORE_RAM_BLK_MEM_1.trace_block_memory/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[7].ram.r/prim_noinit.ram/DEVICE_8SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell qpsk_for_htg_i/system_ila_1/inst/ila_lib/inst/ila_core_inst/ila_trace_memory_inst/SUBCORE_RAM_BLK_MEM_1.trace_block_memory/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[8].ram.r/prim_noinit.ram/DEVICE_8SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell qpsk_for_htg_i/system_ila_1/inst/ila_lib/inst/ila_core_inst/ila_trace_memory_inst/SUBCORE_RAM_BLK_MEM_1.trace_block_memory/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[9].ram.r/prim_noinit.ram/DEVICE_8SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 3 Retarget | Checksum: 180381837
+
+Time (s): cpu = 00:00:25 ; elapsed = 00:00:29 . Memory (MB): peak = 3923.523 ; gain = 20.008
+Retarget | Checksum: 180381837
+INFO: [Opt 31-389] Phase Retarget created 477 cells and removed 938 cells
+INFO: [Opt 31-1021] In phase Retarget, 323 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 4 Constant propagation
+INFO: [Opt 31-138] Pushed 6 inverter(s) to 10 load pin(s).
+Phase 4 Constant propagation | Checksum: 191a7846f
+
+Time (s): cpu = 00:00:26 ; elapsed = 00:00:30 . Memory (MB): peak = 3923.523 ; gain = 20.008
+Constant propagation | Checksum: 191a7846f
+INFO: [Opt 31-389] Phase Constant propagation created 535 cells and removed 2139 cells
+INFO: [Opt 31-1021] In phase Constant propagation, 291 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 5 Sweep
+INFO: [Constraints 18-11670] Building netlist checker database with flags, 0x8
+Done building netlist checker database: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.132 . Memory (MB): peak = 3923.523 ; gain = 0.000
+INFO: [Constraints 18-11670] Building netlist checker database with flags, 0x8
+Done building netlist checker database: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.108 . Memory (MB): peak = 3923.523 ; gain = 0.000
+Phase 5 Sweep | Checksum: 1c93c269c
+
+Time (s): cpu = 00:00:29 ; elapsed = 00:00:33 . Memory (MB): peak = 3923.523 ; gain = 20.008
+Sweep | Checksum: 1c93c269c
+INFO: [Opt 31-389] Phase Sweep created 0 cells and removed 789 cells
+INFO: [Opt 31-1021] In phase Sweep, 4393 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 6 BUFG optimization
+INFO: [Opt 31-1077] Phase BUFG optimization inserted 0 global clock buffer(s) for CLOCK_LOW_FANOUT.
+Phase 6 BUFG optimization | Checksum: 1c93c269c
+
+Time (s): cpu = 00:00:32 ; elapsed = 00:00:34 . Memory (MB): peak = 3923.523 ; gain = 20.008
+BUFG optimization | Checksum: 1c93c269c
+INFO: [Opt 31-662] Phase BUFG optimization created 0 cells of which 0 are BUFGs and removed 0 cells.
+
+Phase 7 Shift Register Optimization
+INFO: [Opt 31-1064] SRL Remap converted 0 SRLs to 0 registers and converted 0 registers of register chains to 0 SRLs
+Phase 7 Shift Register Optimization | Checksum: 2703678d3
+
+Time (s): cpu = 00:00:32 ; elapsed = 00:00:34 . Memory (MB): peak = 3923.523 ; gain = 20.008
+Shift Register Optimization | Checksum: 2703678d3
+INFO: [Opt 31-389] Phase Shift Register Optimization created 1 cells and removed 2 cells
+
+Phase 8 Post Processing Netlist
+Phase 8 Post Processing Netlist | Checksum: 1d5b45f86
+
+Time (s): cpu = 00:00:32 ; elapsed = 00:00:35 . Memory (MB): peak = 3923.523 ; gain = 20.008
+Post Processing Netlist | Checksum: 1d5b45f86
+INFO: [Opt 31-389] Phase Post Processing Netlist created 0 cells and removed 0 cells
+INFO: [Opt 31-1021] In phase Post Processing Netlist, 332 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 9 Finalization
+
+Phase 9.1 Finalizing Design Cores and Updating Shapes
+Phase 9.1 Finalizing Design Cores and Updating Shapes | Checksum: 1b8712e7a
+
+Time (s): cpu = 00:00:34 ; elapsed = 00:00:36 . Memory (MB): peak = 3923.523 ; gain = 20.008
+
+Phase 9.2 Verifying Netlist Connectivity
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.168 . Memory (MB): peak = 3923.523 ; gain = 0.000
+Phase 9.2 Verifying Netlist Connectivity | Checksum: 1b8712e7a
+
+Time (s): cpu = 00:00:34 ; elapsed = 00:00:36 . Memory (MB): peak = 3923.523 ; gain = 20.008
+Phase 9 Finalization | Checksum: 1b8712e7a
+
+Time (s): cpu = 00:00:34 ; elapsed = 00:00:36 . Memory (MB): peak = 3923.523 ; gain = 20.008
+Opt_design Change Summary
+=========================
+
+
+-------------------------------------------------------------------------------------------------------------------------
+|  Phase                        |  #Cells created  |  #Cells Removed  |  #Constrained objects preventing optimizations  |
+-------------------------------------------------------------------------------------------------------------------------
+|  Retarget                     |             477  |             938  |                                            323  |
+|  Constant propagation         |             535  |            2139  |                                            291  |
+|  Sweep                        |               0  |             789  |                                           4393  |
+|  BUFG optimization            |               0  |               0  |                                              0  |
+|  Shift Register Optimization  |               1  |               2  |                                              0  |
+|  Post Processing Netlist      |               0  |               0  |                                            332  |
+-------------------------------------------------------------------------------------------------------------------------
+
+
+Ending Logic Optimization Task | Checksum: 1b8712e7a
+
+Time (s): cpu = 00:00:34 ; elapsed = 00:00:36 . Memory (MB): peak = 3923.523 ; gain = 20.008
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
+INFO: [Power 33-23] Power model is not available for startupe3_inst
+INFO: [Pwropt 34-9] Applying IDT optimizations ...
+INFO: [Pwropt 34-10] Applying ODC optimizations ...
+INFO: [Constraints 18-632] set_output_delay: No clock object specified, the clocks will be automatically identified [C:/Taxi/temp_back_of_v3/Taxi_QPSK_v3/Taxi_QPSK_v3/Taxi_QPSK_v3.srcs/constrs_1/imports/fpga/fpga_r2.xdc:61]
+INFO: [Constraints 18-632] set_input_delay: No clock object specified, the clocks will be automatically identified [C:/Taxi/temp_back_of_v3/Taxi_QPSK_v3/Taxi_QPSK_v3/Taxi_QPSK_v3.srcs/constrs_1/imports/fpga/fpga_r2.xdc:63]
+INFO: [Constraints 18-632] set_output_delay: No clock object specified, the clocks will be automatically identified [C:/Taxi/temp_back_of_v3/Taxi_QPSK_v3/Taxi_QPSK_v3/Taxi_QPSK_v3.srcs/constrs_1/imports/fpga/fpga_r2.xdc:66]
+INFO: [Constraints 18-632] set_output_delay: No clock object specified, the clocks will be automatically identified [C:/Taxi/temp_back_of_v3/Taxi_QPSK_v3/Taxi_QPSK_v3/Taxi_QPSK_v3.srcs/constrs_1/imports/fpga/fpga_r2.xdc:75]
+INFO: [Constraints 18-632] set_input_delay: No clock object specified, the clocks will be automatically identified [C:/Taxi/temp_back_of_v3/Taxi_QPSK_v3/Taxi_QPSK_v3/Taxi_QPSK_v3.srcs/constrs_1/imports/fpga/fpga_r2.xdc:81]
+INFO: [Constraints 18-632] set_input_delay: No clock object specified, the clocks will be automatically identified [C:/Taxi/temp_back_of_v3/Taxi_QPSK_v3/Taxi_QPSK_v3/Taxi_QPSK_v3.srcs/constrs_1/imports/fpga/fpga_r2.xdc:90]
+INFO: [Constraints 18-632] set_output_delay: No clock object specified, the clocks will be automatically identified [C:/Taxi/temp_back_of_v3/Taxi_QPSK_v3/Taxi_QPSK_v3/Taxi_QPSK_v3.srcs/constrs_1/imports/fpga/fpga_r2.xdc:134]
+INFO: [Constraints 18-632] set_input_delay: No clock object specified, the clocks will be automatically identified [C:/Taxi/temp_back_of_v3/Taxi_QPSK_v3/Taxi_QPSK_v3/Taxi_QPSK_v3.srcs/constrs_1/imports/fpga/fpga_r2.xdc:136]
+INFO: [Constraints 18-632] set_output_delay: No clock object specified, the clocks will be automatically identified [C:/Taxi/temp_back_of_v3/Taxi_QPSK_v3/Taxi_QPSK_v3/Taxi_QPSK_v3.srcs/constrs_1/imports/fpga/fpga_r2.xdc:144]
+INFO: [Constraints 18-632] set_input_delay: No clock object specified, the clocks will be automatically identified [C:/Taxi/temp_back_of_v3/Taxi_QPSK_v3/Taxi_QPSK_v3/Taxi_QPSK_v3.srcs/constrs_1/imports/fpga/fpga_r2.xdc:146]
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+
+
+Starting PowerOpt Patch Enables Task
+INFO: [Pwropt 34-162] WRITE_MODE attribute of 70 BRAM(s) out of a total of 190 has been updated to save power. Run report_power_opt to get a complete listing of the BRAMs updated.
+INFO: [Pwropt 34-201] Structural ODC has moved 8 WE to EN ports
+Number of BRAM Ports augmented: 135 newly gated: 16 Total Ports: 380
+Ending PowerOpt Patch Enables Task | Checksum: 270b86e08
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.846 . Memory (MB): peak = 6416.695 ; gain = 0.000
+Ending Power Optimization Task | Checksum: 270b86e08
+
+Time (s): cpu = 00:01:08 ; elapsed = 00:00:42 . Memory (MB): peak = 6416.695 ; gain = 2493.172
+
+Starting Final Cleanup Task
+
+Starting Logic Optimization Task
+INFO: [Constraints 18-632] set_output_delay: No clock object specified, the clocks will be automatically identified [C:/Taxi/temp_back_of_v3/Taxi_QPSK_v3/Taxi_QPSK_v3/Taxi_QPSK_v3.srcs/constrs_1/imports/fpga/fpga_r2.xdc:61]
+INFO: [Constraints 18-632] set_input_delay: No clock object specified, the clocks will be automatically identified [C:/Taxi/temp_back_of_v3/Taxi_QPSK_v3/Taxi_QPSK_v3/Taxi_QPSK_v3.srcs/constrs_1/imports/fpga/fpga_r2.xdc:63]
+INFO: [Constraints 18-632] set_output_delay: No clock object specified, the clocks will be automatically identified [C:/Taxi/temp_back_of_v3/Taxi_QPSK_v3/Taxi_QPSK_v3/Taxi_QPSK_v3.srcs/constrs_1/imports/fpga/fpga_r2.xdc:66]
+INFO: [Constraints 18-632] set_output_delay: No clock object specified, the clocks will be automatically identified [C:/Taxi/temp_back_of_v3/Taxi_QPSK_v3/Taxi_QPSK_v3/Taxi_QPSK_v3.srcs/constrs_1/imports/fpga/fpga_r2.xdc:75]
+INFO: [Constraints 18-632] set_input_delay: No clock object specified, the clocks will be automatically identified [C:/Taxi/temp_back_of_v3/Taxi_QPSK_v3/Taxi_QPSK_v3/Taxi_QPSK_v3.srcs/constrs_1/imports/fpga/fpga_r2.xdc:81]
+INFO: [Constraints 18-632] set_input_delay: No clock object specified, the clocks will be automatically identified [C:/Taxi/temp_back_of_v3/Taxi_QPSK_v3/Taxi_QPSK_v3/Taxi_QPSK_v3.srcs/constrs_1/imports/fpga/fpga_r2.xdc:90]
+INFO: [Constraints 18-632] set_output_delay: No clock object specified, the clocks will be automatically identified [C:/Taxi/temp_back_of_v3/Taxi_QPSK_v3/Taxi_QPSK_v3/Taxi_QPSK_v3.srcs/constrs_1/imports/fpga/fpga_r2.xdc:134]
+INFO: [Constraints 18-632] set_input_delay: No clock object specified, the clocks will be automatically identified [C:/Taxi/temp_back_of_v3/Taxi_QPSK_v3/Taxi_QPSK_v3/Taxi_QPSK_v3.srcs/constrs_1/imports/fpga/fpga_r2.xdc:136]
+INFO: [Constraints 18-632] set_output_delay: No clock object specified, the clocks will be automatically identified [C:/Taxi/temp_back_of_v3/Taxi_QPSK_v3/Taxi_QPSK_v3/Taxi_QPSK_v3.srcs/constrs_1/imports/fpga/fpga_r2.xdc:144]
+INFO: [Constraints 18-632] set_input_delay: No clock object specified, the clocks will be automatically identified [C:/Taxi/temp_back_of_v3/Taxi_QPSK_v3/Taxi_QPSK_v3/Taxi_QPSK_v3.srcs/constrs_1/imports/fpga/fpga_r2.xdc:146]
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Ending Logic Optimization Task | Checksum: 22e811403
+
+Time (s): cpu = 00:00:22 ; elapsed = 00:00:14 . Memory (MB): peak = 6416.695 ; gain = 0.000
+Ending Final Cleanup Task | Checksum: 22e811403
+
+Time (s): cpu = 00:00:24 ; elapsed = 00:00:16 . Memory (MB): peak = 6416.695 ; gain = 0.000
+
+Starting Netlist Obfuscation Task
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.035 . Memory (MB): peak = 6416.695 ; gain = 0.000
+Ending Netlist Obfuscation Task | Checksum: 22e811403
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.050 . Memory (MB): peak = 6416.695 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Implementation
+186 Infos, 117 Warnings, 3 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:02:28 ; elapsed = 00:01:48 . Memory (MB): peak = 6416.695 ; gain = 2975.102
+INFO: [Vivado 12-24828] Executing command : report_drc -file fpga_drc_opted.rpt -pb fpga_drc_opted.pb -rpx fpga_drc_opted.rpx
+Command: report_drc -file fpga_drc_opted.rpt -pb fpga_drc_opted.pb -rpx fpga_drc_opted.rpx
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 2-168] The results of DRC are in file C:/Taxi/temp_back_of_v3/Taxi_QPSK_v3/Taxi_QPSK_v3/Taxi_QPSK_v3.runs/impl_1/fpga_drc_opted.rpt.
+report_drc completed successfully
+report_drc: Time (s): cpu = 00:00:09 ; elapsed = 00:00:06 . Memory (MB): peak = 6416.695 ; gain = 0.000
+generate_parallel_reports: Time (s): cpu = 00:00:09 ; elapsed = 00:00:06 . Memory (MB): peak = 6416.695 ; gain = 0.000
+INFO: [Constraints 18-632] set_output_delay: No clock object specified, the clocks will be automatically identified [C:/Taxi/temp_back_of_v3/Taxi_QPSK_v3/Taxi_QPSK_v3/Taxi_QPSK_v3.srcs/constrs_1/imports/fpga/fpga_r2.xdc:61]
+INFO: [Constraints 18-632] set_input_delay: No clock object specified, the clocks will be automatically identified [C:/Taxi/temp_back_of_v3/Taxi_QPSK_v3/Taxi_QPSK_v3/Taxi_QPSK_v3.srcs/constrs_1/imports/fpga/fpga_r2.xdc:63]
+INFO: [Constraints 18-632] set_output_delay: No clock object specified, the clocks will be automatically identified [C:/Taxi/temp_back_of_v3/Taxi_QPSK_v3/Taxi_QPSK_v3/Taxi_QPSK_v3.srcs/constrs_1/imports/fpga/fpga_r2.xdc:66]
+INFO: [Constraints 18-632] set_output_delay: No clock object specified, the clocks will be automatically identified [C:/Taxi/temp_back_of_v3/Taxi_QPSK_v3/Taxi_QPSK_v3/Taxi_QPSK_v3.srcs/constrs_1/imports/fpga/fpga_r2.xdc:75]
+INFO: [Constraints 18-632] set_input_delay: No clock object specified, the clocks will be automatically identified [C:/Taxi/temp_back_of_v3/Taxi_QPSK_v3/Taxi_QPSK_v3/Taxi_QPSK_v3.srcs/constrs_1/imports/fpga/fpga_r2.xdc:81]
+INFO: [Constraints 18-632] set_input_delay: No clock object specified, the clocks will be automatically identified [C:/Taxi/temp_back_of_v3/Taxi_QPSK_v3/Taxi_QPSK_v3/Taxi_QPSK_v3.srcs/constrs_1/imports/fpga/fpga_r2.xdc:90]
+INFO: [Constraints 18-632] set_output_delay: No clock object specified, the clocks will be automatically identified [C:/Taxi/temp_back_of_v3/Taxi_QPSK_v3/Taxi_QPSK_v3/Taxi_QPSK_v3.srcs/constrs_1/imports/fpga/fpga_r2.xdc:134]
+INFO: [Constraints 18-632] set_input_delay: No clock object specified, the clocks will be automatically identified [C:/Taxi/temp_back_of_v3/Taxi_QPSK_v3/Taxi_QPSK_v3/Taxi_QPSK_v3.srcs/constrs_1/imports/fpga/fpga_r2.xdc:136]
+INFO: [Constraints 18-632] set_output_delay: No clock object specified, the clocks will be automatically identified [C:/Taxi/temp_back_of_v3/Taxi_QPSK_v3/Taxi_QPSK_v3/Taxi_QPSK_v3.srcs/constrs_1/imports/fpga/fpga_r2.xdc:144]
+INFO: [Constraints 18-632] set_input_delay: No clock object specified, the clocks will be automatically identified [C:/Taxi/temp_back_of_v3/Taxi_QPSK_v3/Taxi_QPSK_v3/Taxi_QPSK_v3.srcs/constrs_1/imports/fpga/fpga_r2.xdc:146]
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Wrote PlaceDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.036 . Memory (MB): peak = 6416.695 ; gain = 0.000
+Wrote PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 6416.695 ; gain = 0.000
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Write ShapeDB Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.154 . Memory (MB): peak = 6416.695 ; gain = 0.000
+Writing XDEF routing special nets.
+Wrote RouteStorage: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.273 . Memory (MB): peak = 6416.695 ; gain = 0.000
+Wrote Netlist Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 6416.695 ; gain = 0.000
+Wrote Device Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.014 . Memory (MB): peak = 6416.695 ; gain = 0.000
+Write Physdb Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.334 . Memory (MB): peak = 6416.695 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Taxi/temp_back_of_v3/Taxi_QPSK_v3/Taxi_QPSK_v3/Taxi_QPSK_v3.runs/impl_1/fpga_opt.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:27 ; elapsed = 00:00:18 . Memory (MB): peak = 6416.695 ; gain = 0.000
+INFO: [Chipscope 16-240] Debug cores have already been implemented
+Command: place_design
+Attempting to get a license for feature 'Implementation' and/or device 'xczu48dr'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xczu48dr'
+INFO: [Common 17-83] Releasing license: Implementation
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 2 CPUs
+
+Starting Placer Task
+
+Phase 1 Placer Initialization
+
+Phase 1.1 Placer Initialization Netlist Sorting
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.026 . Memory (MB): peak = 6416.695 ; gain = 0.000
+Phase 1.1 Placer Initialization Netlist Sorting | Checksum: 1ae70d0f4
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.067 . Memory (MB): peak = 6416.695 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.026 . Memory (MB): peak = 6416.695 ; gain = 0.000
+
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: 178c719c2
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:06 . Memory (MB): peak = 6416.695 ; gain = 0.000
+
+Phase 1.3 Build Placer Netlist Model
+Phase 1.3 Build Placer Netlist Model | Checksum: 1e6c8e6de
+
+Time (s): cpu = 00:00:42 ; elapsed = 00:00:30 . Memory (MB): peak = 6416.695 ; gain = 0.000
+
+Phase 1.4 Constrain Clocks/Macros
+Phase 1.4 Constrain Clocks/Macros | Checksum: 1e6c8e6de
+
+Time (s): cpu = 00:00:42 ; elapsed = 00:00:31 . Memory (MB): peak = 6416.695 ; gain = 0.000
+Phase 1 Placer Initialization | Checksum: 1e6c8e6de
+
+Time (s): cpu = 00:00:42 ; elapsed = 00:00:31 . Memory (MB): peak = 6416.695 ; gain = 0.000
+
+Phase 2 Global Placement
+
+Phase 2.1 Floorplanning
+
+Phase 2.1.1 Partition Driven Placement
+
+Phase 2.1.1.1 PBP: Partition Driven Placement
+Phase 2.1.1.1 PBP: Partition Driven Placement | Checksum: 25e19cab9
+
+Time (s): cpu = 00:01:27 ; elapsed = 00:00:59 . Memory (MB): peak = 6416.695 ; gain = 0.000
+
+Phase 2.1.1.2 PBP: Clock Region Placement
+INFO: [Place 30-3162] Check ILP status : ILP-based clock placer completed successfully.
+Phase 2.1.1.2 PBP: Clock Region Placement | Checksum: 23f2c8394
+
+Time (s): cpu = 00:01:33 ; elapsed = 00:01:06 . Memory (MB): peak = 6416.695 ; gain = 0.000
+
+Phase 2.1.1.3 PBP: Discrete Incremental
+Phase 2.1.1.3 PBP: Discrete Incremental | Checksum: 18a9436df
+
+Time (s): cpu = 00:01:33 ; elapsed = 00:01:06 . Memory (MB): peak = 6416.695 ; gain = 0.000
+
+Phase 2.1.1.4 PBP: Compute Congestion
+Phase 2.1.1.4 PBP: Compute Congestion | Checksum: 18a9436df
+
+Time (s): cpu = 00:01:50 ; elapsed = 00:01:15 . Memory (MB): peak = 6416.695 ; gain = 0.000
+
+Phase 2.1.1.5 PBP: Macro Placement
+Phase 2.1.1.5 PBP: Macro Placement | Checksum: 24978bc04
+
+Time (s): cpu = 00:01:52 ; elapsed = 00:01:17 . Memory (MB): peak = 6416.695 ; gain = 0.000
+
+Phase 2.1.1.6 PBP: UpdateTiming
+Phase 2.1.1.6 PBP: UpdateTiming | Checksum: 1f30d671f
+
+Time (s): cpu = 00:01:59 ; elapsed = 00:01:22 . Memory (MB): peak = 6416.695 ; gain = 0.000
+
+Phase 2.1.1.7 PBP: Add part constraints
+Phase 2.1.1.7 PBP: Add part constraints | Checksum: 1f30d671f
+
+Time (s): cpu = 00:02:00 ; elapsed = 00:01:23 . Memory (MB): peak = 6416.695 ; gain = 0.000
+Phase 2.1.1 Partition Driven Placement | Checksum: 1f30d671f
+
+Time (s): cpu = 00:02:00 ; elapsed = 00:01:23 . Memory (MB): peak = 6416.695 ; gain = 0.000
+Phase 2.1 Floorplanning | Checksum: 1f30d671f
+
+Time (s): cpu = 00:02:01 ; elapsed = 00:01:23 . Memory (MB): peak = 6416.695 ; gain = 0.000
+
+Phase 2.2 Update Timing before SLR Path Opt
+Phase 2.2 Update Timing before SLR Path Opt | Checksum: 1f30d671f
+
+Time (s): cpu = 00:02:01 ; elapsed = 00:01:23 . Memory (MB): peak = 6416.695 ; gain = 0.000
+
+Phase 2.3 Post-Processing in Floorplanning
+Phase 2.3 Post-Processing in Floorplanning | Checksum: 234ad0d25
+
+Time (s): cpu = 00:02:01 ; elapsed = 00:01:24 . Memory (MB): peak = 6416.695 ; gain = 0.000
+
+Phase 2.4 Global Place Phase1
+Phase 2.4 Global Place Phase1 | Checksum: 1f2e44583
+
+Time (s): cpu = 00:05:05 ; elapsed = 00:03:20 . Memory (MB): peak = 6453.996 ; gain = 37.301
+
+Phase 2.5 Global Place Phase2
+
+Phase 2.5.1 UpdateTiming Before Physical Synthesis
+Phase 2.5.1 UpdateTiming Before Physical Synthesis | Checksum: 23057a5ea
+
+Time (s): cpu = 00:05:15 ; elapsed = 00:03:25 . Memory (MB): peak = 6453.996 ; gain = 37.301
+
+Phase 2.5.2 Physical Synthesis In Placer
+INFO: [Physopt 32-1035] Found 753 LUTNM shape to break, 2832 LUT instances to create LUTNM shape
+INFO: [Physopt 32-1044] Break lutnm for timing: one critical 424, two critical 329, total 753, new lutff created 0
+INFO: [Physopt 32-1138] End 1 Pass. Optimized 1893 nets or LUTs. Breaked 753 LUTs, combined 1140 existing LUTs and moved 0 existing LUT
+INFO: [Physopt 32-1030] Pass 1. Identified 22 candidate driver sets for equivalent driver rewiring.
+INFO: [Physopt 32-661] Optimized 3 nets.  Re-placed 31 instances.
+INFO: [Physopt 32-775] End 1 Pass. Optimized 3 nets or cells. Created 0 new cell, deleted 2 existing cells and moved 31 existing cells
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.050 . Memory (MB): peak = 6453.996 ; gain = 0.000
+INFO: [Physopt 32-65] No nets found for high-fanout optimization.
+INFO: [Physopt 32-232] Optimized 0 net. Created 0 new instance.
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-46] Identified 19 candidate nets for critical-cell optimization.
+INFO: [Physopt 32-571] Net core_inst/gty_ch[7].ch_fifo/rd_ptr_reg_reg[1] was not replicated.
+INFO: [Physopt 32-571] Net core_inst/gty_ch[7].ch_fifo/rd_ptr_reg_reg[2] was not replicated.
+INFO: [Physopt 32-571] Net core_inst/gty_ch[7].ch_fifo/rd_ptr_reg_reg[0] was not replicated.
+INFO: [Physopt 32-571] Net core_inst/gty_ch[7].ch_fifo/rd_ptr_reg_reg[3] was not replicated.
+INFO: [Physopt 32-232] Optimized 0 net. Created 0 new instance.
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-456] No candidate cells for DSP register optimization found in the design.
+INFO: [Physopt 32-775] End 2 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-1123] No candidate cells found for Shift Register to Pipeline optimization
+INFO: [Physopt 32-775] End 2 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-1401] No candidate cells found for Shift Register optimization.
+INFO: [Physopt 32-677] No candidate cells for Shift Register optimization found in the design
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-526] No candidate cells for BRAM register optimization found in the design
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-846] No candidate cells for URAM register optimization found in the design
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-846] No candidate cells for URAM register optimization found in the design
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-949] No candidate nets found for dynamic/static region interface net replication
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.034 . Memory (MB): peak = 6453.996 ; gain = 0.000
+
+Summary of Physical Synthesis Optimizations
+============================================
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+|  Optimization                                     |  Added Cells  |  Removed Cells  |  Optimized Cells/Nets  |  Dont Touch  |  Iterations  |  Elapsed   |
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+|  LUT Combining                                    |          753  |           1140  |                  1893  |           0  |           1  |  00:00:01  |
+|  Retime                                           |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Equivalent Driver Rewiring                       |            0  |              2  |                     3  |           0  |           1  |  00:00:01  |
+|  Very High Fanout                                 |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Critical Cell                                    |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  DSP Register                                     |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Shift Register to Pipeline                       |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Shift Register                                   |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  BRAM Register                                    |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  URAM Register                                    |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Dynamic/Static Region Interface Net Replication  |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Total                                            |          753  |           1142  |                  1896  |           0  |          11  |  00:00:03  |
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Phase 2.5.2 Physical Synthesis In Placer | Checksum: 247b1c980
+
+Time (s): cpu = 00:05:27 ; elapsed = 00:03:36 . Memory (MB): peak = 6453.996 ; gain = 37.301
+Phase 2.5 Global Place Phase2 | Checksum: a4ea7cd3
+
+Time (s): cpu = 00:05:45 ; elapsed = 00:03:47 . Memory (MB): peak = 6453.996 ; gain = 37.301
+Phase 2 Global Placement | Checksum: a4ea7cd3
+
+Time (s): cpu = 00:05:45 ; elapsed = 00:03:47 . Memory (MB): peak = 6453.996 ; gain = 37.301
+
+Phase 3 Detail Placement
+
+Phase 3.1 Commit Multi Column Macros
+Phase 3.1 Commit Multi Column Macros | Checksum: 1701b05f9
+
+Time (s): cpu = 00:06:06 ; elapsed = 00:03:58 . Memory (MB): peak = 6453.996 ; gain = 37.301
+
+Phase 3.2 Commit Most Macros & LUTRAMs
+Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 1bdf6dd2d
+
+Time (s): cpu = 00:06:13 ; elapsed = 00:04:04 . Memory (MB): peak = 6453.996 ; gain = 37.301
+
+Phase 3.3 Small Shape DP
+
+Phase 3.3.1 Small Shape Clustering
+Phase 3.3.1 Small Shape Clustering | Checksum: 14c62efb8
+
+Time (s): cpu = 00:07:04 ; elapsed = 00:04:35 . Memory (MB): peak = 6453.996 ; gain = 37.301
+
+Phase 3.3.2 Slice Area Swap
+
+Phase 3.3.2.1 Slice Area Swap Initial
+Phase 3.3.2.1 Slice Area Swap Initial | Checksum: 1edacfa8c
+
+Time (s): cpu = 00:07:25 ; elapsed = 00:04:52 . Memory (MB): peak = 6453.996 ; gain = 37.301
+Phase 3.3.2 Slice Area Swap | Checksum: 1edacfa8c
+
+Time (s): cpu = 00:07:26 ; elapsed = 00:04:52 . Memory (MB): peak = 6453.996 ; gain = 37.301
+Phase 3.3 Small Shape DP | Checksum: 1596aec37
+
+Time (s): cpu = 00:08:03 ; elapsed = 00:05:12 . Memory (MB): peak = 6453.996 ; gain = 37.301
+
+Phase 3.4 Place Remaining
+Phase 3.4 Place Remaining | Checksum: caa2522a
+
+Time (s): cpu = 00:08:05 ; elapsed = 00:05:14 . Memory (MB): peak = 6453.996 ; gain = 37.301
+
+Phase 3.5 Re-assign LUT pins
+Phase 3.5 Re-assign LUT pins | Checksum: eeb9af4b
+
+Time (s): cpu = 00:08:21 ; elapsed = 00:05:24 . Memory (MB): peak = 6453.996 ; gain = 37.301
+
+Phase 3.6 Pipeline Register Optimization
+Phase 3.6 Pipeline Register Optimization | Checksum: 1ac7a5c8a
+
+Time (s): cpu = 00:08:23 ; elapsed = 00:05:25 . Memory (MB): peak = 6453.996 ; gain = 37.301
+
+Phase 3.7 Fast Optimization
+Phase 3.7 Fast Optimization | Checksum: 18378aad5
+
+Time (s): cpu = 00:08:58 ; elapsed = 00:05:46 . Memory (MB): peak = 6453.996 ; gain = 37.301
+Phase 3 Detail Placement | Checksum: 18378aad5
+
+Time (s): cpu = 00:08:58 ; elapsed = 00:05:46 . Memory (MB): peak = 6453.996 ; gain = 37.301
+
+Phase 4 Post Placement Optimization and Clean-Up
+
+Phase 4.1 Post Commit Optimization
+INFO: [Constraints 18-632] set_output_delay: No clock object specified, the clocks will be automatically identified [C:/Taxi/temp_back_of_v3/Taxi_QPSK_v3/Taxi_QPSK_v3/Taxi_QPSK_v3.srcs/constrs_1/imports/fpga/fpga_r2.xdc:61]
+INFO: [Constraints 18-632] set_input_delay: No clock object specified, the clocks will be automatically identified [C:/Taxi/temp_back_of_v3/Taxi_QPSK_v3/Taxi_QPSK_v3/Taxi_QPSK_v3.srcs/constrs_1/imports/fpga/fpga_r2.xdc:63]
+INFO: [Constraints 18-632] set_output_delay: No clock object specified, the clocks will be automatically identified [C:/Taxi/temp_back_of_v3/Taxi_QPSK_v3/Taxi_QPSK_v3/Taxi_QPSK_v3.srcs/constrs_1/imports/fpga/fpga_r2.xdc:66]
+INFO: [Constraints 18-632] set_output_delay: No clock object specified, the clocks will be automatically identified [C:/Taxi/temp_back_of_v3/Taxi_QPSK_v3/Taxi_QPSK_v3/Taxi_QPSK_v3.srcs/constrs_1/imports/fpga/fpga_r2.xdc:75]
+INFO: [Constraints 18-632] set_input_delay: No clock object specified, the clocks will be automatically identified [C:/Taxi/temp_back_of_v3/Taxi_QPSK_v3/Taxi_QPSK_v3/Taxi_QPSK_v3.srcs/constrs_1/imports/fpga/fpga_r2.xdc:81]
+INFO: [Constraints 18-632] set_input_delay: No clock object specified, the clocks will be automatically identified [C:/Taxi/temp_back_of_v3/Taxi_QPSK_v3/Taxi_QPSK_v3/Taxi_QPSK_v3.srcs/constrs_1/imports/fpga/fpga_r2.xdc:90]
+INFO: [Constraints 18-632] set_output_delay: No clock object specified, the clocks will be automatically identified [C:/Taxi/temp_back_of_v3/Taxi_QPSK_v3/Taxi_QPSK_v3/Taxi_QPSK_v3.srcs/constrs_1/imports/fpga/fpga_r2.xdc:134]
+INFO: [Constraints 18-632] set_input_delay: No clock object specified, the clocks will be automatically identified [C:/Taxi/temp_back_of_v3/Taxi_QPSK_v3/Taxi_QPSK_v3/Taxi_QPSK_v3.srcs/constrs_1/imports/fpga/fpga_r2.xdc:136]
+INFO: [Constraints 18-632] set_output_delay: No clock object specified, the clocks will be automatically identified [C:/Taxi/temp_back_of_v3/Taxi_QPSK_v3/Taxi_QPSK_v3/Taxi_QPSK_v3.srcs/constrs_1/imports/fpga/fpga_r2.xdc:144]
+INFO: [Constraints 18-632] set_input_delay: No clock object specified, the clocks will be automatically identified [C:/Taxi/temp_back_of_v3/Taxi_QPSK_v3/Taxi_QPSK_v3/Taxi_QPSK_v3.srcs/constrs_1/imports/fpga/fpga_r2.xdc:146]
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Phase 4.1.1 Post Placement Optimization
+Post Placement Optimization Initialization | Checksum: 24236d455
+
+Phase 4.1.1.1 BUFG Insertion
+
+Starting Physical Synthesis Task
+
+Phase 1 Physical Synthesis Initialization
+INFO: [Physopt 32-721] Multithreading enabled for phys_opt_design using a maximum of 2 CPUs
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.150 | TNS=-0.843 |
+Phase 1 Physical Synthesis Initialization | Checksum: 182aa54b5
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:04 . Memory (MB): peak = 6612.754 ; gain = 0.000
+INFO: [Place 46-33] Processed net qpsk_for_htg_i/QPSK_0/U0/u_QPSK_reset_sync_inst/reset, BUFG insertion was skipped due to placement/routing conflicts.
+INFO: [Place 46-32] Processed net qpsk_for_htg_i/QPSK_0/U0/u_QPSK_dut_inst/u_QPSK_src_QPSK/u_QPSK_tc/enb_1_4_0, BUFG insertion was skipped because the netlist editing failed.
+INFO: [Place 46-33] Processed net qpsk_for_htg_i/QPSK_0/U0/u_QPSK_axi_lite_inst/u_QPSK_addr_decoder_inst/data_reg_axi_enable_1_1_reg_0, BUFG insertion was skipped due to placement/routing conflicts.
+INFO: [Place 46-56] BUFG insertion identified 3 candidate nets. Inserted BUFG: 0, Replicated BUFG Driver: 0, Skipped due to Placement/Routing Conflicts: 2, Skipped due to Timing Degradation: 0, Skipped due to netlist editing failed: 1.
+Ending Physical Synthesis Task | Checksum: 1e3c352f7
+
+Time (s): cpu = 00:00:13 ; elapsed = 00:00:07 . Memory (MB): peak = 6612.754 ; gain = 0.000
+Phase 4.1.1.1 BUFG Insertion | Checksum: 24236d455
+
+Time (s): cpu = 00:10:11 ; elapsed = 00:06:34 . Memory (MB): peak = 6612.754 ; gain = 196.059
+
+Phase 4.1.1.2 Post Placement Timing Optimization
+INFO: [Place 30-746] Post Placement Timing Summary WNS=0.209. For the most accurate timing information please run report_timing.
+Phase 4.1.1.2 Post Placement Timing Optimization | Checksum: 1ffffb579
+
+Time (s): cpu = 00:10:52 ; elapsed = 00:07:15 . Memory (MB): peak = 6612.754 ; gain = 196.059
+
+Time (s): cpu = 00:10:52 ; elapsed = 00:07:15 . Memory (MB): peak = 6612.754 ; gain = 196.059
+Phase 4.1 Post Commit Optimization | Checksum: 1ffffb579
+
+Time (s): cpu = 00:10:53 ; elapsed = 00:07:16 . Memory (MB): peak = 6612.754 ; gain = 196.059
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.033 . Memory (MB): peak = 6612.754 ; gain = 0.000
+
+Phase 4.2 Post Placement Cleanup
+Phase 4.2 Post Placement Cleanup | Checksum: 2a1332c01
+
+Time (s): cpu = 00:11:14 ; elapsed = 00:07:30 . Memory (MB): peak = 6612.754 ; gain = 196.059
+
+Phase 4.3 Placer Reporting
+
+Phase 4.3.1 Print Estimated Congestion
+INFO: [Place 30-612] Post-Placement Estimated Congestion 
+ ________________________________________________________________________
+|           | Global Congestion | Long Congestion   | Short Congestion  |
+| Direction | Region Size       | Region Size       | Region Size       |
+|___________|___________________|___________________|___________________|
+|      North|                1x1|                1x1|                8x8|
+|___________|___________________|___________________|___________________|
+|      South|                1x1|                1x1|                4x4|
+|___________|___________________|___________________|___________________|
+|       East|                2x2|                1x1|                8x8|
+|___________|___________________|___________________|___________________|
+|       West|                4x4|                1x1|                8x8|
+|___________|___________________|___________________|___________________|
+
+Phase 4.3.1 Print Estimated Congestion | Checksum: 2a1332c01
+
+Time (s): cpu = 00:11:15 ; elapsed = 00:07:31 . Memory (MB): peak = 6612.754 ; gain = 196.059
+Phase 4.3 Placer Reporting | Checksum: 2a1332c01
+
+Time (s): cpu = 00:11:15 ; elapsed = 00:07:31 . Memory (MB): peak = 6612.754 ; gain = 196.059
+
+Phase 4.4 Final Placement Cleanup
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.034 . Memory (MB): peak = 6612.754 ; gain = 0.000
+
+Time (s): cpu = 00:11:15 ; elapsed = 00:07:31 . Memory (MB): peak = 6612.754 ; gain = 196.059
+Phase 4 Post Placement Optimization and Clean-Up | Checksum: 2a0b9a1c7
+
+Time (s): cpu = 00:11:16 ; elapsed = 00:07:32 . Memory (MB): peak = 6612.754 ; gain = 196.059
+Ending Placer Task | Checksum: 20ad18a0b
+
+Time (s): cpu = 00:11:17 ; elapsed = 00:07:32 . Memory (MB): peak = 6612.754 ; gain = 196.059
+264 Infos, 117 Warnings, 3 Critical Warnings and 0 Errors encountered.
+place_design completed successfully
+place_design: Time (s): cpu = 00:11:25 ; elapsed = 00:07:36 . Memory (MB): peak = 6612.754 ; gain = 196.059
+INFO: [Vivado 12-24838] Running report commands "report_control_sets, report_io, report_utilization" in parallel.
+Running report generation with 2 threads.
+INFO: [Vivado 12-24828] Executing command : report_io -file fpga_io_placed.rpt
+report_io: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.128 . Memory (MB): peak = 6612.754 ; gain = 0.000
+INFO: [Vivado 12-24828] Executing command : report_control_sets -verbose -file fpga_control_sets_placed.rpt
+report_control_sets: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.209 . Memory (MB): peak = 6612.754 ; gain = 0.000
+INFO: [Vivado 12-24828] Executing command : report_utilization -file fpga_utilization_placed.rpt -pb fpga_utilization_placed.pb
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Write ShapeDB Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.251 . Memory (MB): peak = 6612.754 ; gain = 0.000
+Wrote PlaceDB: Time (s): cpu = 00:00:14 ; elapsed = 00:00:06 . Memory (MB): peak = 6612.754 ; gain = 0.000
+Wrote PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 6612.754 ; gain = 0.000
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Wrote RouteStorage: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.274 . Memory (MB): peak = 6612.754 ; gain = 0.000
+Wrote Netlist Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.144 . Memory (MB): peak = 6612.754 ; gain = 0.000
+Wrote Device Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.020 . Memory (MB): peak = 6612.754 ; gain = 0.000
+Write Physdb Complete: Time (s): cpu = 00:00:14 ; elapsed = 00:00:06 . Memory (MB): peak = 6612.754 ; gain = 0.000
+report_design_analysis: Time (s): cpu = 00:00:10 ; elapsed = 00:00:07 . Memory (MB): peak = 6612.754 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Taxi/temp_back_of_v3/Taxi_QPSK_v3/Taxi_QPSK_v3/Taxi_QPSK_v3.runs/impl_1/fpga_placed.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:30 ; elapsed = 00:00:20 . Memory (MB): peak = 6612.754 ; gain = 0.000
+Command: phys_opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xczu48dr'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xczu48dr'
+
+Starting Initial Update Timing Task
+
+Time (s): cpu = 00:00:30 ; elapsed = 00:00:17 . Memory (MB): peak = 6612.754 ; gain = 0.000
+INFO: [Vivado_Tcl 4-2279] Estimated Timing Summary | WNS= 0.144 | TNS= 0.000 | 
+INFO: [Vivado_Tcl 4-383] Design worst setup slack (WNS) is greater than or equal to 0.000 ns. All physical synthesis setup optimizations will be skipped.
+INFO: [Vivado_Tcl 4-232] No setup violation found. The netlist was not modified.
+INFO: [Common 17-83] Releasing license: Implementation
+275 Infos, 117 Warnings, 3 Critical Warnings and 0 Errors encountered.
+phys_opt_design completed successfully
+phys_opt_design: Time (s): cpu = 00:00:31 ; elapsed = 00:00:18 . Memory (MB): peak = 6612.754 ; gain = 0.000
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Write ShapeDB Complete: Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.250 . Memory (MB): peak = 6612.754 ; gain = 0.000
+Wrote PlaceDB: Time (s): cpu = 00:00:14 ; elapsed = 00:00:06 . Memory (MB): peak = 6612.754 ; gain = 0.000
+Wrote PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 6612.754 ; gain = 0.000
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Wrote RouteStorage: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.269 . Memory (MB): peak = 6612.754 ; gain = 0.000
+Wrote Netlist Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.143 . Memory (MB): peak = 6612.754 ; gain = 0.000
+Wrote Device Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.020 . Memory (MB): peak = 6612.754 ; gain = 0.000
+Write Physdb Complete: Time (s): cpu = 00:00:14 ; elapsed = 00:00:06 . Memory (MB): peak = 6612.754 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Taxi/temp_back_of_v3/Taxi_QPSK_v3/Taxi_QPSK_v3/Taxi_QPSK_v3.runs/impl_1/fpga_physopt.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:20 ; elapsed = 00:00:14 . Memory (MB): peak = 6612.754 ; gain = 0.000
+Command: route_design
+Attempting to get a license for feature 'Implementation' and/or device 'xczu48dr'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xczu48dr'
+
+
+Starting Routing Task
+INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 2 CPUs
+
+Phase 1 Build RT Design
+Checksum: PlaceDB: 7b3be11c ConstDB: 0 ShapeSum: 935de76d RouteDB: fc37c182
+Nodegraph reading from file.  Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.930 . Memory (MB): peak = 6612.754 ; gain = 0.000
+Post Restoration Checksum: NetGraph: cd5f27ef | NumContArr: 355a0179 | Constraints: 11cc9ded | Timing: c2a8fa9d
+Phase 1 Build RT Design | Checksum: 1d72ec1f2
+
+Time (s): cpu = 00:00:32 ; elapsed = 00:00:19 . Memory (MB): peak = 6612.754 ; gain = 0.000
+
+Phase 2 Router Initialization
+
+Phase 2.1 Fix Topology Constraints
+Phase 2.1 Fix Topology Constraints | Checksum: 1d72ec1f2
+
+Time (s): cpu = 00:00:33 ; elapsed = 00:00:19 . Memory (MB): peak = 6612.754 ; gain = 0.000
+
+Phase 2.2 Pre Route Cleanup
+Phase 2.2 Pre Route Cleanup | Checksum: 1d72ec1f2
+
+Time (s): cpu = 00:00:33 ; elapsed = 00:00:19 . Memory (MB): peak = 6612.754 ; gain = 0.000
+
+Phase 2.3 Global Clock Net Routing
+ Number of Nodes with overlaps = 0
+Phase 2.3 Global Clock Net Routing | Checksum: 193a77896
+
+Time (s): cpu = 00:00:42 ; elapsed = 00:00:27 . Memory (MB): peak = 6858.324 ; gain = 245.570
+
+Phase 2.4 Update Timing
+Phase 2.4 Update Timing | Checksum: 1a85206ac
+
+Time (s): cpu = 00:01:00 ; elapsed = 00:00:37 . Memory (MB): peak = 6858.324 ; gain = 245.570
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.232  | TNS=0.000  | WHS=-0.185 | THS=-61.397|
+
+
+Phase 2.5 Update Timing for Bus Skew
+
+Phase 2.5.1 Update Timing
+Phase 2.5.1 Update Timing | Checksum: 1ec5f2ea1
+
+Time (s): cpu = 00:01:54 ; elapsed = 00:01:08 . Memory (MB): peak = 6858.324 ; gain = 245.570
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.232  | TNS=0.000  | WHS=-0.218 | THS=-54.192|
+
+Phase 2.5 Update Timing for Bus Skew | Checksum: 2671dbafe
+
+Time (s): cpu = 00:01:55 ; elapsed = 00:01:09 . Memory (MB): peak = 6858.324 ; gain = 245.570
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 0.00383535 %
+  Global Horizontal Routing Utilization  = 0.000686958 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 123762
+    (Failed Nets is the sum of unrouted and partially routed nets)
+  Number of Unrouted Nets             = 100330
+  Number of Partially Routed Nets     = 23432
+  Number of Node Overlaps             = 0
+
+Phase 2 Router Initialization | Checksum: 1ac7455a8
+
+Time (s): cpu = 00:01:59 ; elapsed = 00:01:11 . Memory (MB): peak = 6858.324 ; gain = 245.570
+
+Phase 3 Global Routing
+Phase 3 Global Routing | Checksum: 1ac7455a8
+
+Time (s): cpu = 00:01:59 ; elapsed = 00:01:11 . Memory (MB): peak = 6858.324 ; gain = 245.570
+
+Phase 4 Initial Routing
+
+Phase 4.1 Initial Net Routing Pass
+Phase 4.1 Initial Net Routing Pass | Checksum: 2672c9ce3
+
+Time (s): cpu = 00:02:21 ; elapsed = 00:01:24 . Memory (MB): peak = 6867.879 ; gain = 255.125
+Phase 4 Initial Routing | Checksum: 20f97df31
+
+Time (s): cpu = 00:02:22 ; elapsed = 00:01:25 . Memory (MB): peak = 6867.879 ; gain = 255.125
+
+Phase 5 Rip-up And Reroute
+
+Phase 5.1 Global Iteration 0
+ Number of Nodes with overlaps = 24397
+ Number of Nodes with overlaps = 3101
+ Number of Nodes with overlaps = 531
+ Number of Nodes with overlaps = 145
+ Number of Nodes with overlaps = 37
+ Number of Nodes with overlaps = 13
+ Number of Nodes with overlaps = 5
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-0.032 | TNS=-0.081 | WHS=-0.022 | THS=-0.088 |
+
+Phase 5.1 Global Iteration 0 | Checksum: 1c1908eeb
+
+Time (s): cpu = 00:04:43 ; elapsed = 00:02:53 . Memory (MB): peak = 6869.309 ; gain = 256.555
+
+Phase 5.2 Global Iteration 1
+ Number of Nodes with overlaps = 847
+ Number of Nodes with overlaps = 113
+ Number of Nodes with overlaps = 57
+ Number of Nodes with overlaps = 30
+ Number of Nodes with overlaps = 21
+ Number of Nodes with overlaps = 14
+ Number of Nodes with overlaps = 5
+ Number of Nodes with overlaps = 5
+ Number of Nodes with overlaps = 5
+ Number of Nodes with overlaps = 3
+ Number of Nodes with overlaps = 2
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.013  | TNS=0.000  | WHS=N/A    | THS=N/A    |
+
+Phase 5.2 Global Iteration 1 | Checksum: 20fb90d4c
+
+Time (s): cpu = 00:05:23 ; elapsed = 00:03:23 . Memory (MB): peak = 6869.309 ; gain = 256.555
+Phase 5 Rip-up And Reroute | Checksum: 20fb90d4c
+
+Time (s): cpu = 00:05:24 ; elapsed = 00:03:23 . Memory (MB): peak = 6869.309 ; gain = 256.555
+
+Phase 6 Delay and Skew Optimization
+
+Phase 6.1 Delay CleanUp
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.013  | TNS=0.000  | WHS=0.011  | THS=0.000  |
+
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.013  | TNS=0.000  | WHS=0.011  | THS=0.000  |
+
+Phase 6.1 Delay CleanUp | Checksum: 1de3d0b06
+
+Time (s): cpu = 00:05:52 ; elapsed = 00:03:40 . Memory (MB): peak = 6869.309 ; gain = 256.555
+
+Phase 6.2 Clock Skew Optimization
+Phase 6.2 Clock Skew Optimization | Checksum: 1de3d0b06
+
+Time (s): cpu = 00:05:52 ; elapsed = 00:03:40 . Memory (MB): peak = 6869.309 ; gain = 256.555
+Phase 6 Delay and Skew Optimization | Checksum: 1de3d0b06
+
+Time (s): cpu = 00:05:52 ; elapsed = 00:03:41 . Memory (MB): peak = 6869.309 ; gain = 256.555
+
+Phase 7 Post Hold Fix
+
+Phase 7.1 Hold Fix Iter
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.013  | TNS=0.000  | WHS=0.011  | THS=0.000  |
+
+Phase 7.1 Hold Fix Iter | Checksum: 1af909c22
+
+Time (s): cpu = 00:06:05 ; elapsed = 00:03:48 . Memory (MB): peak = 6869.309 ; gain = 256.555
+Phase 7 Post Hold Fix | Checksum: 1af909c22
+
+Time (s): cpu = 00:06:06 ; elapsed = 00:03:48 . Memory (MB): peak = 6869.309 ; gain = 256.555
+
+Phase 8 Route finalize
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 4.45685 %
+  Global Horizontal Routing Utilization  = 4.10438 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 0
+    (Failed Nets is the sum of unrouted and partially routed nets)
+  Number of Unrouted Nets             = 0
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+Phase 8 Route finalize | Checksum: 1af909c22
+
+Time (s): cpu = 00:06:07 ; elapsed = 00:03:49 . Memory (MB): peak = 6869.309 ; gain = 256.555
+
+Phase 9 Verifying routed nets
+
+ Verification completed successfully
+Phase 9 Verifying routed nets | Checksum: 1af909c22
+
+Time (s): cpu = 00:06:07 ; elapsed = 00:03:49 . Memory (MB): peak = 6869.309 ; gain = 256.555
+
+Phase 10 Depositing Routes
+Phase 10 Depositing Routes | Checksum: 1af909c22
+
+Time (s): cpu = 00:06:13 ; elapsed = 00:03:53 . Memory (MB): peak = 6869.309 ; gain = 256.555
+
+Phase 11 Resolve XTalk
+Phase 11 Resolve XTalk | Checksum: 1af909c22
+
+Time (s): cpu = 00:06:13 ; elapsed = 00:03:53 . Memory (MB): peak = 6869.309 ; gain = 256.555
+
+Phase 12 Post Process Routing
+Phase 12 Post Process Routing | Checksum: 1af909c22
+
+Time (s): cpu = 00:06:14 ; elapsed = 00:03:54 . Memory (MB): peak = 6869.309 ; gain = 256.555
+
+Phase 13 Post Router Timing
+INFO: [Route 35-57] Estimated Timing Summary | WNS=0.013  | TNS=0.000  | WHS=0.011  | THS=0.000  |
+
+INFO: [Route 35-327] The final timing numbers are based on the router estimated timing analysis. For a complete and accurate timing signoff, please run report_timing_summary.
+Phase 13 Post Router Timing | Checksum: 1af909c22
+
+Time (s): cpu = 00:06:14 ; elapsed = 00:03:54 . Memory (MB): peak = 6869.309 ; gain = 256.555
+Total Elapsed time in route_design: 234.28 secs
+
+Phase 14 Post-Route Event Processing
+Phase 14 Post-Route Event Processing | Checksum: 16685e414
+
+Time (s): cpu = 00:06:15 ; elapsed = 00:03:55 . Memory (MB): peak = 6869.309 ; gain = 256.555
+INFO: [Route 35-16] Router Completed Successfully
+Ending Routing Task | Checksum: 16685e414
+
+Time (s): cpu = 00:06:16 ; elapsed = 00:03:55 . Memory (MB): peak = 6869.309 ; gain = 256.555
+
+Routing Is Done.
+INFO: [Common 17-83] Releasing license: Implementation
+290 Infos, 117 Warnings, 3 Critical Warnings and 0 Errors encountered.
+route_design completed successfully
+route_design: Time (s): cpu = 00:06:17 ; elapsed = 00:03:56 . Memory (MB): peak = 6869.309 ; gain = 256.555
+INFO: [Vivado 12-24828] Executing command : report_drc -file fpga_drc_routed.rpt -pb fpga_drc_routed.pb -rpx fpga_drc_routed.rpx
+Command: report_drc -file fpga_drc_routed.rpt -pb fpga_drc_routed.pb -rpx fpga_drc_routed.rpx
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 2-168] The results of DRC are in file C:/Taxi/temp_back_of_v3/Taxi_QPSK_v3/Taxi_QPSK_v3/Taxi_QPSK_v3.runs/impl_1/fpga_drc_routed.rpt.
+report_drc completed successfully
+report_drc: Time (s): cpu = 00:00:18 ; elapsed = 00:00:10 . Memory (MB): peak = 6869.309 ; gain = 0.000
+INFO: [Vivado 12-24828] Executing command : report_methodology -file fpga_methodology_drc_routed.rpt -pb fpga_methodology_drc_routed.pb -rpx fpga_methodology_drc_routed.rpx
+Command: report_methodology -file fpga_methodology_drc_routed.rpt -pb fpga_methodology_drc_routed.pb -rpx fpga_methodology_drc_routed.rpx
+INFO: [Constraints 18-632] set_output_delay: No clock object specified, the clocks will be automatically identified [C:/Taxi/temp_back_of_v3/Taxi_QPSK_v3/Taxi_QPSK_v3/Taxi_QPSK_v3.srcs/constrs_1/imports/fpga/fpga_r2.xdc:61]
+INFO: [Constraints 18-632] set_input_delay: No clock object specified, the clocks will be automatically identified [C:/Taxi/temp_back_of_v3/Taxi_QPSK_v3/Taxi_QPSK_v3/Taxi_QPSK_v3.srcs/constrs_1/imports/fpga/fpga_r2.xdc:63]
+INFO: [Constraints 18-632] set_output_delay: No clock object specified, the clocks will be automatically identified [C:/Taxi/temp_back_of_v3/Taxi_QPSK_v3/Taxi_QPSK_v3/Taxi_QPSK_v3.srcs/constrs_1/imports/fpga/fpga_r2.xdc:66]
+INFO: [Constraints 18-632] set_output_delay: No clock object specified, the clocks will be automatically identified [C:/Taxi/temp_back_of_v3/Taxi_QPSK_v3/Taxi_QPSK_v3/Taxi_QPSK_v3.srcs/constrs_1/imports/fpga/fpga_r2.xdc:75]
+INFO: [Constraints 18-632] set_input_delay: No clock object specified, the clocks will be automatically identified [C:/Taxi/temp_back_of_v3/Taxi_QPSK_v3/Taxi_QPSK_v3/Taxi_QPSK_v3.srcs/constrs_1/imports/fpga/fpga_r2.xdc:81]
+INFO: [Constraints 18-632] set_input_delay: No clock object specified, the clocks will be automatically identified [C:/Taxi/temp_back_of_v3/Taxi_QPSK_v3/Taxi_QPSK_v3/Taxi_QPSK_v3.srcs/constrs_1/imports/fpga/fpga_r2.xdc:90]
+INFO: [Constraints 18-632] set_output_delay: No clock object specified, the clocks will be automatically identified [C:/Taxi/temp_back_of_v3/Taxi_QPSK_v3/Taxi_QPSK_v3/Taxi_QPSK_v3.srcs/constrs_1/imports/fpga/fpga_r2.xdc:134]
+INFO: [Constraints 18-632] set_input_delay: No clock object specified, the clocks will be automatically identified [C:/Taxi/temp_back_of_v3/Taxi_QPSK_v3/Taxi_QPSK_v3/Taxi_QPSK_v3.srcs/constrs_1/imports/fpga/fpga_r2.xdc:136]
+INFO: [Constraints 18-632] set_output_delay: No clock object specified, the clocks will be automatically identified [C:/Taxi/temp_back_of_v3/Taxi_QPSK_v3/Taxi_QPSK_v3/Taxi_QPSK_v3.srcs/constrs_1/imports/fpga/fpga_r2.xdc:144]
+INFO: [Constraints 18-632] set_input_delay: No clock object specified, the clocks will be automatically identified [C:/Taxi/temp_back_of_v3/Taxi_QPSK_v3/Taxi_QPSK_v3/Taxi_QPSK_v3.srcs/constrs_1/imports/fpga/fpga_r2.xdc:146]
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [DRC 23-133] Running Methodology with 2 threads
+INFO: [Vivado_Tcl 2-1520] The results of Report Methodology are in file C:/Taxi/temp_back_of_v3/Taxi_QPSK_v3/Taxi_QPSK_v3/Taxi_QPSK_v3.runs/impl_1/fpga_methodology_drc_routed.rpt.
+report_methodology completed successfully
+report_drc: Time (s): cpu = 00:01:02 ; elapsed = 00:00:34 . Memory (MB): peak = 6869.309 ; gain = 0.000
+INFO: [Vivado 12-24828] Executing command : report_timing_summary -max_paths 10 -report_unconstrained -file fpga_timing_summary_routed.rpt -pb fpga_timing_summary_routed.pb -rpx fpga_timing_summary_routed.rpx -warn_on_violation 
+INFO: [Constraints 18-632] set_output_delay: No clock object specified, the clocks will be automatically identified [C:/Taxi/temp_back_of_v3/Taxi_QPSK_v3/Taxi_QPSK_v3/Taxi_QPSK_v3.srcs/constrs_1/imports/fpga/fpga_r2.xdc:61]
+INFO: [Constraints 18-632] set_input_delay: No clock object specified, the clocks will be automatically identified [C:/Taxi/temp_back_of_v3/Taxi_QPSK_v3/Taxi_QPSK_v3/Taxi_QPSK_v3.srcs/constrs_1/imports/fpga/fpga_r2.xdc:63]
+INFO: [Constraints 18-632] set_output_delay: No clock object specified, the clocks will be automatically identified [C:/Taxi/temp_back_of_v3/Taxi_QPSK_v3/Taxi_QPSK_v3/Taxi_QPSK_v3.srcs/constrs_1/imports/fpga/fpga_r2.xdc:66]
+INFO: [Constraints 18-632] set_output_delay: No clock object specified, the clocks will be automatically identified [C:/Taxi/temp_back_of_v3/Taxi_QPSK_v3/Taxi_QPSK_v3/Taxi_QPSK_v3.srcs/constrs_1/imports/fpga/fpga_r2.xdc:75]
+INFO: [Constraints 18-632] set_input_delay: No clock object specified, the clocks will be automatically identified [C:/Taxi/temp_back_of_v3/Taxi_QPSK_v3/Taxi_QPSK_v3/Taxi_QPSK_v3.srcs/constrs_1/imports/fpga/fpga_r2.xdc:81]
+INFO: [Constraints 18-632] set_input_delay: No clock object specified, the clocks will be automatically identified [C:/Taxi/temp_back_of_v3/Taxi_QPSK_v3/Taxi_QPSK_v3/Taxi_QPSK_v3.srcs/constrs_1/imports/fpga/fpga_r2.xdc:90]
+INFO: [Constraints 18-632] set_output_delay: No clock object specified, the clocks will be automatically identified [C:/Taxi/temp_back_of_v3/Taxi_QPSK_v3/Taxi_QPSK_v3/Taxi_QPSK_v3.srcs/constrs_1/imports/fpga/fpga_r2.xdc:134]
+INFO: [Constraints 18-632] set_input_delay: No clock object specified, the clocks will be automatically identified [C:/Taxi/temp_back_of_v3/Taxi_QPSK_v3/Taxi_QPSK_v3/Taxi_QPSK_v3.srcs/constrs_1/imports/fpga/fpga_r2.xdc:136]
+INFO: [Constraints 18-632] set_output_delay: No clock object specified, the clocks will be automatically identified [C:/Taxi/temp_back_of_v3/Taxi_QPSK_v3/Taxi_QPSK_v3/Taxi_QPSK_v3.srcs/constrs_1/imports/fpga/fpga_r2.xdc:144]
+INFO: [Constraints 18-632] set_input_delay: No clock object specified, the clocks will be automatically identified [C:/Taxi/temp_back_of_v3/Taxi_QPSK_v3/Taxi_QPSK_v3/Taxi_QPSK_v3.srcs/constrs_1/imports/fpga/fpga_r2.xdc:146]
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -2, Temperature grade: E, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+WARNING: [Timing 38-436] There are set_bus_skew constraint(s) in this design. Please run report_bus_skew to ensure that bus skew requirements are met.
+report_timing_summary: Time (s): cpu = 00:00:26 ; elapsed = 00:00:16 . Memory (MB): peak = 6869.309 ; gain = 0.000
+INFO: [Vivado 12-24838] Running report commands "report_incremental_reuse, report_route_status" in parallel.
+Running report generation with 2 threads.
+INFO: [Vivado 12-24828] Executing command : report_incremental_reuse -file fpga_incremental_reuse_routed.rpt
+INFO: [Vivado_Tcl 4-1062] Incremental flow is disabled. No incremental reuse Info to report.
+INFO: [Vivado 12-24828] Executing command : report_route_status -file fpga_route_status.rpt -pb fpga_route_status.pb
+INFO: [Vivado 12-24828] Executing command : report_power -file fpga_power_routed.rpt -pb fpga_power_summary_routed.pb -rpx fpga_power_routed.rpx
+Command: report_power -file fpga_power_routed.rpt -pb fpga_power_summary_routed.pb -rpx fpga_power_routed.rpx
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+WARNING: [Power 33-332] Found switching activity that implies high-fanout reset nets being asserted for excessive periods of time which may result in inaccurate power analysis.
+Resolution: To review and fix problems, please run Power Constraints Advisor in the GUI from Tools > Power Constraints Advisor or run report_power with the -advisory option to generate a text report.
+327 Infos, 119 Warnings, 3 Critical Warnings and 0 Errors encountered.
+report_power completed successfully
+report_power: Time (s): cpu = 00:00:31 ; elapsed = 00:00:22 . Memory (MB): peak = 6888.199 ; gain = 18.891
+INFO: [Vivado 12-24828] Executing command : report_clock_utilization -file fpga_clock_utilization_routed.rpt
+report_clock_utilization: Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 6888.199 ; gain = 0.000
+INFO: [Vivado 12-24828] Executing command : report_bus_skew -warn_on_violation -file fpga_bus_skew_routed.rpt -pb fpga_bus_skew_routed.pb -rpx fpga_bus_skew_routed.rpx
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -2, Temperature grade: E, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+generate_parallel_reports: Time (s): cpu = 00:02:26 ; elapsed = 00:01:31 . Memory (MB): peak = 6888.199 ; gain = 18.891
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Write ShapeDB Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.230 . Memory (MB): peak = 6894.297 ; gain = 6.098
+Wrote PlaceDB: Time (s): cpu = 00:00:12 ; elapsed = 00:00:05 . Memory (MB): peak = 6898.125 ; gain = 9.926
+Wrote PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 6898.125 ; gain = 0.000
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Wrote RouteStorage: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.829 . Memory (MB): peak = 6898.125 ; gain = 0.000
+Wrote Netlist Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.150 . Memory (MB): peak = 6898.125 ; gain = 0.000
+Wrote Device Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.020 . Memory (MB): peak = 6898.125 ; gain = 0.000
+Write Physdb Complete: Time (s): cpu = 00:00:13 ; elapsed = 00:00:06 . Memory (MB): peak = 6898.125 ; gain = 9.926
+INFO: [Common 17-1381] The checkpoint 'C:/Taxi/temp_back_of_v3/Taxi_QPSK_v3/Taxi_QPSK_v3/Taxi_QPSK_v3.runs/impl_1/fpga_routed.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:20 ; elapsed = 00:00:14 . Memory (MB): peak = 6898.125 ; gain = 9.926
+Command: write_bitstream -force fpga.bit
+Attempting to get a license for feature 'Implementation' and/or device 'xczu48dr'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xczu48dr'
+Running DRC as a precondition to command write_bitstream
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado 12-3199] DRC finished with 0 Errors
+INFO: [Vivado 12-3200] Please refer to the DRC report (report_drc) for more information.
+INFO: [Designutils 20-2272] Running write_bitstream with 2 threads.
+Loading data files...
+Loading site data...
+Loading route data...
+Processing options...
+Creating bitmap...
+Creating bitstream...
+Bitstream compression saved 131066048 bits.
+Writing bitstream ./fpga.bit...
+INFO: [Vivado 12-1842] Bitgen Completed Successfully.
+INFO: [Common 17-83] Releasing license: Implementation
+341 Infos, 119 Warnings, 3 Critical Warnings and 0 Errors encountered.
+write_bitstream completed successfully
+write_bitstream: Time (s): cpu = 00:01:33 ; elapsed = 00:01:13 . Memory (MB): peak = 7419.430 ; gain = 521.305
+INFO: [Common 17-206] Exiting Vivado at Thu Sep 18 13:28:20 2025...

@@ -1,0 +1,29 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
+| Date         : Thu Sep 18 12:58:30 2025
+| Host         : ENG_8JCHGB4 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xczu48dr-ffvg1517-2-e
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'qpsk_for_htg_QPSK_0_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of qpsk_for_htg_QPSK_0_0 (fau.edu:ip:QPSK:1.0) from (Rev. 2114232591) to (Rev. 2114264368)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'qpsk_for_htg_QPSK_0_0'. These changes may impact your design.
+
+
+-Upgrade has removed port 'Tile0_ADC_Ch0_TValid'
+
+-Upgrade has added port 'Tile0_ADC_Ch0_IQ_Valid'
+
+

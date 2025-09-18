@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2024.2 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:34:34 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Thu Sep 11 05:06:19 2025
+# Process ID         : 172518
+# Current directory  : /home/sarial/intellifpga/taxi/src/eth/example/HTG_ZRF8/fpga/fpga_R2_ZU48DR/fpga.runs/taxi_eth_phy_25g_us_gty_ll_ch_synth_1
+# Command line       : vivado -log taxi_eth_phy_25g_us_gty_ll_ch.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source taxi_eth_phy_25g_us_gty_ll_ch.tcl
+# Log file           : /home/sarial/intellifpga/taxi/src/eth/example/HTG_ZRF8/fpga/fpga_R2_ZU48DR/fpga.runs/taxi_eth_phy_25g_us_gty_ll_ch_synth_1/taxi_eth_phy_25g_us_gty_ll_ch.vds
+# Journal file       : /home/sarial/intellifpga/taxi/src/eth/example/HTG_ZRF8/fpga/fpga_R2_ZU48DR/fpga.runs/taxi_eth_phy_25g_us_gty_ll_ch_synth_1/vivado.jou
+# Running On         : sarial
+# Platform           : Ubuntu
+# Operating System   : Ubuntu 22.04.5 LTS
+# Processor Detail   : 12th Gen Intel(R) Core(TM) i7-12700H
+# CPU Frequency      : 2948.477 MHz
+# CPU Physical cores : 14
+# CPU Logical cores  : 20
+# Host memory        : 16564 MB
+# Swap memory        : 56008 MB
+# Total Virtual      : 72573 MB
+# Available Virtual  : 61406 MB
+#-----------------------------------------------------------
+source taxi_eth_phy_25g_us_gty_ll_ch.tcl -notrace

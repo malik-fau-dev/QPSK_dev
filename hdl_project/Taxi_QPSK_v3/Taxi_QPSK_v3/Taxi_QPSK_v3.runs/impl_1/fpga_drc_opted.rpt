@@ -1,0 +1,323 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
+| Date         : Thu Sep 18 13:12:25 2025
+| Host         : ENG_8JCHGB4 running 64-bit major release  (build 9200)
+| Command      : report_drc -file fpga_drc_opted.rpt -pb fpga_drc_opted.pb -rpx fpga_drc_opted.rpx
+| Design       : fpga
+| Device       : xczu48dr-ffvg1517-2-e
+| Speed File   : -2
+| Design State : Synthesized
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Report DRC
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+           Ruledeck: default
+             Max checks: <unlimited>
+             Checks found: 57
++--------+----------+------------------------+--------+
+| Rule   | Severity | Description            | Checks |
++--------+----------+------------------------+--------+
+| DPIP-2 | Warning  | Input pipelining       | 2      |
+| DPOP-3 | Warning  | PREG Output pipelining | 22     |
+| DPOP-4 | Warning  | MREG Output pipelining | 33     |
++--------+----------+------------------------+--------+
+
+2. REPORT DETAILS
+-----------------
+DPIP-2#1 Warning
+Input pipelining  
+DSP qpsk_for_htg_i/QPSK_0/U0/u_QPSK_dut_inst/u_QPSK_src_QPSK/u_QPSK_Rx/u_Frequency_and_Time_Synchronizer/u_Carrier_Synchronizer/Delay6_reg_im_reg[0] input qpsk_for_htg_i/QPSK_0/U0/u_QPSK_dut_inst/u_QPSK_src_QPSK/u_QPSK_Rx/u_Frequency_and_Time_Synchronizer/u_Carrier_Synchronizer/Delay6_reg_im_reg[0]/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-2#2 Warning
+Input pipelining  
+DSP qpsk_for_htg_i/QPSK_0/U0/u_QPSK_dut_inst/u_QPSK_src_QPSK/u_QPSK_Rx/u_Frequency_and_Time_Synchronizer/u_Carrier_Synchronizer/Delay6_reg_re_reg[0] input qpsk_for_htg_i/QPSK_0/U0/u_QPSK_dut_inst/u_QPSK_src_QPSK/u_QPSK_Rx/u_Frequency_and_Time_Synchronizer/u_Carrier_Synchronizer/Delay6_reg_re_reg[0]/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPOP-3#1 Warning
+PREG Output pipelining  
+DSP qpsk_for_htg_i/QPSK_0/U0/u_QPSK_dut_inst/u_QPSK_src_QPSK/u_QPSK_Rx/u_Frequency_and_Time_Synchronizer/u_Carrier_Synchronizer/Product_mul_temp output qpsk_for_htg_i/QPSK_0/U0/u_QPSK_dut_inst/u_QPSK_src_QPSK/u_QPSK_Rx/u_Frequency_and_Time_Synchronizer/u_Carrier_Synchronizer/Product_mul_temp/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-3#2 Warning
+PREG Output pipelining  
+DSP qpsk_for_htg_i/QPSK_0/U0/u_QPSK_dut_inst/u_QPSK_src_QPSK/u_QPSK_Rx/u_Frequency_and_Time_Synchronizer/u_Carrier_Synchronizer/Product_mul_temp_2 output qpsk_for_htg_i/QPSK_0/U0/u_QPSK_dut_inst/u_QPSK_src_QPSK/u_QPSK_Rx/u_Frequency_and_Time_Synchronizer/u_Carrier_Synchronizer/Product_mul_temp_2/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-3#3 Warning
+PREG Output pipelining  
+DSP qpsk_for_htg_i/QPSK_0/U0/u_QPSK_dut_inst/u_QPSK_src_QPSK/u_QPSK_Rx/u_Frequency_and_Time_Synchronizer/u_Coarse_Frequency_Compensator/Product1_mul_temp output qpsk_for_htg_i/QPSK_0/U0/u_QPSK_dut_inst/u_QPSK_src_QPSK/u_QPSK_Rx/u_Frequency_and_Time_Synchronizer/u_Coarse_Frequency_Compensator/Product1_mul_temp/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-3#4 Warning
+PREG Output pipelining  
+DSP qpsk_for_htg_i/QPSK_0/U0/u_QPSK_dut_inst/u_QPSK_src_QPSK/u_QPSK_Rx/u_Frequency_and_Time_Synchronizer/u_Coarse_Frequency_Compensator/Product1_mul_temp_1 output qpsk_for_htg_i/QPSK_0/U0/u_QPSK_dut_inst/u_QPSK_src_QPSK/u_QPSK_Rx/u_Frequency_and_Time_Synchronizer/u_Coarse_Frequency_Compensator/Product1_mul_temp_1/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-3#5 Warning
+PREG Output pipelining  
+DSP qpsk_for_htg_i/QPSK_0/U0/u_QPSK_dut_inst/u_QPSK_src_QPSK/u_QPSK_Rx/u_Frequency_and_Time_Synchronizer/u_Coarse_Frequency_Compensator/Product1_mul_temp_2 output qpsk_for_htg_i/QPSK_0/U0/u_QPSK_dut_inst/u_QPSK_src_QPSK/u_QPSK_Rx/u_Frequency_and_Time_Synchronizer/u_Coarse_Frequency_Compensator/Product1_mul_temp_2/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-3#6 Warning
+PREG Output pipelining  
+DSP qpsk_for_htg_i/QPSK_0/U0/u_QPSK_dut_inst/u_QPSK_src_QPSK/u_QPSK_Rx/u_Frequency_and_Time_Synchronizer/u_Coarse_Frequency_Compensator/Product1_mul_temp_3 output qpsk_for_htg_i/QPSK_0/U0/u_QPSK_dut_inst/u_QPSK_src_QPSK/u_QPSK_Rx/u_Frequency_and_Time_Synchronizer/u_Coarse_Frequency_Compensator/Product1_mul_temp_3/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-3#7 Warning
+PREG Output pipelining  
+DSP qpsk_for_htg_i/QPSK_0/U0/u_QPSK_dut_inst/u_QPSK_src_QPSK/u_QPSK_Rx/u_Frequency_and_Time_Synchronizer/u_Coarse_Frequency_Compensator/u_Raise_Power_to_4/Product1_mul_temp output qpsk_for_htg_i/QPSK_0/U0/u_QPSK_dut_inst/u_QPSK_src_QPSK/u_QPSK_Rx/u_Frequency_and_Time_Synchronizer/u_Coarse_Frequency_Compensator/u_Raise_Power_to_4/Product1_mul_temp/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-3#8 Warning
+PREG Output pipelining  
+DSP qpsk_for_htg_i/QPSK_0/U0/u_QPSK_dut_inst/u_QPSK_src_QPSK/u_QPSK_Rx/u_Frequency_and_Time_Synchronizer/u_Coarse_Frequency_Compensator/u_Raise_Power_to_4/Product1_mul_temp_1 output qpsk_for_htg_i/QPSK_0/U0/u_QPSK_dut_inst/u_QPSK_src_QPSK/u_QPSK_Rx/u_Frequency_and_Time_Synchronizer/u_Coarse_Frequency_Compensator/u_Raise_Power_to_4/Product1_mul_temp_1/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-3#9 Warning
+PREG Output pipelining  
+DSP qpsk_for_htg_i/QPSK_0/U0/u_QPSK_dut_inst/u_QPSK_src_QPSK/u_QPSK_Rx/u_Frequency_and_Time_Synchronizer/u_Coarse_Frequency_Compensator/u_Raise_Power_to_4/Product1_mul_temp_2 output qpsk_for_htg_i/QPSK_0/U0/u_QPSK_dut_inst/u_QPSK_src_QPSK/u_QPSK_Rx/u_Frequency_and_Time_Synchronizer/u_Coarse_Frequency_Compensator/u_Raise_Power_to_4/Product1_mul_temp_2/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-3#10 Warning
+PREG Output pipelining  
+DSP qpsk_for_htg_i/QPSK_0/U0/u_QPSK_dut_inst/u_QPSK_src_QPSK/u_QPSK_Rx/u_Frequency_and_Time_Synchronizer/u_Coarse_Frequency_Compensator/u_Raise_Power_to_4/Product1_mul_temp_3 output qpsk_for_htg_i/QPSK_0/U0/u_QPSK_dut_inst/u_QPSK_src_QPSK/u_QPSK_Rx/u_Frequency_and_Time_Synchronizer/u_Coarse_Frequency_Compensator/u_Raise_Power_to_4/Product1_mul_temp_3/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-3#11 Warning
+PREG Output pipelining  
+DSP qpsk_for_htg_i/QPSK_0/U0/u_QPSK_dut_inst/u_QPSK_src_QPSK/u_QPSK_Rx/u_Frequency_and_Time_Synchronizer/u_Coarse_Frequency_Compensator/u_Raise_Power_to_4/Product2_mul_temp output qpsk_for_htg_i/QPSK_0/U0/u_QPSK_dut_inst/u_QPSK_src_QPSK/u_QPSK_Rx/u_Frequency_and_Time_Synchronizer/u_Coarse_Frequency_Compensator/u_Raise_Power_to_4/Product2_mul_temp/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-3#12 Warning
+PREG Output pipelining  
+DSP qpsk_for_htg_i/QPSK_0/U0/u_QPSK_dut_inst/u_QPSK_src_QPSK/u_QPSK_Rx/u_Frequency_and_Time_Synchronizer/u_Coarse_Frequency_Compensator/u_Raise_Power_to_4/Product2_mul_temp_1 output qpsk_for_htg_i/QPSK_0/U0/u_QPSK_dut_inst/u_QPSK_src_QPSK/u_QPSK_Rx/u_Frequency_and_Time_Synchronizer/u_Coarse_Frequency_Compensator/u_Raise_Power_to_4/Product2_mul_temp_1/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-3#13 Warning
+PREG Output pipelining  
+DSP qpsk_for_htg_i/QPSK_0/U0/u_QPSK_dut_inst/u_QPSK_src_QPSK/u_QPSK_Rx/u_Frequency_and_Time_Synchronizer/u_Coarse_Frequency_Compensator/u_Raise_Power_to_4/Product2_mul_temp_2 output qpsk_for_htg_i/QPSK_0/U0/u_QPSK_dut_inst/u_QPSK_src_QPSK/u_QPSK_Rx/u_Frequency_and_Time_Synchronizer/u_Coarse_Frequency_Compensator/u_Raise_Power_to_4/Product2_mul_temp_2/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-3#14 Warning
+PREG Output pipelining  
+DSP qpsk_for_htg_i/QPSK_0/U0/u_QPSK_dut_inst/u_QPSK_src_QPSK/u_QPSK_Rx/u_Frequency_and_Time_Synchronizer/u_Coarse_Frequency_Compensator/u_Raise_Power_to_4/Product2_mul_temp_3 output qpsk_for_htg_i/QPSK_0/U0/u_QPSK_dut_inst/u_QPSK_src_QPSK/u_QPSK_Rx/u_Frequency_and_Time_Synchronizer/u_Coarse_Frequency_Compensator/u_Raise_Power_to_4/Product2_mul_temp_3/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-3#15 Warning
+PREG Output pipelining  
+DSP qpsk_for_htg_i/QPSK_0/U0/u_QPSK_dut_inst/u_QPSK_src_QPSK/u_QPSK_Rx/u_Frequency_and_Time_Synchronizer/u_Phase_Ambiguity_Estimation_and_Correction/u_Phase_Ambiguity_Corrector/Product2_mul_temp output qpsk_for_htg_i/QPSK_0/U0/u_QPSK_dut_inst/u_QPSK_src_QPSK/u_QPSK_Rx/u_Frequency_and_Time_Synchronizer/u_Phase_Ambiguity_Estimation_and_Correction/u_Phase_Ambiguity_Corrector/Product2_mul_temp/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-3#16 Warning
+PREG Output pipelining  
+DSP qpsk_for_htg_i/QPSK_0/U0/u_QPSK_dut_inst/u_QPSK_src_QPSK/u_QPSK_Rx/u_Frequency_and_Time_Synchronizer/u_Phase_Ambiguity_Estimation_and_Correction/u_Phase_Ambiguity_Corrector/Product2_mul_temp_1 output qpsk_for_htg_i/QPSK_0/U0/u_QPSK_dut_inst/u_QPSK_src_QPSK/u_QPSK_Rx/u_Frequency_and_Time_Synchronizer/u_Phase_Ambiguity_Estimation_and_Correction/u_Phase_Ambiguity_Corrector/Product2_mul_temp_1/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-3#17 Warning
+PREG Output pipelining  
+DSP qpsk_for_htg_i/QPSK_0/U0/u_QPSK_dut_inst/u_QPSK_src_QPSK/u_QPSK_Rx/u_Frequency_and_Time_Synchronizer/u_Phase_Ambiguity_Estimation_and_Correction/u_Phase_Ambiguity_Corrector/Product2_mul_temp_2 output qpsk_for_htg_i/QPSK_0/U0/u_QPSK_dut_inst/u_QPSK_src_QPSK/u_QPSK_Rx/u_Frequency_and_Time_Synchronizer/u_Phase_Ambiguity_Estimation_and_Correction/u_Phase_Ambiguity_Corrector/Product2_mul_temp_2/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-3#18 Warning
+PREG Output pipelining  
+DSP qpsk_for_htg_i/QPSK_0/U0/u_QPSK_dut_inst/u_QPSK_src_QPSK/u_QPSK_Rx/u_Frequency_and_Time_Synchronizer/u_Phase_Ambiguity_Estimation_and_Correction/u_Phase_Ambiguity_Corrector/Product2_mul_temp_3 output qpsk_for_htg_i/QPSK_0/U0/u_QPSK_dut_inst/u_QPSK_src_QPSK/u_QPSK_Rx/u_Frequency_and_Time_Synchronizer/u_Phase_Ambiguity_Estimation_and_Correction/u_Phase_Ambiguity_Corrector/Product2_mul_temp_3/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-3#19 Warning
+PREG Output pipelining  
+DSP qpsk_for_htg_i/QPSK_0/U0/u_QPSK_dut_inst/u_QPSK_src_QPSK/u_QPSK_Rx/u_Frequency_and_Time_Synchronizer/u_Symbol_Synchronizer/u_Interpolation_Filter/Product1_mul_temp output qpsk_for_htg_i/QPSK_0/U0/u_QPSK_dut_inst/u_QPSK_src_QPSK/u_QPSK_Rx/u_Frequency_and_Time_Synchronizer/u_Symbol_Synchronizer/u_Interpolation_Filter/Product1_mul_temp/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-3#20 Warning
+PREG Output pipelining  
+DSP qpsk_for_htg_i/QPSK_0/U0/u_QPSK_dut_inst/u_QPSK_src_QPSK/u_QPSK_Rx/u_Frequency_and_Time_Synchronizer/u_Symbol_Synchronizer/u_Interpolation_Filter/Product1_mul_temp_1 output qpsk_for_htg_i/QPSK_0/U0/u_QPSK_dut_inst/u_QPSK_src_QPSK/u_QPSK_Rx/u_Frequency_and_Time_Synchronizer/u_Symbol_Synchronizer/u_Interpolation_Filter/Product1_mul_temp_1/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-3#21 Warning
+PREG Output pipelining  
+DSP qpsk_for_htg_i/QPSK_0/U0/u_QPSK_dut_inst/u_QPSK_src_QPSK/u_QPSK_Rx/u_Frequency_and_Time_Synchronizer/u_Symbol_Synchronizer/u_Interpolation_Filter/Product2_mul_temp output qpsk_for_htg_i/QPSK_0/U0/u_QPSK_dut_inst/u_QPSK_src_QPSK/u_QPSK_Rx/u_Frequency_and_Time_Synchronizer/u_Symbol_Synchronizer/u_Interpolation_Filter/Product2_mul_temp/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-3#22 Warning
+PREG Output pipelining  
+DSP qpsk_for_htg_i/QPSK_0/U0/u_QPSK_dut_inst/u_QPSK_src_QPSK/u_QPSK_Rx/u_Frequency_and_Time_Synchronizer/u_Symbol_Synchronizer/u_Interpolation_Filter/Product2_mul_temp_1 output qpsk_for_htg_i/QPSK_0/U0/u_QPSK_dut_inst/u_QPSK_src_QPSK/u_QPSK_Rx/u_Frequency_and_Time_Synchronizer/u_Symbol_Synchronizer/u_Interpolation_Filter/Product2_mul_temp_1/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-4#1 Warning
+MREG Output pipelining  
+DSP qpsk_for_htg_i/QPSK_0/U0/u_QPSK_dut_inst/u_QPSK_src_QPSK/u_QPSK_Rx/u_Frequency_and_Time_Synchronizer/u_Carrier_Synchronizer/Delay6_reg_im_reg[0] multiplier stage qpsk_for_htg_i/QPSK_0/U0/u_QPSK_dut_inst/u_QPSK_src_QPSK/u_QPSK_Rx/u_Frequency_and_Time_Synchronizer/u_Carrier_Synchronizer/Delay6_reg_im_reg[0]/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-4#2 Warning
+MREG Output pipelining  
+DSP qpsk_for_htg_i/QPSK_0/U0/u_QPSK_dut_inst/u_QPSK_src_QPSK/u_QPSK_Rx/u_Frequency_and_Time_Synchronizer/u_Carrier_Synchronizer/Delay6_reg_re_reg[0] multiplier stage qpsk_for_htg_i/QPSK_0/U0/u_QPSK_dut_inst/u_QPSK_src_QPSK/u_QPSK_Rx/u_Frequency_and_Time_Synchronizer/u_Carrier_Synchronizer/Delay6_reg_re_reg[0]/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-4#3 Warning
+MREG Output pipelining  
+DSP qpsk_for_htg_i/QPSK_0/U0/u_QPSK_dut_inst/u_QPSK_src_QPSK/u_QPSK_Rx/u_Frequency_and_Time_Synchronizer/u_Carrier_Synchronizer/Product_mul_temp multiplier stage qpsk_for_htg_i/QPSK_0/U0/u_QPSK_dut_inst/u_QPSK_src_QPSK/u_QPSK_Rx/u_Frequency_and_Time_Synchronizer/u_Carrier_Synchronizer/Product_mul_temp/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-4#4 Warning
+MREG Output pipelining  
+DSP qpsk_for_htg_i/QPSK_0/U0/u_QPSK_dut_inst/u_QPSK_src_QPSK/u_QPSK_Rx/u_Frequency_and_Time_Synchronizer/u_Carrier_Synchronizer/Product_mul_temp_2 multiplier stage qpsk_for_htg_i/QPSK_0/U0/u_QPSK_dut_inst/u_QPSK_src_QPSK/u_QPSK_Rx/u_Frequency_and_Time_Synchronizer/u_Carrier_Synchronizer/Product_mul_temp_2/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-4#5 Warning
+MREG Output pipelining  
+DSP qpsk_for_htg_i/QPSK_0/U0/u_QPSK_dut_inst/u_QPSK_src_QPSK/u_QPSK_Rx/u_Frequency_and_Time_Synchronizer/u_Coarse_Frequency_Compensator/Product1_mul_temp multiplier stage qpsk_for_htg_i/QPSK_0/U0/u_QPSK_dut_inst/u_QPSK_src_QPSK/u_QPSK_Rx/u_Frequency_and_Time_Synchronizer/u_Coarse_Frequency_Compensator/Product1_mul_temp/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-4#6 Warning
+MREG Output pipelining  
+DSP qpsk_for_htg_i/QPSK_0/U0/u_QPSK_dut_inst/u_QPSK_src_QPSK/u_QPSK_Rx/u_Frequency_and_Time_Synchronizer/u_Coarse_Frequency_Compensator/Product1_mul_temp_1 multiplier stage qpsk_for_htg_i/QPSK_0/U0/u_QPSK_dut_inst/u_QPSK_src_QPSK/u_QPSK_Rx/u_Frequency_and_Time_Synchronizer/u_Coarse_Frequency_Compensator/Product1_mul_temp_1/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-4#7 Warning
+MREG Output pipelining  
+DSP qpsk_for_htg_i/QPSK_0/U0/u_QPSK_dut_inst/u_QPSK_src_QPSK/u_QPSK_Rx/u_Frequency_and_Time_Synchronizer/u_Coarse_Frequency_Compensator/Product1_mul_temp_2 multiplier stage qpsk_for_htg_i/QPSK_0/U0/u_QPSK_dut_inst/u_QPSK_src_QPSK/u_QPSK_Rx/u_Frequency_and_Time_Synchronizer/u_Coarse_Frequency_Compensator/Product1_mul_temp_2/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-4#8 Warning
+MREG Output pipelining  
+DSP qpsk_for_htg_i/QPSK_0/U0/u_QPSK_dut_inst/u_QPSK_src_QPSK/u_QPSK_Rx/u_Frequency_and_Time_Synchronizer/u_Coarse_Frequency_Compensator/Product1_mul_temp_3 multiplier stage qpsk_for_htg_i/QPSK_0/U0/u_QPSK_dut_inst/u_QPSK_src_QPSK/u_QPSK_Rx/u_Frequency_and_Time_Synchronizer/u_Coarse_Frequency_Compensator/Product1_mul_temp_3/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-4#9 Warning
+MREG Output pipelining  
+DSP qpsk_for_htg_i/QPSK_0/U0/u_QPSK_dut_inst/u_QPSK_src_QPSK/u_QPSK_Rx/u_Frequency_and_Time_Synchronizer/u_Coarse_Frequency_Compensator/u_Coarse_Frequency_Estimator/Delay5_reg_im_reg[0] multiplier stage qpsk_for_htg_i/QPSK_0/U0/u_QPSK_dut_inst/u_QPSK_src_QPSK/u_QPSK_Rx/u_Frequency_and_Time_Synchronizer/u_Coarse_Frequency_Compensator/u_Coarse_Frequency_Estimator/Delay5_reg_im_reg[0]/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-4#10 Warning
+MREG Output pipelining  
+DSP qpsk_for_htg_i/QPSK_0/U0/u_QPSK_dut_inst/u_QPSK_src_QPSK/u_QPSK_Rx/u_Frequency_and_Time_Synchronizer/u_Coarse_Frequency_Compensator/u_Coarse_Frequency_Estimator/Delay5_reg_re_reg[0] multiplier stage qpsk_for_htg_i/QPSK_0/U0/u_QPSK_dut_inst/u_QPSK_src_QPSK/u_QPSK_Rx/u_Frequency_and_Time_Synchronizer/u_Coarse_Frequency_Compensator/u_Coarse_Frequency_Estimator/Delay5_reg_re_reg[0]/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-4#11 Warning
+MREG Output pipelining  
+DSP qpsk_for_htg_i/QPSK_0/U0/u_QPSK_dut_inst/u_QPSK_src_QPSK/u_QPSK_Rx/u_Frequency_and_Time_Synchronizer/u_Coarse_Frequency_Compensator/u_Raise_Power_to_4/Product1_mul_temp multiplier stage qpsk_for_htg_i/QPSK_0/U0/u_QPSK_dut_inst/u_QPSK_src_QPSK/u_QPSK_Rx/u_Frequency_and_Time_Synchronizer/u_Coarse_Frequency_Compensator/u_Raise_Power_to_4/Product1_mul_temp/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-4#12 Warning
+MREG Output pipelining  
+DSP qpsk_for_htg_i/QPSK_0/U0/u_QPSK_dut_inst/u_QPSK_src_QPSK/u_QPSK_Rx/u_Frequency_and_Time_Synchronizer/u_Coarse_Frequency_Compensator/u_Raise_Power_to_4/Product1_mul_temp_1 multiplier stage qpsk_for_htg_i/QPSK_0/U0/u_QPSK_dut_inst/u_QPSK_src_QPSK/u_QPSK_Rx/u_Frequency_and_Time_Synchronizer/u_Coarse_Frequency_Compensator/u_Raise_Power_to_4/Product1_mul_temp_1/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-4#13 Warning
+MREG Output pipelining  
+DSP qpsk_for_htg_i/QPSK_0/U0/u_QPSK_dut_inst/u_QPSK_src_QPSK/u_QPSK_Rx/u_Frequency_and_Time_Synchronizer/u_Coarse_Frequency_Compensator/u_Raise_Power_to_4/Product1_mul_temp_2 multiplier stage qpsk_for_htg_i/QPSK_0/U0/u_QPSK_dut_inst/u_QPSK_src_QPSK/u_QPSK_Rx/u_Frequency_and_Time_Synchronizer/u_Coarse_Frequency_Compensator/u_Raise_Power_to_4/Product1_mul_temp_2/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-4#14 Warning
+MREG Output pipelining  
+DSP qpsk_for_htg_i/QPSK_0/U0/u_QPSK_dut_inst/u_QPSK_src_QPSK/u_QPSK_Rx/u_Frequency_and_Time_Synchronizer/u_Coarse_Frequency_Compensator/u_Raise_Power_to_4/Product1_mul_temp_3 multiplier stage qpsk_for_htg_i/QPSK_0/U0/u_QPSK_dut_inst/u_QPSK_src_QPSK/u_QPSK_Rx/u_Frequency_and_Time_Synchronizer/u_Coarse_Frequency_Compensator/u_Raise_Power_to_4/Product1_mul_temp_3/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-4#15 Warning
+MREG Output pipelining  
+DSP qpsk_for_htg_i/QPSK_0/U0/u_QPSK_dut_inst/u_QPSK_src_QPSK/u_QPSK_Rx/u_Frequency_and_Time_Synchronizer/u_Coarse_Frequency_Compensator/u_Raise_Power_to_4/Product2_mul_temp multiplier stage qpsk_for_htg_i/QPSK_0/U0/u_QPSK_dut_inst/u_QPSK_src_QPSK/u_QPSK_Rx/u_Frequency_and_Time_Synchronizer/u_Coarse_Frequency_Compensator/u_Raise_Power_to_4/Product2_mul_temp/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-4#16 Warning
+MREG Output pipelining  
+DSP qpsk_for_htg_i/QPSK_0/U0/u_QPSK_dut_inst/u_QPSK_src_QPSK/u_QPSK_Rx/u_Frequency_and_Time_Synchronizer/u_Coarse_Frequency_Compensator/u_Raise_Power_to_4/Product2_mul_temp_1 multiplier stage qpsk_for_htg_i/QPSK_0/U0/u_QPSK_dut_inst/u_QPSK_src_QPSK/u_QPSK_Rx/u_Frequency_and_Time_Synchronizer/u_Coarse_Frequency_Compensator/u_Raise_Power_to_4/Product2_mul_temp_1/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-4#17 Warning
+MREG Output pipelining  
+DSP qpsk_for_htg_i/QPSK_0/U0/u_QPSK_dut_inst/u_QPSK_src_QPSK/u_QPSK_Rx/u_Frequency_and_Time_Synchronizer/u_Coarse_Frequency_Compensator/u_Raise_Power_to_4/Product2_mul_temp_2 multiplier stage qpsk_for_htg_i/QPSK_0/U0/u_QPSK_dut_inst/u_QPSK_src_QPSK/u_QPSK_Rx/u_Frequency_and_Time_Synchronizer/u_Coarse_Frequency_Compensator/u_Raise_Power_to_4/Product2_mul_temp_2/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-4#18 Warning
+MREG Output pipelining  
+DSP qpsk_for_htg_i/QPSK_0/U0/u_QPSK_dut_inst/u_QPSK_src_QPSK/u_QPSK_Rx/u_Frequency_and_Time_Synchronizer/u_Coarse_Frequency_Compensator/u_Raise_Power_to_4/Product2_mul_temp_3 multiplier stage qpsk_for_htg_i/QPSK_0/U0/u_QPSK_dut_inst/u_QPSK_src_QPSK/u_QPSK_Rx/u_Frequency_and_Time_Synchronizer/u_Coarse_Frequency_Compensator/u_Raise_Power_to_4/Product2_mul_temp_3/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-4#19 Warning
+MREG Output pipelining  
+DSP qpsk_for_htg_i/QPSK_0/U0/u_QPSK_dut_inst/u_QPSK_src_QPSK/u_QPSK_Rx/u_Frequency_and_Time_Synchronizer/u_Phase_Ambiguity_Estimation_and_Correction/u_Phase_Ambiguity_Corrector/Product2_mul_temp multiplier stage qpsk_for_htg_i/QPSK_0/U0/u_QPSK_dut_inst/u_QPSK_src_QPSK/u_QPSK_Rx/u_Frequency_and_Time_Synchronizer/u_Phase_Ambiguity_Estimation_and_Correction/u_Phase_Ambiguity_Corrector/Product2_mul_temp/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-4#20 Warning
+MREG Output pipelining  
+DSP qpsk_for_htg_i/QPSK_0/U0/u_QPSK_dut_inst/u_QPSK_src_QPSK/u_QPSK_Rx/u_Frequency_and_Time_Synchronizer/u_Phase_Ambiguity_Estimation_and_Correction/u_Phase_Ambiguity_Corrector/Product2_mul_temp_1 multiplier stage qpsk_for_htg_i/QPSK_0/U0/u_QPSK_dut_inst/u_QPSK_src_QPSK/u_QPSK_Rx/u_Frequency_and_Time_Synchronizer/u_Phase_Ambiguity_Estimation_and_Correction/u_Phase_Ambiguity_Corrector/Product2_mul_temp_1/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-4#21 Warning
+MREG Output pipelining  
+DSP qpsk_for_htg_i/QPSK_0/U0/u_QPSK_dut_inst/u_QPSK_src_QPSK/u_QPSK_Rx/u_Frequency_and_Time_Synchronizer/u_Phase_Ambiguity_Estimation_and_Correction/u_Phase_Ambiguity_Corrector/Product2_mul_temp_2 multiplier stage qpsk_for_htg_i/QPSK_0/U0/u_QPSK_dut_inst/u_QPSK_src_QPSK/u_QPSK_Rx/u_Frequency_and_Time_Synchronizer/u_Phase_Ambiguity_Estimation_and_Correction/u_Phase_Ambiguity_Corrector/Product2_mul_temp_2/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-4#22 Warning
+MREG Output pipelining  
+DSP qpsk_for_htg_i/QPSK_0/U0/u_QPSK_dut_inst/u_QPSK_src_QPSK/u_QPSK_Rx/u_Frequency_and_Time_Synchronizer/u_Phase_Ambiguity_Estimation_and_Correction/u_Phase_Ambiguity_Corrector/Product2_mul_temp_3 multiplier stage qpsk_for_htg_i/QPSK_0/U0/u_QPSK_dut_inst/u_QPSK_src_QPSK/u_QPSK_Rx/u_Frequency_and_Time_Synchronizer/u_Phase_Ambiguity_Estimation_and_Correction/u_Phase_Ambiguity_Corrector/Product2_mul_temp_3/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-4#23 Warning
+MREG Output pipelining  
+DSP qpsk_for_htg_i/QPSK_0/U0/u_QPSK_dut_inst/u_QPSK_src_QPSK/u_QPSK_Rx/u_Frequency_and_Time_Synchronizer/u_Phase_Ambiguity_Estimation_and_Correction/u_Phase_Ambiguity_Estimator/Delay9_reg_im_reg[0] multiplier stage qpsk_for_htg_i/QPSK_0/U0/u_QPSK_dut_inst/u_QPSK_src_QPSK/u_QPSK_Rx/u_Frequency_and_Time_Synchronizer/u_Phase_Ambiguity_Estimation_and_Correction/u_Phase_Ambiguity_Estimator/Delay9_reg_im_reg[0]/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-4#24 Warning
+MREG Output pipelining  
+DSP qpsk_for_htg_i/QPSK_0/U0/u_QPSK_dut_inst/u_QPSK_src_QPSK/u_QPSK_Rx/u_Frequency_and_Time_Synchronizer/u_Phase_Ambiguity_Estimation_and_Correction/u_Phase_Ambiguity_Estimator/Delay9_reg_re_reg[0] multiplier stage qpsk_for_htg_i/QPSK_0/U0/u_QPSK_dut_inst/u_QPSK_src_QPSK/u_QPSK_Rx/u_Frequency_and_Time_Synchronizer/u_Phase_Ambiguity_Estimation_and_Correction/u_Phase_Ambiguity_Estimator/Delay9_reg_re_reg[0]/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-4#25 Warning
+MREG Output pipelining  
+DSP qpsk_for_htg_i/QPSK_0/U0/u_QPSK_dut_inst/u_QPSK_src_QPSK/u_QPSK_Rx/u_Frequency_and_Time_Synchronizer/u_Preamble_Detector/u_Correlator/u_Magnitude_Squared_and_Moving_Sum/Delay2_reg_re_reg[0] multiplier stage qpsk_for_htg_i/QPSK_0/U0/u_QPSK_dut_inst/u_QPSK_src_QPSK/u_QPSK_Rx/u_Frequency_and_Time_Synchronizer/u_Preamble_Detector/u_Correlator/u_Magnitude_Squared_and_Moving_Sum/Delay2_reg_re_reg[0]/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-4#26 Warning
+MREG Output pipelining  
+DSP qpsk_for_htg_i/QPSK_0/U0/u_QPSK_dut_inst/u_QPSK_src_QPSK/u_QPSK_Rx/u_Frequency_and_Time_Synchronizer/u_Preamble_Detector/u_Correlator/u_Magnitude_Squared_and_Moving_Sum/Delay4_reg_reg[0] multiplier stage qpsk_for_htg_i/QPSK_0/U0/u_QPSK_dut_inst/u_QPSK_src_QPSK/u_QPSK_Rx/u_Frequency_and_Time_Synchronizer/u_Preamble_Detector/u_Correlator/u_Magnitude_Squared_and_Moving_Sum/Delay4_reg_reg[0]/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-4#27 Warning
+MREG Output pipelining  
+DSP qpsk_for_htg_i/QPSK_0/U0/u_QPSK_dut_inst/u_QPSK_src_QPSK/u_QPSK_Rx/u_Frequency_and_Time_Synchronizer/u_Symbol_Synchronizer/u_Gardner_TED/u_GTED/Delay10_reg_reg[0]__0 multiplier stage qpsk_for_htg_i/QPSK_0/U0/u_QPSK_dut_inst/u_QPSK_src_QPSK/u_QPSK_Rx/u_Frequency_and_Time_Synchronizer/u_Symbol_Synchronizer/u_Gardner_TED/u_GTED/Delay10_reg_reg[0]__0/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-4#28 Warning
+MREG Output pipelining  
+DSP qpsk_for_htg_i/QPSK_0/U0/u_QPSK_dut_inst/u_QPSK_src_QPSK/u_QPSK_Rx/u_Frequency_and_Time_Synchronizer/u_Symbol_Synchronizer/u_Gardner_TED/u_GTED/Delay13_reg_reg[0]__0 multiplier stage qpsk_for_htg_i/QPSK_0/U0/u_QPSK_dut_inst/u_QPSK_src_QPSK/u_QPSK_Rx/u_Frequency_and_Time_Synchronizer/u_Symbol_Synchronizer/u_Gardner_TED/u_GTED/Delay13_reg_reg[0]__0/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-4#29 Warning
+MREG Output pipelining  
+DSP qpsk_for_htg_i/QPSK_0/U0/u_QPSK_dut_inst/u_QPSK_src_QPSK/u_QPSK_Rx/u_Frequency_and_Time_Synchronizer/u_Symbol_Synchronizer/u_Interpolation_Filter/Product1_mul_temp multiplier stage qpsk_for_htg_i/QPSK_0/U0/u_QPSK_dut_inst/u_QPSK_src_QPSK/u_QPSK_Rx/u_Frequency_and_Time_Synchronizer/u_Symbol_Synchronizer/u_Interpolation_Filter/Product1_mul_temp/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-4#30 Warning
+MREG Output pipelining  
+DSP qpsk_for_htg_i/QPSK_0/U0/u_QPSK_dut_inst/u_QPSK_src_QPSK/u_QPSK_Rx/u_Frequency_and_Time_Synchronizer/u_Symbol_Synchronizer/u_Interpolation_Filter/Product1_mul_temp_1 multiplier stage qpsk_for_htg_i/QPSK_0/U0/u_QPSK_dut_inst/u_QPSK_src_QPSK/u_QPSK_Rx/u_Frequency_and_Time_Synchronizer/u_Symbol_Synchronizer/u_Interpolation_Filter/Product1_mul_temp_1/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-4#31 Warning
+MREG Output pipelining  
+DSP qpsk_for_htg_i/QPSK_0/U0/u_QPSK_dut_inst/u_QPSK_src_QPSK/u_QPSK_Rx/u_Frequency_and_Time_Synchronizer/u_Symbol_Synchronizer/u_Interpolation_Filter/Product2_mul_temp multiplier stage qpsk_for_htg_i/QPSK_0/U0/u_QPSK_dut_inst/u_QPSK_src_QPSK/u_QPSK_Rx/u_Frequency_and_Time_Synchronizer/u_Symbol_Synchronizer/u_Interpolation_Filter/Product2_mul_temp/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-4#32 Warning
+MREG Output pipelining  
+DSP qpsk_for_htg_i/QPSK_0/U0/u_QPSK_dut_inst/u_QPSK_src_QPSK/u_QPSK_Rx/u_Frequency_and_Time_Synchronizer/u_Symbol_Synchronizer/u_Interpolation_Filter/Product2_mul_temp_1 multiplier stage qpsk_for_htg_i/QPSK_0/U0/u_QPSK_dut_inst/u_QPSK_src_QPSK/u_QPSK_Rx/u_Frequency_and_Time_Synchronizer/u_Symbol_Synchronizer/u_Interpolation_Filter/Product2_mul_temp_1/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-4#33 Warning
+MREG Output pipelining  
+DSP qpsk_for_htg_i/QPSK_0/U0/u_QPSK_dut_inst/u_QPSK_src_QPSK/u_QPSK_Rx/u_Frequency_and_Time_Synchronizer/u_Symbol_Synchronizer/u_Loop_Filter/Delay3_reg_reg[0] multiplier stage qpsk_for_htg_i/QPSK_0/U0/u_QPSK_dut_inst/u_QPSK_src_QPSK/u_QPSK_Rx/u_Frequency_and_Time_Synchronizer/u_Symbol_Synchronizer/u_Loop_Filter/Delay3_reg_reg[0]/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+

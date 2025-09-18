@@ -1,0 +1,713 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="synth_1" LaunchPart="xczu48dr-ffvg1517-2-e" LaunchTime="1758215006" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/fpga.dcp">
+  <File Type="PA-TCL" Name="fpga.tcl"/>
+  <File Type="REPORTS-TCL" Name="fpga_reports.tcl"/>
+  <File Type="RDS-RDS" Name="fpga.vds"/>
+  <File Type="RDS-PROPCONSTRS" Name="fpga_drc_synth.rpt"/>
+  <File Type="RDS-UTIL" Name="fpga_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="fpga_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="fpga.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="fpga_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="fpga_timing_summary_synth.pb"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/bd/qpsk_for_htg/qpsk_for_htg.bd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/fpga/rtl/fpga_core.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../intellifpga/taxi/src/eth/example/HTG_ZRF8/fpga/rtl/fpga_core.sv"/>
+        <Attr Name="ImportTime" Val="1757549029"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/fpga/pll/pll_i2c_init_r2.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../intellifpga/taxi/src/eth/example/HTG_ZRF8/fpga/pll/pll_i2c_init_r2.sv"/>
+        <Attr Name="ImportTime" Val="1757549029"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/fpga/lib/taxi/src/xfcp/lib/taxi/src/prim/rtl/taxi_arbiter.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../intellifpga/taxi/src/eth/example/HTG_ZRF8/fpga/lib/taxi/src/xfcp/lib/taxi/src/prim/rtl/taxi_arbiter.sv"/>
+        <Attr Name="ImportTime" Val="1757549029"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/fpga/lib/taxi/src/xfcp/lib/taxi/src/axi/rtl/taxi_axil_if.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../intellifpga/taxi/src/eth/example/HTG_ZRF8/fpga/lib/taxi/src/xfcp/lib/taxi/src/axi/rtl/taxi_axil_if.sv"/>
+        <Attr Name="ImportTime" Val="1757549029"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/fpga/lib/taxi/src/eth/lib/taxi/src/axis/rtl/taxi_axis_arb_mux.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../intellifpga/taxi/src/eth/example/HTG_ZRF8/fpga/lib/taxi/src/eth/lib/taxi/src/axis/rtl/taxi_axis_arb_mux.sv"/>
+        <Attr Name="ImportTime" Val="1757549029"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/fpga/lib/taxi/src/axis/rtl/taxi_axis_async_fifo.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../intellifpga/taxi/src/eth/example/HTG_ZRF8/fpga/lib/taxi/src/axis/rtl/taxi_axis_async_fifo.sv"/>
+        <Attr Name="ImportTime" Val="1757549029"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/fpga/lib/taxi/src/eth/rtl/taxi_axis_baser_rx_32.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../intellifpga/taxi/src/eth/example/HTG_ZRF8/fpga/lib/taxi/src/eth/rtl/taxi_axis_baser_rx_32.sv"/>
+        <Attr Name="ImportTime" Val="1757549029"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/fpga/lib/taxi/src/eth/rtl/taxi_axis_baser_rx_64.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../intellifpga/taxi/src/eth/example/HTG_ZRF8/fpga/lib/taxi/src/eth/rtl/taxi_axis_baser_rx_64.sv"/>
+        <Attr Name="ImportTime" Val="1757549029"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/fpga/lib/taxi/src/eth/rtl/taxi_axis_baser_tx_32.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../intellifpga/taxi/src/eth/example/HTG_ZRF8/fpga/lib/taxi/src/eth/rtl/taxi_axis_baser_tx_32.sv"/>
+        <Attr Name="ImportTime" Val="1757549029"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/fpga/lib/taxi/src/eth/rtl/taxi_axis_baser_tx_64.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../intellifpga/taxi/src/eth/example/HTG_ZRF8/fpga/lib/taxi/src/eth/rtl/taxi_axis_baser_tx_64.sv"/>
+        <Attr Name="ImportTime" Val="1757549029"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/fpga/lib/taxi/src/xfcp/lib/taxi/src/axis/rtl/taxi_axis_cobs_decode.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../intellifpga/taxi/src/eth/example/HTG_ZRF8/fpga/lib/taxi/src/xfcp/lib/taxi/src/axis/rtl/taxi_axis_cobs_decode.sv"/>
+        <Attr Name="ImportTime" Val="1757549029"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/fpga/lib/taxi/src/xfcp/lib/taxi/src/axis/rtl/taxi_axis_cobs_encode.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../intellifpga/taxi/src/eth/example/HTG_ZRF8/fpga/lib/taxi/src/xfcp/lib/taxi/src/axis/rtl/taxi_axis_cobs_encode.sv"/>
+        <Attr Name="ImportTime" Val="1757549029"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/fpga/lib/taxi/src/xfcp/lib/taxi/src/axis/rtl/taxi_axis_fifo.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../intellifpga/taxi/src/eth/example/HTG_ZRF8/fpga/lib/taxi/src/xfcp/lib/taxi/src/axis/rtl/taxi_axis_fifo.sv"/>
+        <Attr Name="ImportTime" Val="1757549029"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/fpga/lib/taxi/src/axis/rtl/taxi_axis_if.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../intellifpga/taxi/src/eth/example/HTG_ZRF8/fpga/lib/taxi/src/axis/rtl/taxi_axis_if.sv"/>
+        <Attr Name="ImportTime" Val="1757549029"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/fpga/lib/taxi/src/eth/rtl/taxi_axis_xgmii_rx_32.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../intellifpga/taxi/src/eth/example/HTG_ZRF8/fpga/lib/taxi/src/eth/rtl/taxi_axis_xgmii_rx_32.sv"/>
+        <Attr Name="ImportTime" Val="1757549029"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/fpga/lib/taxi/src/eth/rtl/taxi_axis_xgmii_rx_64.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../intellifpga/taxi/src/eth/example/HTG_ZRF8/fpga/lib/taxi/src/eth/rtl/taxi_axis_xgmii_rx_64.sv"/>
+        <Attr Name="ImportTime" Val="1757549029"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/fpga/lib/taxi/src/eth/rtl/taxi_axis_xgmii_tx_32.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../intellifpga/taxi/src/eth/example/HTG_ZRF8/fpga/lib/taxi/src/eth/rtl/taxi_axis_xgmii_tx_32.sv"/>
+        <Attr Name="ImportTime" Val="1757549029"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/fpga/lib/taxi/src/eth/rtl/taxi_axis_xgmii_tx_64.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../intellifpga/taxi/src/eth/example/HTG_ZRF8/fpga/lib/taxi/src/eth/rtl/taxi_axis_xgmii_tx_64.sv"/>
+        <Attr Name="ImportTime" Val="1757549029"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/fpga/lib/taxi/src/io/rtl/taxi_debounce_switch.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../intellifpga/taxi/src/eth/example/HTG_ZRF8/fpga/lib/taxi/src/io/rtl/taxi_debounce_switch.sv"/>
+        <Attr Name="ImportTime" Val="1757549029"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/fpga/lib/taxi/src/eth/rtl/taxi_eth_mac_10g.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../intellifpga/taxi/src/eth/example/HTG_ZRF8/fpga/lib/taxi/src/eth/rtl/taxi_eth_mac_10g.sv"/>
+        <Attr Name="ImportTime" Val="1757549029"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/fpga/lib/taxi/src/eth/rtl/us/taxi_eth_mac_25g_us.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../intellifpga/taxi/src/eth/example/HTG_ZRF8/fpga/lib/taxi/src/eth/rtl/us/taxi_eth_mac_25g_us.sv"/>
+        <Attr Name="ImportTime" Val="1757549029"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/fpga/lib/taxi/src/eth/rtl/us/taxi_eth_mac_25g_us_ch.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../intellifpga/taxi/src/eth/example/HTG_ZRF8/fpga/lib/taxi/src/eth/rtl/us/taxi_eth_mac_25g_us_ch.sv"/>
+        <Attr Name="ImportTime" Val="1757549029"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/fpga/lib/taxi/src/eth/rtl/taxi_eth_mac_phy_10g.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../intellifpga/taxi/src/eth/example/HTG_ZRF8/fpga/lib/taxi/src/eth/rtl/taxi_eth_mac_phy_10g.sv"/>
+        <Attr Name="ImportTime" Val="1757549029"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/fpga/lib/taxi/src/eth/rtl/taxi_eth_mac_phy_10g_rx.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../intellifpga/taxi/src/eth/example/HTG_ZRF8/fpga/lib/taxi/src/eth/rtl/taxi_eth_mac_phy_10g_rx.sv"/>
+        <Attr Name="ImportTime" Val="1757549029"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/fpga/lib/taxi/src/eth/rtl/taxi_eth_mac_phy_10g_tx.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../intellifpga/taxi/src/eth/example/HTG_ZRF8/fpga/lib/taxi/src/eth/rtl/taxi_eth_mac_phy_10g_tx.sv"/>
+        <Attr Name="ImportTime" Val="1757549029"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/fpga/lib/taxi/src/eth/rtl/taxi_eth_mac_stats.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../intellifpga/taxi/src/eth/example/HTG_ZRF8/fpga/lib/taxi/src/eth/rtl/taxi_eth_mac_stats.sv"/>
+        <Attr Name="ImportTime" Val="1757549029"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/fpga/lib/taxi/src/eth/rtl/taxi_eth_phy_10g.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../intellifpga/taxi/src/eth/example/HTG_ZRF8/fpga/lib/taxi/src/eth/rtl/taxi_eth_phy_10g.sv"/>
+        <Attr Name="ImportTime" Val="1757549029"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/fpga/lib/taxi/src/eth/rtl/taxi_eth_phy_10g_rx.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../intellifpga/taxi/src/eth/example/HTG_ZRF8/fpga/lib/taxi/src/eth/rtl/taxi_eth_phy_10g_rx.sv"/>
+        <Attr Name="ImportTime" Val="1757549029"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/fpga/lib/taxi/src/eth/rtl/taxi_eth_phy_10g_rx_ber_mon.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../intellifpga/taxi/src/eth/example/HTG_ZRF8/fpga/lib/taxi/src/eth/rtl/taxi_eth_phy_10g_rx_ber_mon.sv"/>
+        <Attr Name="ImportTime" Val="1757549029"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/fpga/lib/taxi/src/eth/rtl/taxi_eth_phy_10g_rx_frame_sync.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../intellifpga/taxi/src/eth/example/HTG_ZRF8/fpga/lib/taxi/src/eth/rtl/taxi_eth_phy_10g_rx_frame_sync.sv"/>
+        <Attr Name="ImportTime" Val="1757549029"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/fpga/lib/taxi/src/eth/rtl/taxi_eth_phy_10g_rx_if.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../intellifpga/taxi/src/eth/example/HTG_ZRF8/fpga/lib/taxi/src/eth/rtl/taxi_eth_phy_10g_rx_if.sv"/>
+        <Attr Name="ImportTime" Val="1757549029"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/fpga/lib/taxi/src/eth/rtl/taxi_eth_phy_10g_rx_watchdog.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../intellifpga/taxi/src/eth/example/HTG_ZRF8/fpga/lib/taxi/src/eth/rtl/taxi_eth_phy_10g_rx_watchdog.sv"/>
+        <Attr Name="ImportTime" Val="1757549029"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/fpga/lib/taxi/src/eth/rtl/taxi_eth_phy_10g_tx.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../intellifpga/taxi/src/eth/example/HTG_ZRF8/fpga/lib/taxi/src/eth/rtl/taxi_eth_phy_10g_tx.sv"/>
+        <Attr Name="ImportTime" Val="1757549029"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/fpga/lib/taxi/src/eth/rtl/taxi_eth_phy_10g_tx_if.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../intellifpga/taxi/src/eth/example/HTG_ZRF8/fpga/lib/taxi/src/eth/rtl/taxi_eth_phy_10g_tx_if.sv"/>
+        <Attr Name="ImportTime" Val="1757549029"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/fpga/lib/taxi/src/eth/rtl/us/taxi_eth_phy_10g_us_gt.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../intellifpga/taxi/src/eth/example/HTG_ZRF8/fpga/lib/taxi/src/eth/rtl/us/taxi_eth_phy_10g_us_gt.sv"/>
+        <Attr Name="ImportTime" Val="1757549029"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/fpga/lib/taxi/src/eth/rtl/us/taxi_eth_phy_10g_us_gt_ll.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../intellifpga/taxi/src/eth/example/HTG_ZRF8/fpga/lib/taxi/src/eth/rtl/us/taxi_eth_phy_10g_us_gt_ll.sv"/>
+        <Attr Name="ImportTime" Val="1757549029"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/fpga/lib/taxi/src/eth/rtl/us/taxi_eth_phy_25g_us_gt.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../intellifpga/taxi/src/eth/example/HTG_ZRF8/fpga/lib/taxi/src/eth/rtl/us/taxi_eth_phy_25g_us_gt.sv"/>
+        <Attr Name="ImportTime" Val="1757549029"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/fpga/lib/taxi/src/eth/rtl/us/taxi_eth_phy_25g_us_gt_ll.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../intellifpga/taxi/src/eth/example/HTG_ZRF8/fpga/lib/taxi/src/eth/rtl/us/taxi_eth_phy_25g_us_gt_ll.sv"/>
+        <Attr Name="ImportTime" Val="1757549029"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/fpga/lib/taxi/src/eth/lib/taxi/src/hip/rtl/us/taxi_gt_qpll_reset.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../intellifpga/taxi/src/eth/example/HTG_ZRF8/fpga/lib/taxi/src/eth/lib/taxi/src/hip/rtl/us/taxi_gt_qpll_reset.sv"/>
+        <Attr Name="ImportTime" Val="1757549029"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/fpga/lib/taxi/src/eth/lib/taxi/src/hip/rtl/us/taxi_gt_rx_reset.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../intellifpga/taxi/src/eth/example/HTG_ZRF8/fpga/lib/taxi/src/eth/lib/taxi/src/hip/rtl/us/taxi_gt_rx_reset.sv"/>
+        <Attr Name="ImportTime" Val="1757549029"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/fpga/lib/taxi/src/eth/lib/taxi/src/hip/rtl/us/taxi_gt_tx_reset.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../intellifpga/taxi/src/eth/example/HTG_ZRF8/fpga/lib/taxi/src/eth/lib/taxi/src/hip/rtl/us/taxi_gt_tx_reset.sv"/>
+        <Attr Name="ImportTime" Val="1757549029"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/fpga/lib/taxi/src/xfcp/lib/taxi/src/lss/rtl/taxi_i2c_master.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../intellifpga/taxi/src/eth/example/HTG_ZRF8/fpga/lib/taxi/src/xfcp/lib/taxi/src/lss/rtl/taxi_i2c_master.sv"/>
+        <Attr Name="ImportTime" Val="1757549029"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/fpga/lib/taxi/src/eth/lib/taxi/src/lfsr/rtl/taxi_lfsr.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../intellifpga/taxi/src/eth/example/HTG_ZRF8/fpga/lib/taxi/src/eth/lib/taxi/src/lfsr/rtl/taxi_lfsr.sv"/>
+        <Attr Name="ImportTime" Val="1757549029"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/fpga/lib/taxi/src/eth/rtl/taxi_mac_ctrl_rx.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../intellifpga/taxi/src/eth/example/HTG_ZRF8/fpga/lib/taxi/src/eth/rtl/taxi_mac_ctrl_rx.sv"/>
+        <Attr Name="ImportTime" Val="1757549029"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/fpga/lib/taxi/src/eth/rtl/taxi_mac_ctrl_tx.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../intellifpga/taxi/src/eth/example/HTG_ZRF8/fpga/lib/taxi/src/eth/rtl/taxi_mac_ctrl_tx.sv"/>
+        <Attr Name="ImportTime" Val="1757549029"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/fpga/lib/taxi/src/eth/rtl/taxi_mac_pause_ctrl_rx.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../intellifpga/taxi/src/eth/example/HTG_ZRF8/fpga/lib/taxi/src/eth/rtl/taxi_mac_pause_ctrl_rx.sv"/>
+        <Attr Name="ImportTime" Val="1757549029"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/fpga/lib/taxi/src/eth/rtl/taxi_mac_pause_ctrl_tx.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../intellifpga/taxi/src/eth/example/HTG_ZRF8/fpga/lib/taxi/src/eth/rtl/taxi_mac_pause_ctrl_tx.sv"/>
+        <Attr Name="ImportTime" Val="1757549029"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/fpga/lib/taxi/src/xfcp/lib/taxi/src/prim/rtl/taxi_penc.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../intellifpga/taxi/src/eth/example/HTG_ZRF8/fpga/lib/taxi/src/xfcp/lib/taxi/src/prim/rtl/taxi_penc.sv"/>
+        <Attr Name="ImportTime" Val="1757549029"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/fpga/lib/taxi/src/eth/lib/taxi/src/stats/rtl/taxi_stats_collect.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../intellifpga/taxi/src/eth/example/HTG_ZRF8/fpga/lib/taxi/src/eth/lib/taxi/src/stats/rtl/taxi_stats_collect.sv"/>
+        <Attr Name="ImportTime" Val="1757549029"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/fpga/lib/taxi/src/xfcp/lib/taxi/src/stats/rtl/taxi_stats_counter.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../intellifpga/taxi/src/eth/example/HTG_ZRF8/fpga/lib/taxi/src/xfcp/lib/taxi/src/stats/rtl/taxi_stats_counter.sv"/>
+        <Attr Name="ImportTime" Val="1757549029"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/fpga/lib/taxi/src/xfcp/lib/taxi/src/stats/rtl/taxi_stats_strings_full.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../intellifpga/taxi/src/eth/example/HTG_ZRF8/fpga/lib/taxi/src/xfcp/lib/taxi/src/stats/rtl/taxi_stats_strings_full.sv"/>
+        <Attr Name="ImportTime" Val="1757549029"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/fpga/lib/taxi/src/sync/rtl/taxi_sync_reset.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../intellifpga/taxi/src/eth/example/HTG_ZRF8/fpga/lib/taxi/src/sync/rtl/taxi_sync_reset.sv"/>
+        <Attr Name="ImportTime" Val="1757549029"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/fpga/lib/taxi/src/sync/rtl/taxi_sync_signal.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../intellifpga/taxi/src/eth/example/HTG_ZRF8/fpga/lib/taxi/src/sync/rtl/taxi_sync_signal.sv"/>
+        <Attr Name="ImportTime" Val="1757549029"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/fpga/lib/taxi/src/xfcp/lib/taxi/src/lss/rtl/taxi_uart.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../intellifpga/taxi/src/eth/example/HTG_ZRF8/fpga/lib/taxi/src/xfcp/lib/taxi/src/lss/rtl/taxi_uart.sv"/>
+        <Attr Name="ImportTime" Val="1757549029"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/fpga/lib/taxi/src/xfcp/lib/taxi/src/lss/rtl/taxi_uart_brg.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../intellifpga/taxi/src/eth/example/HTG_ZRF8/fpga/lib/taxi/src/xfcp/lib/taxi/src/lss/rtl/taxi_uart_brg.sv"/>
+        <Attr Name="ImportTime" Val="1757549029"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/fpga/lib/taxi/src/xfcp/lib/taxi/src/lss/rtl/taxi_uart_rx.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../intellifpga/taxi/src/eth/example/HTG_ZRF8/fpga/lib/taxi/src/xfcp/lib/taxi/src/lss/rtl/taxi_uart_rx.sv"/>
+        <Attr Name="ImportTime" Val="1757549029"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/fpga/lib/taxi/src/xfcp/lib/taxi/src/lss/rtl/taxi_uart_tx.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../intellifpga/taxi/src/eth/example/HTG_ZRF8/fpga/lib/taxi/src/xfcp/lib/taxi/src/lss/rtl/taxi_uart_tx.sv"/>
+        <Attr Name="ImportTime" Val="1757549029"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/fpga/lib/taxi/src/xfcp/rtl/taxi_xfcp_if_uart.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../intellifpga/taxi/src/eth/example/HTG_ZRF8/fpga/lib/taxi/src/xfcp/rtl/taxi_xfcp_if_uart.sv"/>
+        <Attr Name="ImportTime" Val="1757549029"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/fpga/lib/taxi/src/xfcp/rtl/taxi_xfcp_mod_axil.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../intellifpga/taxi/src/eth/example/HTG_ZRF8/fpga/lib/taxi/src/xfcp/rtl/taxi_xfcp_mod_axil.sv"/>
+        <Attr Name="ImportTime" Val="1757549029"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/fpga/lib/taxi/src/xfcp/rtl/taxi_xfcp_mod_i2c_master.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../intellifpga/taxi/src/eth/example/HTG_ZRF8/fpga/lib/taxi/src/xfcp/rtl/taxi_xfcp_mod_i2c_master.sv"/>
+        <Attr Name="ImportTime" Val="1757549029"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/fpga/lib/taxi/src/xfcp/rtl/taxi_xfcp_mod_stats.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../intellifpga/taxi/src/eth/example/HTG_ZRF8/fpga/lib/taxi/src/xfcp/rtl/taxi_xfcp_mod_stats.sv"/>
+        <Attr Name="ImportTime" Val="1757549029"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/fpga/lib/taxi/src/xfcp/rtl/taxi_xfcp_switch.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../intellifpga/taxi/src/eth/example/HTG_ZRF8/fpga/lib/taxi/src/xfcp/rtl/taxi_xfcp_switch.sv"/>
+        <Attr Name="ImportTime" Val="1757549029"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/fpga/lib/taxi/src/eth/rtl/taxi_xgmii_baser_dec.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../intellifpga/taxi/src/eth/example/HTG_ZRF8/fpga/lib/taxi/src/eth/rtl/taxi_xgmii_baser_dec.sv"/>
+        <Attr Name="ImportTime" Val="1757549029"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/fpga/lib/taxi/src/eth/rtl/taxi_xgmii_baser_enc.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../intellifpga/taxi/src/eth/example/HTG_ZRF8/fpga/lib/taxi/src/eth/rtl/taxi_xgmii_baser_enc.sv"/>
+        <Attr Name="ImportTime" Val="1757549029"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/fpga/rtl/fpga_r2.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../intellifpga/taxi/src/eth/example/HTG_ZRF8/fpga/rtl/fpga_r2.sv"/>
+        <Attr Name="ImportTime" Val="1757549029"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/fpga/fpga_R2_ZU48DR/defines.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../intellifpga/taxi/src/eth/example/HTG_ZRF8/fpga/fpga_R2_ZU48DR/defines.v"/>
+        <Attr Name="ImportTime" Val="1757549116"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/project_1/archive_project_summary.txt">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../project_1.xpr/project_1/archive_project_summary.txt"/>
+        <Attr Name="ImportTime" Val="1757605987"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="fpga"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1" RelGenDir="$PGENDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/imports/fpga/fpga_r2.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../intellifpga/taxi/src/eth/example/HTG_ZRF8/fpga/fpga_r2.xdc"/>
+        <Attr Name="ImportTime" Val="1757549029"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/constrs_1/imports/fpga/cfgmclk.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../intellifpga/taxi/src/eth/example/HTG_ZRF8/fpga/cfgmclk.xdc"/>
+        <Attr Name="ImportTime" Val="1757549029"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/constrs_1/imports/fpga/lib/taxi/src/eth/syn/vivado/taxi_eth_mac_fifo.tcl">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../intellifpga/taxi/src/eth/example/HTG_ZRF8/fpga/lib/taxi/src/eth/syn/vivado/taxi_eth_mac_fifo.tcl"/>
+        <Attr Name="ImportTime" Val="1757549029"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/constrs_1/imports/fpga/lib/taxi/src/axis/syn/vivado/taxi_axis_async_fifo.tcl">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../intellifpga/taxi/src/eth/example/HTG_ZRF8/fpga/lib/taxi/src/axis/syn/vivado/taxi_axis_async_fifo.tcl"/>
+        <Attr Name="ImportTime" Val="1757549029"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/constrs_1/imports/fpga/lib/taxi/src/sync/syn/vivado/taxi_sync_reset.tcl">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../intellifpga/taxi/src/eth/example/HTG_ZRF8/fpga/lib/taxi/src/sync/syn/vivado/taxi_sync_reset.tcl"/>
+        <Attr Name="ImportTime" Val="1757549029"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/constrs_1/imports/fpga/lib/taxi/src/sync/syn/vivado/taxi_sync_signal.tcl">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../intellifpga/taxi/src/eth/example/HTG_ZRF8/fpga/lib/taxi/src/sync/syn/vivado/taxi_sync_signal.tcl"/>
+        <Attr Name="ImportTime" Val="1757549029"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TargetConstrsFile" Val="$PSRCDIR/constrs_1/imports/fpga/cfgmclk.xdc"/>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1" RelGenDir="$PGENDIR/utils_1">
+    <Filter Type="Utils"/>
+    <File Path="$PSRCDIR/utils_1/imports/synth_1/fpga.dcp">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedInSteps" Val="synth_1"/>
+        <Attr Name="AutoDcp" Val="1"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2024">
+      <Desc>Vivado Synthesis Defaults</Desc>
+    </StratHandle>
+    <Step Id="synth_design"/>
+  </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="qpsk_for_htg_QPSK_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="taxi_eth_phy_25g_us_gty_full"/>
+  <BlockFileSet Type="BlockSrcs" Name="usp_rfdc_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="taxi_eth_phy_25g_us_gty_ch"/>
+  <BlockFileSet Type="BlockSrcs" Name="qpsk_for_htg_system_ila_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="taxi_eth_phy_25g_us_gty_ll_full"/>
+  <BlockFileSet Type="BlockSrcs" Name="taxi_eth_phy_25g_us_gty_ll_ch"/>
+</GenRun>

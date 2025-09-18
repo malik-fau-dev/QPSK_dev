@@ -1,0 +1,32 @@
+1. fpgautil -b fpga_qpsk_full.bit
+2. fpgautil -o qpsk_dt_overlay.dtbo
+3. systemctl restart iiod 2>/dev/null || { killall iiod 2>/dev/null; iiod -F & }
+
+4. device-tree compilation commmand: dtc -@ -I dts -O dtb -o qpsk_dt_overlay.dtbo dut_ip_overlay.dts
+
+petalinux2024 login: root (automatic login)
+
+root@petalinux2024:~# root
+root@petalinux2024:~# fpgautil -b fpga_v2.bit
+Time taken to load BIN is 443.000000 Milli Seconds
+BIN FILE loaded through FPGA manager successfully
+root@petalinux2024:~# ls
+-110  fpga.bit  fpga_bypass_qpsk.bit  fpga_registers_out.bit  fpga_v2.bit  qpsk_dt_overlay.dtbo
+root@petalinux2024:~# pwd
+/home/root
+root@petalinux2024:~# fpgautil -o qpsk_dt_overlay.dtbo
+mkdir: cannot create directory '/configfs': File exists
+[  112.002387] OF: overlay: WARNING: memory leak will occur if overlay removed, property: /__symbols__/axi_dmac_s2mm
+[  112.012885] OF: overlay: WARNING: memory leak will occur if overlay removed, property: /__symbols__/axi_dmac_mm2s
+[  112.023279] OF: overlay: WARNING: memory leak will occur if overlay removed, property: /__symbols__/mwipcore0
+[  112.033401] OF: overlay: WARNING: memory leak will occur if overlay removed, property: /__symbols__/mmrd_channel
+[  112.043658] OF: overlay: WARNING: memory leak will occur if overlay removed, property: /__symbols__/mmwr_channel
+root@petalinux2024:~# sys
+
+
+fpgautil -b fpga_v2.bit
+
+
+rx_src_sel = 0 (AXI-stream data), rx_src_sel = 1 (ADC data) 
+capture_src_sel
+

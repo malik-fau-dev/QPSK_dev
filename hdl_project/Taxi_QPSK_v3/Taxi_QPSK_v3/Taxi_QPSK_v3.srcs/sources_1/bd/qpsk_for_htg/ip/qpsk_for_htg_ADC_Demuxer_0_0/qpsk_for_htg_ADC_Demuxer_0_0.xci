@@ -1,0 +1,55 @@
+{
+  "schema": "xilinx.com:schema:json_instance:1.0",
+  "ip_inst": {
+    "xci_name": "qpsk_for_htg_ADC_Demuxer_0_0",
+    "cell_name": "ADC_Demuxer_0",
+    "component_reference": "mathworks.com:user:ADC_Demuxer:1.0",
+    "ip_revision": "13",
+    "gen_directory": "../../../../../../Taxi_QPSK_v3.gen/sources_1/bd/qpsk_for_htg/ip/qpsk_for_htg_ADC_Demuxer_0_0",
+    "parameters": {
+      "component_parameters": {
+        "IQMODE": [ { "value": "true", "resolve_type": "user", "format": "bool", "enabled": false, "usage": "all" } ],
+        "SAMPLESPERCLOCK": [ { "value": "4", "resolve_type": "user", "format": "long", "usage": "all" } ],
+        "Component_Name": [ { "value": "qpsk_for_htg_ADC_Demuxer_0_0", "resolve_type": "user", "usage": "all" } ],
+        "ISGEN3": [ { "value": "true", "value_src": "user", "resolve_type": "user", "format": "bool", "usage": "all" } ]
+      },
+      "model_parameters": {
+        "IQMODE": [ { "value": "true", "resolve_type": "generated", "format": "bool", "usage": "all" } ],
+        "SAMPLESPERCLOCK": [ { "value": "4", "resolve_type": "generated", "format": "long", "usage": "all" } ],
+        "ISGEN3": [ { "value": "true", "resolve_type": "generated", "format": "bool", "usage": "all" } ]
+      },
+      "project_parameters": {
+        "ARCHITECTURE": [ { "value": "zynquplusRFSOC" } ],
+        "BASE_BOARD_PART": [ { "value": "" } ],
+        "BOARD_CONNECTIONS": [ { "value": "" } ],
+        "DEVICE": [ { "value": "xczu48dr" } ],
+        "PACKAGE": [ { "value": "ffvg1517" } ],
+        "PREFHDL": [ { "value": "VERILOG" } ],
+        "SILICON_REVISION": [ { "value": "" } ],
+        "SIMULATOR_LANGUAGE": [ { "value": "MIXED" } ],
+        "SPEEDGRADE": [ { "value": "-2" } ],
+        "STATIC_POWER": [ { "value": "" } ],
+        "TEMPERATURE_GRADE": [ { "value": "E" } ]
+      },
+      "runtime_parameters": {
+        "IPCONTEXT": [ { "value": "IP_Integrator" } ],
+        "IPREVISION": [ { "value": "13" } ],
+        "MANAGED": [ { "value": "TRUE" } ],
+        "OUTPUTDIR": [ { "value": "../../../../../../Taxi_QPSK_v3.gen/sources_1/bd/qpsk_for_htg/ip/qpsk_for_htg_ADC_Demuxer_0_0" } ],
+        "SELECTEDSIMMODEL": [ { "value": "" } ],
+        "SHAREDDIR": [ { "value": "../../ipshared" } ],
+        "SWVERSION": [ { "value": "2024.2" } ],
+        "SYNTHESISFLOW": [ { "value": "OUT_OF_CONTEXT" } ]
+      }
+    },
+    "boundary": {
+      "ports": {
+        "IQ_In": [ { "direction": "in", "size_left": "127", "size_right": "0", "driver_value": "0" } ],
+        "IQ_Valid_In": [ { "direction": "in", "driver_value": "0" } ],
+        "I_Out": [ { "direction": "out", "size_left": "63", "size_right": "0", "driver_value": "0" } ],
+        "Q_Out": [ { "direction": "out", "size_left": "63", "size_right": "0", "driver_value": "0" } ],
+        "IQ_Valid_Out": [ { "direction": "out", "driver_value": "0" } ]
+      }
+    }
+  }
+}
